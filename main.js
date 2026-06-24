@@ -1,6 +1,5 @@
 const contacts = [];
 
-// VOID — hech narsa qaytarmaydi, faqat qo'shadi
 function addContact() {
   const name = document.getElementById("nameInput").value;
   const number = document.getElementById("numberInput").value;
@@ -15,15 +14,12 @@ function addContact() {
   }
 }
 
-// RETURN — kontaktlar sonini qaytaradi
 function contactCount() {
   return contacts.length;
 }
 
-// ARROW — faqat ismlarni oladi
 const getNames = () => contacts.map(c => c.name);
 
-// VOID — ekranda ko'rsatadi
 function showContacts() {
   const list = document.getElementById("contactList");
   list.innerHTML = "";
