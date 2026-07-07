@@ -1,0 +1,130 @@
+//let x = 0;
+let y = -1;
+let z = 4;
+
+if (x > y) {
+if (x > z) {
+if (y > z) {
+console.log(x + ", " + y + ", " + z);
+} else {
+console.log(x + ", " + z + ", " + y);
+}
+}
+}
+
+if (y > x) {
+if (y > z) {
+if (x > z) {
+console.log(y + ", " + x + ", " + z);
+} else {
+console.log(y + ", " + z + ", " + x);
+}
+}
+}
+
+if (z > x) {
+if (z > y) {
+if (x > y) {
+console.log(z + ", " + x + ", " + y);
+} else {
+console.log(z + ", " + y + ", " + x);
+}
+}
+}
+
+
+//4
+let a = -5;
+let b = -2;
+let c = -6;
+let d = 0;
+let e = -1;
+
+let max = a;
+
+if (b > max) {
+max = b;
+}
+
+if (c > max) {
+max = c;
+}
+
+if (d > max) {
+max = d;
+}
+
+if (e > max) {
+max = e;
+}
+
+console.log("Eng katta son: " + max);
+//5
+
+for (let x = 0; x <= 15; x++) {
+    if (x == 0) {
+        console.log(x + " juft son");
+    } else if (x % 2 == 0) {
+        console.log(x + " juft son");
+    } else {
+        console.log(x + " toq son");
+    }
+}
+
+
+//6 
+
+let s1 = 99;
+let s2 = 88;
+let s3 = 77;
+let s4 = 66;
+let s5 = 55;
+
+let ball = (s1 + s2 + s3 + s4 + s5) / 5;
+
+console.log(ball);
+
+if (ball >= 90) {
+    console.log("A");
+} else if (ball >= 80) {
+    console.log("B");
+} else if (ball >= 70) {
+    console.log("C");
+} else {
+    console.log("F");
+}
+
+//7
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 15 == 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 == 0) {
+        console.log("Fizz");
+    } else if (i % 5 == 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+
+
+//8 
+for (let happyNumbers = 1; happyNumbers <= 20; happyNumbers++) {
+    let x = happyNumbers;
+    
+    while (x != 1 && x != 4) {
+        let y = 0;
+        while (x > 0) {
+            let z = x % 10;
+            y = y + (z * z);
+            x = Math.floor(x / 10);
+        }
+        x = y;
+    }
+    
+    if (x == 1) {
+        console.log(happyNumbers);
+    }
+}
+
