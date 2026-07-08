@@ -96,29 +96,104 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
-//8 
-let topilganlar = 0;
-let happyNumbers = 1;
-let boshlangichSon = 1;
+//8 // Happy Number: raqamlar kvadratini qo'shib, 1 chiqishini tekshiradi
+function isHappy(num) {
 
-while (topilganlar < 5) {
-    let yigindi = 0;
-    
-    while (happyNumbers > 0) {
-        let qoldiq = happyNumbers % 10;
-        yigindi = yigindi + (qoldiq * qoldiq);
-        happyNumbers = Math.floor(happyNumbers / 10);
+    while (num !== 1 && num !== 4) {
+
+        let sum = 0;
+
+        while (num > 0) {
+
+            let digit = num % 10;
+
+            sum = sum + (digit ** 2);
+
+            num = Math.floor(num / 10);
+        }
+
+        num = sum;
     }
-    
-    if (yigindi == 1) {
-        console.log(boshlangichSon);
-        topilganlar = topilganlar + 1;
-        boshlangichSon = boshlangichSon + 1;
-        happyNumbers = boshlangichSon;
-    } else if (yigindi == 4) {
-        boshlangichSon = boshlangichSon + 1;
-        happyNumbers = boshlangichSon;
-    } else {
-        happyNumbers = yigindi;
-    }
+
+    return num === 1;
 }
+
+
+let son = 1;
+let count = 0;
+
+while (count < 5) {
+
+    if (isHappy(son)) {
+        console.log(son);
+        count++;
+    }
+
+    son++;
+}
+
+
+
+// 9 ARMSTORNG 
+for (let i = 100; i <= 999; i++) {
+
+    let yuzlik = Math.floor(i / 100);    //math.floor bu 3,7 bosa qiymatini bitta 3 qilib chiqazib beradi
+    let onlik = Math.floor(i / 10) % 10;
+    let birlik = i % 10;
+
+    let yigindi = (yuzlik ** 3) + (onlik ** 3) + (birlik ** 3);
+
+    if (yigindi === i) {   //nega 3 ta === ishlatganman sababi "raqamlar kublari yig'indisi asl sonning o'ziga tengmi? dgan manoni beradi
+        console.log(i);
+    }
+
+}
+
+// 10 
+for (let i = 1; i <= 5; i++) {  //shu 5 ni 10 qisam 10ta yulduz chiqazadi
+
+    let qator = "";  //bu bo'sh matn (empty string).
+
+    for (let j = 1; j <= i; j++) { // i = 1 → 1 ta * i = 2 → 2 ta * i = 3 → 3 ta *i = 4 → 4 ta *
+i = 5 → 5 ta *
+        qator += "* ";   //nega bunaqa yozilgan sababi har bir qator uchun yulduz chiqazishi uchun!
+    }
+
+    console.log(qator);
+
+}
+// 11 GCD (Greatest Common Divisor) — EKUB (Eng katta umumiy bo'luvchi)
+//% → qoldiqni topish === 0 → qoldiq 0 ga tengmi (qoldiqsiz bo'linadimi)
+let a = 20;
+let b = 30;
+
+let ekub = 1;
+
+for (let i = 1; i <= a && i <= b; i++) {
+
+    if (a % i === 0 && b % i === 0) {
+        ekub = i;
+    }
+
+}
+
+console.log(ekub);
+
+
+//12 1000 dan kichik bo'lgan 3 va 5 ga karrali sonlarning yig'indisini topish.
+qoldiq
+% → qoldiqni topadi
+=== 0 → qoldiq 0 ekanini tekshiradi
+% va === 0 birga → qoldiqsiz bo'linishni tekshiradi.
+
+let sum = 0;
+
+for (let i = 1; i < 1000; i++) {
+
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum += i;
+    }
+
+}
+
+console.log(sum);
