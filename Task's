@@ -1,37 +1,26 @@
-//let x = 0;
+let x = 0;
 let y = -1;
 let z = 4;
 
-if (x > y) {
-if (x > z) {
-if (y > z) {
-console.log(x + ", " + y + ", " + z);
+if (x >= y && x >= z) {
+    if (y >= z) {
+        console.log(x + ", " + y + ", " + z);
+    } else {
+        console.log(x + ", " + z + ", " + y);
+    }
+} else if (y >= x && y >= z) {
+    if (x >= z) {
+        console.log(y + ", " + x + ", " + z);
+    } else {
+        console.log(y + ", " + z + ", " + x);
+    }
 } else {
-console.log(x + ", " + z + ", " + y);
+    if (x >= y) {
+        console.log(z + ", " + x + ", " + y);
+    } else {
+        console.log(z + ", " + y + ", " + x);
+    }
 }
-}
-}
-
-if (y > x) {
-if (y > z) {
-if (x > z) {
-console.log(y + ", " + x + ", " + z);
-} else {
-console.log(y + ", " + z + ", " + x);
-}
-}
-}
-
-if (z > x) {
-if (z > y) {
-if (x > y) {
-console.log(z + ", " + x + ", " + y);
-} else {
-console.log(z + ", " + y + ", " + x);
-}
-}
-}
-
 
 //4
 let a = -5;
@@ -107,7 +96,6 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
-
 
 //8 
 for (let happyNumbers = 1; happyNumbers <= 20; happyNumbers++) {
