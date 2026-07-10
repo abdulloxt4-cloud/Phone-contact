@@ -1,0 +1,69 @@
+!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop iPhones</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>iPhone List</h2>
+
+    <ul id="phoneList">
+
+        <li draggable="true">iPhone 11</li>
+
+        <li draggable="true">iPhone 12</li>
+
+        <li draggable="true">iPhone 13</li>
+
+        <li draggable="true">iPhone 14</li>
+
+        <li draggable="true">iPhone 15</li>
+
+        <li draggable="true">iPhone 16</li>
+
+        <li draggable="true">iPhone 17</li>
+
+    </ul>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+/CSS
+body {
+    font-family: Arial, sans-serif;
+}
+
+#phoneList {
+    width: 250px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background-color: lightgray;
+    padding: 15px;
+    margin: 10px;
+    cursor: grab;
+}
+
+//JS
+
+const phones = document.querySelectorAll("li");
+
+let phone;
+
+
+phones.forEach(function (item) {
+
+    item.addEventListener("dragstart", function () {
+        phone = item;
+    });
+
+});
