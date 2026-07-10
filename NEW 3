@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Enter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="box">
+        MOUSE USTIGA BOS 
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//CSS
+#box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+//JS
+const box = document.getElementById("box");
+
+box.addEventListener("mouseenter", function () {
+    box.style.backgroundColor = "red";
+});
