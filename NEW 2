@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button id="menuBtn">Subject</button>
+
+    <div id="dropdown">
+        <p>History 1</p>
+        <p>English language 2</p>
+        <p>math 3</p>
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html> 
+
+// CSS 
+//bu Code nma qb bervoti assosiy vazifasi man run bosganimda Subject dgan narsami ochib yopishimi togilab beradi
+#dropdown {
+    display: none;
+}
+
+
+//JSS
+const menuBtn = document.getElementById("menuBtn");
+const dropdown = document.getElementById("dropdown");
+
+menuBtn.addEventListener("click", function () {
+    if (dropdown.style.display === "block") {  // Agar eshik ochiq bo'lsa:yop Aks holda: och
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+});
