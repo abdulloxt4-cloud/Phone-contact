@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="switch">
+        OFF
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//CSS
+#switch {
+    width: 80px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+//JS
+const switchBtn = document.getElementById("switch");
+
+switchBtn.addEventListener("click", function () {
+
+    if (switchBtn.textContent == "OFF") {
+
+        switchBtn.textContent = "ON";
+        switchBtn.style.backgroundColor = "green";
+
+    } else {
+
+        switchBtn.textContent = "OFF";
+        switchBtn.style.backgroundColor = "gray";
+
+    }
+
+});
