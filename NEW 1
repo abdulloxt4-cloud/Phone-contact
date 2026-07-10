@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <title>Button Click Event</title>
+</head>
+<body>
+
+    <button id="btn">Click Me</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JAVASCRIPT
+const button = document.getElementById("btn");
+
+button.addEventListener("click", function () { //"Buttonni kuzatib tur, agar bosilsa keyingi kodni ishlat."
+    console.log("Button bosildi!");
+});
