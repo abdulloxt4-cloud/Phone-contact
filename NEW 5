@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slideshow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img id="image" src="https://via.placeholder.com/300x200" alt="Slideshow">
+
+    <br><br>
+
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//CSS 
+
+#image {
+    width: 300px;
+    height: 200px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+
+// JS
+const image = document.getElementById("image");
+const nextBtn = document.getElementById("nextBtn");
+
+let count = 1;
+
+nextBtn.addEventListener("click", function () {
+    count++;
+
+    image.src = "image" + count + ".jpg";
+});
