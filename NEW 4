@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="form">
+
+        <input id="name" type="text" placeholder="Ismingiz">
+
+        <input id="email" type="email" placeholder="Email">
+
+        <input id="password" type="password" placeholder="Password">
+
+        <button type="submit">Register</button>
+
+    </form>
+
+
+    <p id="error"></p>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//CSS 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+#error {
+    color: red;
+}
+
+//JS
+const form = document.getElementById("form");
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+
+const error = document.getElementById("error");
+
+
+form.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    if (nameInput.value == "") {
+        error.textContent = "Name is required";
+    } 
+    else if (emailInput.value == "") {
+        error.textContent = "Email is required";
+    } 
+    else if (passwordInput.value == "") {
+        error.textContent = "Password is required";
+    } 
+    else {
+        error.textContent = "Form submitted!";
+    }
+
+});
+
