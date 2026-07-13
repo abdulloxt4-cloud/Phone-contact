@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Calls with Debounced Input Events</title>
+</head>
+
+<body>
+
+    <input id="search" type="text" placeholder="Search...">
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+// Input elementni olish
+let search = document.getElementById("search");
+
+// Timer saqlash uchun o'zgaruvchi
+let timer;
+
+
+// Input event qo'shish
+search.addEventListener("input", function() {
+
+    // Eski timerlarni o'chirish
+    clearTimeout(timer);
+
+    // Yangi timer boshlash
+    timer = setTimeout(function() {
+
+        // API chaqirishni ko'rsatish
+        console.log("API call:", search.value);
+
+    }, 1000);  //millisekund 1 qb yozib bomidi sababi setTimeout() millisecund qabul qiladi Faqat!
+
+});
