@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Capturing Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="box">
+        <button id="btn">
+            Click me
+        </button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//CSS
+#box {
+    width: 250px;
+    height: 200px;
+    background-color: lightblue;
+    padding: 40px;
+}
+
+button {
+    padding: 10px;
+    background-color: lightgreen;
+}
+
+//JS 
+let box = document.getElementById("box");
+let btn = document.getElementById("btn");
+
+box.addEventListener("click", function() {
+    console.log("Box ishladi");
+}, true);
+
+
+btn.addEventListener("click", function() {
+    console.log("Button ishladi");
+}, true);
+
+//true → capturing (yuqoridan pastga)
+false yoki yozilmasa → bubbling (pastdan yuqoriga)
