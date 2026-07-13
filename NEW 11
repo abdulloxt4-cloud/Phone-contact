@@ -26,6 +26,8 @@ let button = document.getElementById("add");
 button.onclick = function () {
     let item = document.createElement("li");
     item.innerHTML = "New Item"; // elementining ichidagi eski ma'lumotni o'chirib, uning o'rniga "New Item" yozuvini qo'yadi.
-    list.appendChild(item);
+    list.appendChild(item); //list — bu odatda HTML element (masalan, <ul>, <div>, <ol>).
+item — qo‘shilayotgan yangi element (masalan, <li>).
+appendChild() — JavaScript metodi, u bir elementni boshqa element ichiga qoshadi
 };
 
