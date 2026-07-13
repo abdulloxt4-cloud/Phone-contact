@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalStorage Counter</title>
+</head>
+
+<body>
+
+    <h2 id="counter">Counter: 0</h2>
+
+    <button id="btn">Increment</button>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+// HTML elementlarni olish
+let count = document.getElementById("count");
+let btn = document.getElementById("btn");
+
+// LocalStorage dan sonni olish localStorage — bu saqlab qo‘yish (save qilish) uchun ishlatiladigan narsa.
+let number = localStorage.getItem("number") || 0;
+
+// Ekranga chiqarish
+count.textContent = "Counter: " + number;
+
+
+// Button bosilganda ishlash
+btn.addEventListener("click", function() {
+
+    // Sonni oshirish
+    number++;
+
+    // Yangilangan sonni chiqarish
+    count.textContent = "Counter: " + number;
+
+    // Sonni saqlash
+    localStorage.setItem("number", number);
+
+});
