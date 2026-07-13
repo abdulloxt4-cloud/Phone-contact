@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SessionStorage Cart</title>
+</head>
+
+<body>
+
+<input id="item" placeholder="Enter item name">
+
+<button id="btn">Add to Cart</button>
+
+<ul id="cart"></ul>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS 
+// HTML elementlarni olish
+let item = document.getElementById("item");
+let btn = document.getElementById("btn");
+let cart = document.getElementById("cart");
+
+
+// Button bosilganda ishlash
+btn.onclick = function() {
+
+    // Input ichidagi qiymatni olish
+    let value = item.value;
+
+    // Qiymatni sessionStorage ga saqlash sessionStorage — bu brauzer ichidagi vaqtinchalik xotira.
+    sessionStorage.setItem("cart", value);
+
+    // Ekranga chiqarish
+    cart.innerHTML = value;
+
+};
+
