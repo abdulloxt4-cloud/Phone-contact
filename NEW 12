@@ -1,0 +1,31 @@
+//<form> → ma'lumot kiritish va yuborish uchun HTML elementi.
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="myForm">
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="surname" placeholder="Enter your surname">
+    <input type="email" id="email" placeholder="Enter your gmail">  
+//placeholder → input ichidagi ko'rsatma matni.
+value → foydalanuvchi kiritgan haqiqiy ma'lumot.
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let form = document.getElementById("myForm");
+
+
+    let name = document.getElementById("name").value;
+    let surname = document.getElementById("surname").value;
+    let email = document.getElementById("email").value;
+
+    console.log(name);
+    console.log(surname);
+    console.log(email);
