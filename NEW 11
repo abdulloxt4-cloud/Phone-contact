@@ -25,7 +25,7 @@ let button = document.getElementById("add");
 
 button.onclick = function () {
     let item = document.createElement("li");
-    item.innerHTML = "New Item";
+    item.innerHTML = "New Item"; // elementining ichidagi eski ma'lumotni o'chirib, uning o'rniga "New Item" yozuvini qo'yadi.
     list.appendChild(item);
 };
 
