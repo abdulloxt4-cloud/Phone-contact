@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruits</title>
+</head>
+<body>
+
+    <ul id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>PineApple</li>
+        <li>lemon</li>
+
+    </ul>
+
+    <button id="addBtn">Add Item</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+let list = document.getElementById("list");
+let button = document.getElementById("add");
+
+button.onclick = function () {
+    let item = document.createElement("li");
+    item.innerHTML = "New Item";
+    list.appendChild(item);
+};
+
