@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stop Propagation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="box">
+        <button id="btn">Click me</button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+/CSS
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    padding: 50px;
+}
+
+button {
+    padding: 10px;
+    background-color: lightgreen;
+}
+
+//JS
+let box = document.getElementById("box");
+let btn = document.getElementById("btn");
+
+
+box.addEventListener("click", function() {
+    console.log("Div ishladi");
+});
+
+
+btn.addEventListener("click", function(event) {
+
+    console.log("Button ishladi");
+
+    event.stopPropagation(); //event → Hodisa (harakat ma’lumoti).
+//stopPropagation() — Event tarqalishini to‘xtatish
+
+});
