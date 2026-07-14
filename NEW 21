@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notification API</title>
+</head>
+<body>
+
+    <button onclick="showNotification()">Show Notification</button>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function showNotification() {
+
+    Notification.requestPermission().then(function(permission) {
+
+        if (permission == "granted") {
+
+            new Notification("Hello!");
+
+        }
+
+    });
+
+}
