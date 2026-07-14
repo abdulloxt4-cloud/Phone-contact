@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clipboard API</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+
+    <button onclick="copyText()">Copy</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function copyText() {
+
+    let text = document.getElementById("text").value;
+
+    navigator.clipboard.writeText(text);
+
+    document.getElementById("result").innerHTML = "Copied";
+
+}
