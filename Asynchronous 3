@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>3-mashq</title>
+</head>
+<body>
+
+    <button onclick="getData()">Get Data</button>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function getData() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            console.log(data);
+        });
+}
+
