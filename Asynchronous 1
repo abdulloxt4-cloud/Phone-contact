@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Delayed Callback</title>
+</head>
+<body>
+
+    <button onclick="start()">Start</button>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function delay(callback) {
+    setTimeout(callback, 2000);
+}
+
+function hello() {
+    console.log("Hello");
+}
+
+function start() {
+    delay(hello);
+}
