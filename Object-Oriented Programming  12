@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University</title>
+</head>
+<body>
+
+<h2>University Departments</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+
+// University class
+class University {
+    constructor(name) {
+        this.name = name;
+        this.departments = [];
+    }
+
+    // Fakultet qo'shish
+    addDepartment(department) {
+        this.departments.push(department);
+        console.log(department + " fakulteti qo'shildi.");
+    }
+
+    // Fakultet o'chirish
+    removeDepartment(department) {
+        let index = this.departments.indexOf(department);
+
+        if (index !== -1) {
+            this.departments.splice(index, 1);
+            console.log(department + " fakulteti o'chirildi.");
+        } else {
+            console.log(department + " fakulteti mavjud emas.");
+        }
+    }
+
+    // Fakultetlarni chiqarish
+    displayDepartments() {
+        console.log(this.name + " fakultetlari:");
+
+        if (this.departments.length === 0) {
+            console.log("Fakultetlar mavjud emas.");
+        } else {
+            for (let i = 0; i < this.departments.length; i++) {
+                console.log((i + 1) + ". " + this.departments[i]);
+            }
+        }
+    }
+}
+
+
+// Universitet yaratish
+let university = new University("Toshkent Davlat Texnika Universiteti");
+
+
+// Natija
+university.displayDepartments();
+
+university.addDepartment("Informatika");
+university.addDepartment("Matematika");
+university.addDepartment("Fizika");
+
+university.displayDepartments();
+
+university.removeDepartment("Matematika");
+
+university.displayDepartments();
+
+university.removeDepartment("Kimyo");
