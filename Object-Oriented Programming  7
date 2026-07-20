@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book</title>
+</head>
+<body>
+
+<h2>Book Details</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html> 
+
+//JS
+
+// Book class
+class Book {
+    constructor(title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+
+    display() {
+        console.log("Title:", this.title);
+        console.log("Author:", this.author);
+        console.log("Publication Year:", this.year);
+    }
+}
+
+// Ebook class
+class Ebook extends Book {
+    constructor(title, author, year, price) {
+        super(title, author, year);
+        this.price = price;
+    }
+
+    display() {
+        console.log("Title:", this.title);
+        console.log("Author:", this.author);
+        console.log("Publication Year:", this.year);
+        console.log("Price:", this.price);
+    }
+}
+
+// Object
+let ebook = new Ebook("JavaScript Asoslari", "Abdulloh", 2026, 50000);
+
+// Result
+ebook.display();d
