@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sequential Async</title>
+</head>
+<body>
+
+    <h2>User</h2>
+
+    <button onclick="getUser()">Get User</button>
+
+    <div id="result"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+// Asinxron funksiya
+async function getUser() {
+
+    // 1-API
+    let response1 = await fetch("https://jsonplaceholder.typicode.com/users/1");
+    let data1 = await response1.json();
+
+    // 2-API
+    let response2 = await fetch("https://jsonplaceholder.typicode.com/users/2");
+    let data2 = await response2.json();
+
+    // HTML
+    let result = document.getElementById("result");
+
+    // Natija
+    result.innerHTML =
+        data1.name + "<br>" +
+        data2.name;
+}
