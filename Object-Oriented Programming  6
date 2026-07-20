@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee</title>
+</head>
+<body>
+
+<h2>Employee Salary</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+// Employee class
+class Employee {
+    constructor(name, salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    annualSalary() {
+        return this.salary * 12;
+    }
+}
+
+// Manager class
+class Manager extends Employee {
+    constructor(name, salary, department) {
+        super(name, salary);
+        this.department = department;
+    }
+
+    annualSalary() {
+        return (this.salary * 12) * 1.1;
+    }
+}
+
+// Object
+let manager1 = new Manager("Abdulloh", 5000, "Marketing");
+let manager2 = new Manager("Javohir", 5500, "IT");
+
+// Result
+console.log("Name:", manager1.name);
+console.log("Monthly Salary:", manager1.salary);
+console.log("Department:", manager1.department);
+console.log("Annual Salary:", manager1.annualSalary());
+
+console.log("----------------");
+
+console.log("Name:", manager2.name);
+console.log("Monthly Salary:", manager2.salary);
+console.log("Department:", manager2.department);
+console.log("Annual Salary:", manager2.annualSalary());
