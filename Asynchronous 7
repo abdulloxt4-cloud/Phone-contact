@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retry API</title>
+</head>
+<body>
+    <h1>Open Console (Fn + F12)</h1>
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+
+async function requestData(url, attempts) {
+    for (let i = 1; i <= attempts; i++) {
+        console.log("Attempt: " + i);
+
+        // API ga so'rov yuboramiz
+        let response = await fetch(url).catch(() => null);
+
+        // Agar javob muvaffaqiyatli bo'lsa (true bo'lsa)
+        if (response && response.ok) {
+            console.log("Success!");
+            return; 
+        }
+
+        console.log("Failed.");
+    }
+    console.log("All attempts failed.");
+}
+
+// Test qilish uchun (noto'g'ri havola va 3 ta urinish)
+requestData("https://wrong-link-123.com", 3);
