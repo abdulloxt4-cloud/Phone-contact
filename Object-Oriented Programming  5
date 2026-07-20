@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shape Area</title>
+</head>
+<body>
+
+    <h2>Shape Area Calculator</h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+// Parent class
+class Shape {
+    area() {}
+}
+
+// Circle class
+class Circle extends Shape {
+    constructor(radius) {
+        super();
+        this.radius = radius;
+    }
+
+    area() {
+        console.log("Circle Area:", (3.14 * this.radius * this.radius).toFixed(2));
+    }
+}
+
+// Triangle class
+class Triangle extends Shape {
+    constructor(base, height) {
+        super();
+        this.base = base;
+        this.height = height;
+    }
+
+    area() {
+        console.log("Triangle Area:", (this.base * this.height / 2).toFixed(2));
+    }
+}
+
+// Object
+let circle = new Circle(5);
+let triangle = new Triangle(10, 6);
+
+// Result
+circle.area();
+triangle.area();
