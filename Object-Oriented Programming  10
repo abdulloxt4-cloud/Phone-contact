@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product</title>
+</head>
+<body>
+
+    <h2>Products</h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+
+// Product class
+class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+}
+
+
+// Car class
+class Car extends Product {
+    constructor(name, price, model) {
+        super(name, price);
+        this.model = model;
+    }
+}
+
+
+// Phone class
+class Phone extends Product {
+    constructor(name, price, memory) {
+        super(name, price);
+        this.memory = memory;
+    }
+}
+
+
+// Objects
+let bmw = new Car("BMW", 50000, "M5");
+let iphone = new Phone("iPhone", 1200, "256GB");
+
+
+// Result
+console.log("Car:", bmw.name);
+console.log("Model:", bmw.model);
+console.log("Price: $" + bmw.price);
+
+console.log("----------------");
+
+console.log("Phone:", iphone.name);
+console.log("Memory:", iphone.memory);
+console.log("Price: $" + iphone.price);
