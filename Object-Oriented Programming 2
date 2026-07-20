@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OOP Rectangle Class</title>
+</head>
+<body>
+    <h1>Konsolni oching (F12)</h1>
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    calculateArea() {
+        return this.width * this.height;
+    }
+
+    calculatePerimeter() {
+        return 2 * (this.width + this.height);
+    }
+}
+
+let myRectangle = new Rectangle(10, 5);
+
+// Eng kalta va qisqa ko'rinishi:
+console.log(myRectangle.calculateArea());      // 50
+console.log(myRectangle.calculatePerimeter()); // 30
