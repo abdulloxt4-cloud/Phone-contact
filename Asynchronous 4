@@ -1,0 +1,45 @@
+<!DOCTYPE html
+<html>
+<head>
+  <title>Parallel Download</title>
+</head>
+<body>
+  <h2>Information of work</h2>
+  <div id="result"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+
+// API linklar
+const urls = [
+    "https://jsonplaceholder.typicode.com/users/1",
+    "https://jsonplaceholder.typicode.com/users/2",
+    "https://jsonplaceholder.typicode.com/users/3"
+];
+
+// Hamma linkni yuklash
+let promises = urls.map(function(url) {
+    return fetch(url).then(function(response) {
+        return response.json();
+    });
+});
+
+// Hammasini kutish
+Promise.all(promises)
+.then(function(data) {
+
+    // Console
+    console.log(data);
+
+    // HTML
+    let result = document.getElementById("result");
+
+    // Ismlarni chiqarish
+    data.forEach(function(user) {
+        result.innerHTML += user.name + "<br>";
+    });
+
+})
