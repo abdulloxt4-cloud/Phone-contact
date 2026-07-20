@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timeout Cancel</title>
+</head>
+<body>
+    <h1>Konsolni oching (F12)</h1>
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+
+let pult = new AbortController();
+
+// 1. Vaqt tugaganda ishlaydigan oddiy funksiya
+function vaqtTugadi() {
+    pult.abort(); // Pultni bosib, fetch-ni o'chiramiz
+    console.log("Vaqt tugadi, so'rov bekor qilindi!");
+}
+
+// 2. 2 soniyadan keyin yuqoridagi funksiyani ishga tushir deymiz
+setTimeout(vaqtTugadi, 2000);
+
+// 3. Internetdan ma'lumot olish
+async function getData() {
+    let res = await fetch("https://jsonplaceholder.typicode.com/photos", { signal: pult.signal });
+    let data = await res.json();
+    console.log("Ma'lumot keldi!", data);
+}
+
+getData();
