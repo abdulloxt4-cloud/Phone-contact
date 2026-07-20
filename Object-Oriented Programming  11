@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Transfer</title>
+</head>
+<body>
+
+<h2>Bank Account</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+// BankAccount class
+class BankAccount {
+    constructor(number, name, balance) {
+        this.number = number;
+        this.name = name;
+        this.balance = balance;
+    }
+
+    // Pul qo'shish
+    deposit(money) {
+        this.balance += money;
+    }
+
+    // Pul yechish
+    withdraw(money) {
+        this.balance -= money;
+    }
+
+    // Pul o'tkazish
+    transfer(other, money) {
+        this.balance -= money;
+        other.balance += money;
+    }
+}
+
+
+// Account yaratish
+let acc1 = new BankAccount("SB-012", "Jasur", 2000);
+let acc2 = new BankAccount("SB-019", "Sardor", 3000);
+
+
+// Boshlang'ich balans
+console.log("Jasur balance:", acc1.balance);
+console.log("Sardor balance:", acc2.balance);
+
+
+// Deposit
+acc1.deposit(500);
+console.log("After deposit:", acc1.balance);
+
+
+// Withdraw
+acc1.withdraw(200);
+console.log("After withdraw:", acc1.balance);
+
+
+// Transfer
+acc1.transfer(acc2, 700);
+
+
+// Oxirgi natija
+console.log("Jasur final balance:", acc1.balance);
+console.log("Sardor final balance:", acc2.balance);
