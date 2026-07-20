@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank</title>
+</head>
+<body>
+
+<h2>Bank Branches</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+// Bank class
+class Bank {
+    constructor(name) {
+        this.name = name;
+        this.branches = [];
+    }
+
+    // Branch qo'shish
+    addBranch(branch) {
+        this.branches.push(branch);
+        console.log(branch + " added successfully.");
+    }
+
+    // Branch o'chirish
+    removeBranch(branch) {
+        let index = this.branches.indexOf(branch);
+
+        if (index !== -1) {
+            this.branches.splice(index, 1);
+            console.log(branch + " removed successfully.");
+        }
+    }
+
+    // Branchlarni ko'rsatish
+    displayBranches() {
+        console.log("List of Bank Branches:");
+
+        for (let i = 0; i < this.branches.length; i++) {
+            console.log((i + 1) + ". " + this.branches[i]);
+        }
+    }
+}
+
+
+// Object
+let bank = new Bank("My Bank");
+
+// Add
+bank.addBranch("Branch A");
+bank.addBranch("Branch B");
+bank.addBranch("Branch C");
+
+// Show
+bank.displayBranches();
+
+// Remove
+bank.removeBranch("Branch B");
+
+// Show
+bank.displayBranches();
