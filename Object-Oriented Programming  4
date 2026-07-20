@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Account</title>
+</head>
+<body>
+
+    <h2>Bank Account</h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+class BankAccount {
+    constructor(number, balance) {
+        this.number = number;
+        this.balance = balance;
+    }
+
+    deposit(money) {
+        this.balance += money;
+        console.log("Deposit:", money);
+    }
+
+    withdraw(money) {
+        console.log("Withdraw:", money);
+
+        if (money <= this.balance) {
+            this.balance -= money;
+        } else {
+            console.log("Pul yetmaydi");
+        }
+    }
+}
+
+let acc = new BankAccount("12345", 1000);
+
+console.log("Account:", acc.number);
+console.log("Balance:", acc.balance);
+
+acc.deposit(500);
+console.log("Balance:", acc.balance);
+
+acc.withdraw(300);
+console.log("Balance:", acc.balance);
+
+acc.withdraw(2000);
+console.log("Balance:", acc.balance);
