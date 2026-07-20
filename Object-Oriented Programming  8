@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal</title>
+</head>
+<body>// Animal class
+class Animal {
+    constructor(species, sound) {
+        this.species = species;
+        this.sound = sound;
+    }
+
+    makeSound() {
+        console.log("Species:", this.species);
+        console.log("Sound:", this.sound);
+    }
+}
+
+// Dog class
+class Dog extends Animal {
+    constructor(species, sound, color) {
+        super(species, sound);
+        this.color = color;
+    }
+
+    makeSound() {
+        console.log("Species:", this.species);
+        console.log("Color:", this.color);
+        console.log("Sound:", this.sound);
+    }
+}
+
+// Object
+let dog = new Dog("It", "Vov Vov", "Oq");
+
+// Result
+dog.makeSound();
+
+<h2>Animal Sound</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
