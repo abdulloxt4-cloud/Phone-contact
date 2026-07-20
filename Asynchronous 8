@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interval Test</title>
+</head>
+<body>
+    <h1>Open Console (Fn + F12)</h1>
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+
+// 1. Bajarilishi kerak bo'lgan funksiya
+function sayHello() {
+    console.log("Salom! Ishlayapman...");
+}
+
+// 2. Har 2 soniyada (2000 ms) sayHello ni ishga tushirish
+setInterval(sayHello, 2000);
