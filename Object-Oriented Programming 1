@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OOP Person Class</title>
+</head>
+<body>
+    <h1>(F12)</h1>
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+// 1.yaratish uchun qolip (Class)
+class Person {
+    constructor(name, age, country) {
+        this.name = name;    
+        this.age = age;         
+        this.country = country; 
+    }
+
+    // Ma'lumotlarni ko'rsatuvchi metod (funksiya)
+    displayDetails() {
+        console.log(`Ismi: ${this.name}, Yoshi: ${this.age}, Davlati: ${this.country}`);
+    }
+}
+
+let person1 = new Person("Ali", 25, "O'zbekiston");
+let person2 = new Person("John", 30, "AQSh");
+let person3 = new Person("alex", 40, "Kazakhistan");
+let person4 = new Person("smith", 20, "UNITED STATES OF AMERICA");
+
+
+// 3. Ularning ma'lumotlarini konsolga chiqaramiz
+person1.displayDetails();
+person2.displayDetails();
+person3.displayDetails();
+person4.displayDetails();
