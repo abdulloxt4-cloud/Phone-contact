@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle & Car OOP</title>
+</head>
+<body>
+
+    <pre id="output"></pre>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+  //JS
+
+  class Vehicle {
+    constructor(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    displayDetails() {
+        console.log(`Vehicle Details:\nMake: ${this.make}\nModel: ${this.model}\nYear: ${this.year}\n`);
+    }
+}
+
+class Car extends Vehicle {
+    constructor(make, model, year, doors) {
+        super(make, model, year);
+        this.doors = doors;
+    }
+
+    displayDetails() {
+        console.log(`Car Details:\nMake: ${this.make}\nModel: ${this.model}\nYear: ${this.year}\nDoors: ${this.doors}`);
+    }
+}
+
+let myVehicle = new Vehicle("Ford", "F-150", 2020);
+myVehicle.displayDetails();
+
+let myCar = new Car("Honda", "Accord", 2023, 4);
+myCar.displayDetails();
