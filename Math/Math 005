@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Decimal Format</h1>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function decimals(number, places) {
+
+    return number.toFixed(places);
+
+}
+
+
+console.log(decimals(2.100212, 2));
+
+console.log(decimals(2.100212, 3));
+
+console.log(decimals(2100, 2));
