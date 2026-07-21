@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>26</title>
+</head>
+<body>
+
+<h2>26. nth Root</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function nthroot(number, n) {
+
+    return Math.pow(number, 1 / n);
+
+}
+
+console.log(nthroot(64, 2));
+console.log(nthroot(64, -2));
