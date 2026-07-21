@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>GCD</h1>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function gcd_two_numbers(a, b) {
+
+    while (b != 0) {
+
+        let temp = b;
+
+        b = a % b;
+
+        a = temp;
+    }
+
+    return a;
+}
+
+
+console.log(gcd_two_numbers(12, 13));
+
+console.log(gcd_two_numbers(9, 3));
