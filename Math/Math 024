@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>24</title>
+</head>
+<body>
+
+<h2>24. Round Number</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function round_number(number){
+    return parseFloat(number.toFixed(4));
+}
+
+console.log(round_number(-4.55555));
+console.log(round_number(5.0001000));
