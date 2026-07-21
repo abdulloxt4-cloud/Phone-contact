@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Minimum Number</h1>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+//JS
+
+
+function min(array) {
+
+    return Math.min(...array);
+
+}
+
+
+console.log(min([12,34,56,1]));
+
+console.log(min([-12,-34,0,-56,-1]));
