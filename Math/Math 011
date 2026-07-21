@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function lcm_more_than_two_numbers(numbers) {
+
+    let result = numbers[0];
+
+    for (let i = 1; i < numbers.length; i++) {
+
+        while (result % numbers[i] != 0) {
+            result++;
+        }
+
+    }
+
+    return result;
+}
+
+
+console.log(lcm_more_than_two_numbers([100,90,80,7]));
+
+console.log(lcm_more_than_two_numbers([5,10,15,25]));
