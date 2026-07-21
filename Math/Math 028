@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>28</title>
+</head>
+<body>
+
+<h2>28. Next Multiple of 5</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function int_round5(number) {
+
+    return Math.ceil(number / 5) * 5;
+
+}
+
+console.log(int_round5(32));
+console.log(int_round5(137));
