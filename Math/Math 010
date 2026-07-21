@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function lcm_two_numbers(a, b) {
+
+    let max = a > b ? a : b;
+
+    while (true) {
+
+        if (max % a == 0 && max % b == 0) {
+            return max;
+        }
+
+        max++;
+    }
+
+}
+
+
+console.log(lcm_two_numbers(3,15));
+
+console.log(lcm_two_numbers(10,15));
