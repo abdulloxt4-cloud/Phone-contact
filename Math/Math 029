@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>29</title>
+</head>
+<body>
+
+<h2>29. Positive to Negative</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function pos_to_neg(number) {
+
+    return -Math.abs(number);
+
+}
+
+console.log(pos_to_neg(15));
+console.log(pos_to_neg(100));
