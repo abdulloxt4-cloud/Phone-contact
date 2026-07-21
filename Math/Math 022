@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>22</title>
+</head>
+<body>
+
+<h2>22. Roman to Integer</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+
+function roman_to_integer(roman){
+
+    const value = {
+        I:1,
+        V:5,
+        X:10,
+        L:50,
+        C:100,
+        D:500,
+        M:1000
+    };
+
+    let total = 0;
+
+    for(let i = 0; i < roman.length; i++){
+
+        if(value[roman[i]] < value[roman[i+1]]){
+            total -= value[roman[i]];
+        }else{
+            total += value[roman[i]];
+        }
+
+    }
+
+    return total;
+}
+
+console.log(roman_to_integer("XXV"));
+console.log(roman_to_integer("XCIX"));
+console.log(roman_to_integer("MMXXIV"));
