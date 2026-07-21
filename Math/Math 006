@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Maximum Number</h1>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+
+
+function max(array) {
+
+    return Math.max(...array);
+
+}
+
+
+console.log(max([12,34,56,1]));
+
+console.log(max([-12,-34,0,-56,-1]));
