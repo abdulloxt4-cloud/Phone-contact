@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>20</title>
+</head>
+<body>
+
+<h2>20. Binomial</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function factorial(number) {
+    let result = 1;
+
+    for (let i = 1; i <= number; i++) {
+        result *= i;
+    }
+
+    return result;
+}
+
+function binomial(n, k) {
+    return factorial(n) / (factorial(k) * factorial(n - k));
+}
+
+console.log(binomial(8, 3));
+console.log(binomial(10, 2));
