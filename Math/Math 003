@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Decimal Convert</h1>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function dec_to_bho(number, type) {
+
+    if (type == "B") {
+        return number.toString(2);
+    }
+
+    if (type == "H") {
+        return number.toString(16);
+    }
+
+    if (type == "O") {
+        return number.toString(8);
+    }
+
+}
+
+
+console.log(dec_to_bho(120,"B"));
+
+console.log(dec_to_bho(120,"H"));
+
+console.log(dec_to_bho(120,"O"));
