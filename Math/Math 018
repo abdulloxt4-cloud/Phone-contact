@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>18</title>
+</head>
+<body>
+
+<h2>18. Product</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function product(array) {
+    let total = 1;
+
+    for (let i = 0; i < array.length; i++) {
+        if (!isNaN(array[i])) {
+            total *= Number(array[i]);
+        }
+    }
+
+    return total;
+}
+
+console.log(product([1,2,3]));
+console.log(product([100,-200,3]));
+console.log(product([1,2,"a",3]));
