@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>14</title>
+</head>
+<body>
+
+<h2>Round Number</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+//JS
+
+function precise_round(number, decimal) {
+    return number.toFixed(decimal);
+}
+
+console.log(precise_round(12.375, 2));
+console.log(precise_round(-10.3079499, 3));
+console.log(precise_round(10.49999, 0));
+console.log(precise_round(10.49999, 2));
