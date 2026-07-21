@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>16</title>
+</head>
+<body>
+
+<h2>16. Numeric</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function is_Int(value) {
+    return Number.isInteger(value);
+}
+
+console.log(is_Int(23));
+console.log(is_Int(4e2));
+console.log(is_Int(NaN));
+console.log(is_Int(23.75));
+console.log(is_Int(-23));
