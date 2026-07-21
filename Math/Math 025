@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>25</title>
+</head>
+<body>
+
+<h2>25. Currency Math</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+let n1 = "$40.24";
+let n2 = "$21.57";
+
+let a = parseFloat(n1.replace("$",""));
+let b = parseFloat(n2.replace("$",""));
+
+console.log("Add =", a + b);
+console.log("Subtract =", a - b);
+console.log("Multiply =", a * b);
+console.log("Divide =", a / b);
