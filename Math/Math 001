@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function base_convert(number, fromBase, toBase) {
+
+    let result = parseInt(number, fromBase).toString(toBase);
+
+    return result;
+}
+
+
+console.log(base_convert("E164", 16, 8));
+
+console.log(base_convert(1000, 2, 8));
