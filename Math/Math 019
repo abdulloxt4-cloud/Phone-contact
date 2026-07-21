@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>19</title>
+</head>
+<body>
+
+<h2>19. Pythagorean</h2>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+//JS
+
+function pythagorean_theorem(a, b) {
+    return Math.sqrt(a * a + b * b);
+}
+
+console.log(pythagorean_theorem(2, 4));
+console.log(pythagorean_theorem(3, 4));
