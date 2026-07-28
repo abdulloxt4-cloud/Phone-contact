@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>36</title>
+</head>
+<body>
+
+<h2>Power of Two</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function isPower_of_two(number) {
+    while (number > 1) {
+        number = number / 2;
+    }
+
+    return number == 1;
+}
+
+console.log(isPower_of_two(64));
+console.log(isPower_of_two(94));
+
+
+//OZIM UCHUN 
+
+64 / 2 = 32
+32 / 2 = 16
+16 / 2 = 8
+8 / 2 = 4
+4 / 2 = 2
+2 / 2 = 1
