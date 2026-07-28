@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>33</title>
+</head>
+<body>
+
+<h2>Degrees to Radians</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function degrees_to_radians(degree) {
+    return degree * Math.PI / 180;
+}
+
+console.log(degrees_to_radians(45));
