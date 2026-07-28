@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>31</title>
+</head>
+<body>
+
+<h2>Highest of Three Numbers</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function highest_of_three(a, b, c) {
+    return Math.max(a, b, c);
+}
+
+console.log(highest_of_three(-5, 4, 2));  
+
+
+
+orasida eng kotta son topish kerak. va javob 4
