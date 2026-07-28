@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>37</title>
+</head>
+<body>
+
+<h2>Value Limit</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function value_limit(value, min, max) {
+    if (value < min) {
+        return min;
+    }
+
+    if (value > max) {
+        return max;
+    }
+
+    return value;
+}
+
+console.log(value_limit(7, 1, 12));
+console.log(value_limit(-7, 0, 12));
+console.log(value_limit(15, 0, 12));
+
+
+//OZIM UCHUN
+value
+↓
+tekshir
+
+kichik bo'lsa → min
+
+katta bo'lsa → max
+
+orasida bo'lsa → o'zi
