@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>40</title>
+</head>
+<body>
+
+<h2>Random Background Color</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+let colors = ["red", "blue", "green", "yellow"];
+
+let random = Math.floor(Math.random() * colors.length);
+
+document.body.style.backgroundColor = colors[random];
+
+
+//
+
+Math.random()
+↓
+tasodifiy son
+
+Math.floor()
+↓
+kasrni olib tashlaydi
+
+colors[]
+↓
+arraydan bitta rangni oladi
