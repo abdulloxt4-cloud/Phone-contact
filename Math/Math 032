@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>32</title>
+</head>
+<body>
+
+<h2>Percentage Calculator</h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>1
+
+
+//JS
+
+function percentage(money, percent) {
+    return money * percent / 100;
+}
+
+let result = percentage(500, 30);
+
+console.log(result);
