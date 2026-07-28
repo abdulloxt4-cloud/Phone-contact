@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>38</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function number_test(number) {
+    if (number % 1 == 0) {
+        return "It is a whole number.";
+    }
+
+    return "Number has a decimal place.";
+}
+
+console.log(number_test(25.66));
+console.log(number_test(10));
+
+
+//OPINION
+Butun son:
+10
+25
+100
+
+Kasr ---> Decimal son:
+10.5
+25.66
+3.14
