@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>41</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+
+function count_digits(number) {
+    return number.toString().length;
+}
+
+console.log(count_digits(7));
+console.log(count_digits(25));
+console.log(count_digits(12345));
+
+
+//Extra
+toString()
+↓
+Sonni matnga aylantiradi.
+
+length
+↓
+Nechta belgi borligini sanaydi.
