@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>44</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+
+let hamming = [
+    1, 2, 3, 4, 5,
+    6, 8, 9, 10, 12,
+    15, 16, 18, 20, 24,
+    25, 27, 30, 32, 36
+];
+
+console.log(hamming);
+
+
+//OZIM UCHUN
+
+Hamming son
+
+↓
+
+Faqat 2, 3 va 5 yordamida hosil bo'ladigan son.
+
+✅ 6 = 2 × 3
+✅ 15 = 3 × 5
+✅ 20 = 2 × 2 × 5
+
+❌ 14 = 2 × 7
+❌ 21 = 3 × 7
+
