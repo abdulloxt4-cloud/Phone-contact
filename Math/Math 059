@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>59</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+//JS
+
+function pyramidVolume(base, height) {
+
+    let volume = (base * height) / 3;
+
+    return volume;
+}
+
+console.log(pyramidVolume(20, 9));
+
+
+//OZIM UCHUN
+
+base = 20
+height = 9
+(20 × 9) / 3   = 60
+
+Cuboid (56):
+
+uzunlik × eni × balandlik
+
+
+Cube (57):
+
+tomon × tomon × tomon
+
+
+Cone (58):
+
+1/3 × π × radius² × balandlik
+
+
+Pyramid (59):
+
+1/3 × asos × balandlik
+
