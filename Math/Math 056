@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>56</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function cuboidVolume(length, width, height) {
+
+    let volume = length * width * height;
+
+    return volume;
+}
+
+console.log(cuboidVolume(5, 3, 2));
+
+
+//OZIM UCHUN
+
+Quti hajmi
+
+↓
+
+uzunlik × eni × balandlik
+
+↓
+
+javobni chiqarish
+
+let volume = length * width * height;
