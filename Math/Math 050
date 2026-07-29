@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>50</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function addComplex(a, b, c, d) {
+
+    let real = a + c;
+    let imaginary = b + d;
+
+    console.log(real + " + " + imaginary + "i");
+}
+
+addComplex(3, 2, 5, 4);
+
+//OZIM uchun
+
+Birinchi son:
+3 + 2i
+
+Ikkinchi son:
+5 + 4i
+-----------------
+Kompleks son:
+
+a + bi
+
+a → oddiy son
+
+b → i oldidagi son
+--------------------
+a → haqiqiy qism (real)
+
+b → mavhum qism (imaginary)
