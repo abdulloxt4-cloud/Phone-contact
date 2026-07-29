@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>58</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function coneVolume(r, h) {
+
+    let volume = (1 / 3) * Math.PI * r * r * h;
+
+    return volume;
+}
+
+console.log(coneVolume(3, 5));
+
+
+//OZIM UCHUN
+------------------------------
+Math.pi Pi (π) — bu matematikadagi doimiy son (konstanta) bo'lib, aylananing uzunligini uning diametriga bo'lish orqali hosil bo'ladigan nisbatni bildiradi.
+π = 3.14159 ---> 3.141592653589793  ---> Aylana uzunligi = 2 × π × radius
+------------------------------
+Cuboid:
+
+uzunlik × eni × balandlik
+
+
+Cube:
+
+tomon × tomon × tomon
+
+
+Cone:
+
+1/3 × π × radius² × balandlik
