@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>55</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let a = 5;
+let b = 10;
+
+let temp = a;
+
+a = b;
+
+b = temp;
+
+console.log(a);
+console.log(b);
+
+//OZIM UCHUN
+
+temp — bu temporary
+temp odatda vaqtincha biror narsani saqlab turish uchun ishlatiladi.
+
+temp
+
+↓
+
+vaqtinchalik quti
+
+↓
+
+biror qiymatni yo'qotib qo'ymaslik uchun saqlaydi.
