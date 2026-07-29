@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>53</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function divideComplex(a, b, c, d) {
+
+    let result = c * c + d * d;
+
+    let real = (a * c + b * d) / result;
+
+    let imaginary = (b * c - a * d) / result;
+
+    console.log(real + " + " + imaginary + "i");
+}
+
+divideComplex(4, 2, 1, 1);
