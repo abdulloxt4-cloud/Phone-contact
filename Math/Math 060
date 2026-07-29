@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>60</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS 
+
+
+function cylinderVolume(r, h) {
+
+    let volume = Math.PI * r * r * h;
+
+    return volume;
+}
+
+console.log(cylinderVolume(3, 5));
+
+//RESULT 141.3716694115407
+
+//OZIM UCHUN
+Cuboid:
+uzunlik × eni × balandlik
+
+Cube:
+tomon × tomon × tomon
+
+Cone:
+1/3 × π × r² × h
+
+Pyramid:
+1/3 × asos × balandlik
+
+Cylinder:
+π × r² × h
