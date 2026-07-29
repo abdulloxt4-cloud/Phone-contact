@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>61</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function prismVolume(base, height, length) {
+
+    let volume = (base * height * length) / 2;
+
+    return volume;
+}
+
+console.log(prismVolume(6, 4, 10));
+
+
+//OZIM UCHUN
+6  → base (uchburchak asosi)
+
+4  → height (uchburchak balandligi)
+
+10 → length (prizma uzunligi)
+
+   /\
+  /  \
+ /____\
+
+
+ base = 6
+
+height = 4
+
+length = 10
