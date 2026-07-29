@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>52</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function multiplyComplex(a, b, c, d) {
+
+    let real = a * c - b * d;
+    let imaginary = a * d + b * c;
+
+    console.log(real + " + " + imaginary + "i");
+}
+
+multiplyComplex(3, 2, 4, 5);
+
+
+//OZIM UCHUN
+
+Qo'shish:
+real + real
+i + i
+
+Ayirish:
+real - real
+i - i
+
+Ko'paytirish:
+(a*c - b*d)
+(a*d + b*c)
