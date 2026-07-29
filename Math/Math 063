@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>63</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function sphereVolume(r) {
+
+    let volume = (4 * Math.PI * r * r * r) / 3;
+
+    return volume;
+}
+
+console.log(sphereVolume(3));
+
+
+//OZIM UCHUN
+//RESULT 113.09733552923255 qattan bunaqa natija keldi!
+
+r = 3
+
+3 × 3 × 3 = 27
+
+4 × π × 27
+
+3.141592653589793
+4 × 3.141592653589793 × 27
+
+= 339.29200658769767
+
+339.29200658769767 / 3
+
+= 113.09733552923255
+
+Math.PI
+
+↓
+
+3.141592653589793
+
+↓
+
+π juda uzun son
+
+↓
+
+Natija ham uzun chiqadi.
