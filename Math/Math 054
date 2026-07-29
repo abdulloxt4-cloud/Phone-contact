@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>54</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function isPowerOf10(number) {
+
+    while (number % 10 === 0) {
+        number = number / 10;
+    }
+
+    return number === 1;
+}
+
+console.log(isPowerOf10(100));
+console.log(isPowerOf10(75));
+
+
+
+//OZIM UCHUN
+10¹ = 10 
+
+10² = 100 
+
+10³ = 1000 
+
+10⁴ = 10000 
+
+Power of 10
+
+↓
+
+10, 100, 1000, 10000...
+
+↓
+
+Har safar 10 ga ko'payadi.
