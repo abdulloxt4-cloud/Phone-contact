@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>48</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function falling(x, k) {
+
+    let result = 1;
+
+    for (let i = 0; i < k; i++) {
+        result = result * x;
+        x--;
+    }
+
+    return result;
+}
+
+console.log(falling(5, 3));
+
+
+//OZIM UCHUN
+
+Oddiy faktorial:
+
+5!
+↓
+5 × 4 × 3 × 2 × 1
+
+
+Falling factorial:
+
+5,3
+↓
+5 × 4 × 3
