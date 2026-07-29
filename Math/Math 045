@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>45</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let array = [20, 5, 3];
+
+let result = array[0];
+
+result = result - array[1];
+result = result - array[2];
+
+console.log(result);
+
+//OZIM UCHUN
+Array:
+
+[20, 5, 3]
+
+↓
+
+20 - 5
+
+↓
+
+15 - 3
+
+↓
+
+12
