@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>51</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+
+function subtractComplex(a, b, c, d) {
+
+    let real = a - c;
+    let imaginary = b - d;
+
+    console.log(real + " + " + imaginary + "i");
+}
+
+subtractComplex(8, 6, 3, 2);
+
+//OZIM UCHUN
++  → qo'shish  50-51 mashqlar
+-  → ayirish
+Qo'shish:
+a + c
+b + d
+
+Ayirish:
+a - c
+b - d
