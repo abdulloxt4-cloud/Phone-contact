@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>57</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function cubeVolume(a) {
+
+    let volume = a * a * a;
+
+    return volume;
+}
+
+console.log(cubeVolume(5));
+
+//OZIM UCHUN
+-------------------------
+Cuboid (56)
+
+↓
+
+uzunlik × eni × balandlik
+
+
+Cube (57)
+
+↓
+
+tomon × tomon × tomon
+------------------------
+Cube → kub
+
+Volume → hajm
+
+a → tomon
+
+Formula:
+a * a * a
