@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>46</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function calculate(a, b) {
+
+    console.log("Bo'lish:", a / b);
+
+    console.log("Qoldiq:", a % b);
+
+}
+
+calculate(22, 5);
+
+
+//OZIM UCHUN
+Bo'lish: 4.4
+
+Qoldiq: 2
+
+calculate(20, 5);
+Bo'lish: 4
+
+Qoldiq: 0
+
+20 / 5 = 4
+20 % 5 = 0
+
+22 / 5 = 4.4
+22 % 5 = 2
