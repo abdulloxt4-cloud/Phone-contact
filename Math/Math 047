@@ -1,0 +1,46 @@
+Euclid — qadimgi yunon matematigi.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>47</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function gcd(a, b) {
+
+    while (b != 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    return a;
+}
+
+console.log(gcd(12, 18));
+
+
+
+//OZIM UCHUN
+Euclid
+
+↓
+
+GCD topadi.
+
+Extended Euclid
+
+↓
+
+GCD ni topadi
++
+qanday topilganini ham hisoblaydi.
