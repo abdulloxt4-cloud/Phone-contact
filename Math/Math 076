@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>76</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function subtract(a, b) {
+
+    while (b != 0) {
+
+        let borrow = (~a) & b;
+
+        a = a ^ b;
+
+        b = borrow << 1;
+
+    }
+
+    return a;
+}
+
+console.log(subtract(200, 100));
+console.log(subtract(200, 300));
+console.log(subtract(-200, -300));
+console.log(subtract(200, 200));
+
+//OZIM UCHUN
+
+
+100
+
+-100
+
+100
+
+0
+
+XOR (^)
+
+→ qo'shishga o'xshash ishlaydi.
+
+
+AND (&)
+
+→ qayerda ko'chirish (carry) kerakligini topadi.
+
+
+Shift (<<)
+
+→ bitni chapga suradi.
+
+Subtract → Ayirish
+
+Integer → Butun son
+
+Arithmetic Operators → Matematik operatorlar
+
+Bitwise → Bitlar bilan ishlash
+
+^ → XOR
+
+& → AND
+
+<< → Chapga surish
