@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>70</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function rpn(text) {
+
+    let arr = text.split(" ");
+
+    let a = Number(arr[0]);
+    let b = Number(arr[1]);
+    let op = arr[2];
+
+    if (op == "+") {
+        return a + b;
+    }
+    else if (op == "-") {
+        return a - b;
+    }
+    else if (op == "*") {
+        return a * b;
+    }
+    else if (op == "/") {
+        return a / b;
+    }
+    else {
+        return "Noto'g'ri operator";
+    }
+
+}
+
+console.log(rpn("3 4 +"));
+console.log(rpn("5 2 *"));
+console.log(rpn("8 3 -"));
+console.log(rpn("6 2 /"));
+
+
+//OZIM UCHUN
+
+Oddiy:
+
+3 + 4
+
+↓
+
+RPN:
+
+3 4 +
+
+----------------
+
+5 × 2
+
+↓
+
+5 2 *
+
+----------------
+
+8 - 3
+
+↓
+
+8 3 -
