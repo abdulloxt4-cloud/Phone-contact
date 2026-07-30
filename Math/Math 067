@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>67</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function geometricSum(first, ratio, count) {
+
+    let sum = 0;
+
+    for (let i = 0; i < count; i++) {
+
+        sum = sum + first;
+
+        first = first * ratio;
+    }
+
+    return sum;
+}
+
+console.log(geometricSum(2, 2, 4));
+
+
+//OZIM UCHUN
+
+
+geometricSum(2, 2, 4)
+
+2 → birinchi son
+
+2 → har safar nechaga ko'payadi
+
+4 → nechta son olinadi
+
+sum → yig'adi.
+first → keyingi songa aylanib boradi.
+ratio → har safar ko'paytiradigan son.
+count → nechta son hisoblanadi.
