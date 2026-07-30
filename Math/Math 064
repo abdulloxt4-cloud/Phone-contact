@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>64</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function hemisphereVolume(r) {
+
+    let volume = (2 * Math.PI * r * r * r) / 3;
+
+    return volume;
+}
+
+console.log(hemisphereVolume(3));
+
+
+//OZIM UCHUN
+Hemisphere → Yarim shar
+
+Sphere → Shar
+
+Volume → Hajm
+
+Radius (r) → Radius
+
+Math.PI → π (3.14159...)
+
+Formula:
+
+(2 × π × r³) / 3
+
+Hemisphere — Sphere ning yarmi, shuning uchun formulada 4 o'rniga 2 ishlatiladi.
+
