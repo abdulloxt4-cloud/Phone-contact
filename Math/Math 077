@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>77</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function sumStrings(num1, num2) {
+
+    let a = Number(num1);
+
+    let b = Number(num2);
+
+    return a + b;
+
+}
+
+console.log(sumStrings("123", "123"));
+console.log(sumStrings("45", "100"));
+
+//OZIM UCHUN
+
+"123" + "123"
+
+↓
+
+Number()
+
+↓
+
+123 + 123
+
+↓
+
+246
+
+String → Matn
+
+Integer → Butun son
+
+Number() → Stringni songa aylantiradi
+
+Sum → Yig'indi
+"45"  → string
+
+45    → number
