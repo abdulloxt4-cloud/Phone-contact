@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>78</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function tetrahedral(n) {
+
+    return n * (n + 1) * (n + 2) / 6;
+
+}
+
+console.log(tetrahedral(3));
+console.log(tetrahedral(5));
+
+//OZIM UCHUN
+
+n = 3
+
+↓
+
+3 × (3+1) × (3+2) / 6
+
+↓
+
+3 × 4 × 5 / 6
+
+↓
+
+10
+
+Tetrahedral Number → Tetraedr son
+
+Formula:
+
+n(n+1)(n+2)/6
+
+n → tartib raqami
+
+Math → formula bilan hisoblash
