@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>80</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function repdigit(num) {
+
+    let str = num.toString();
+
+    for (let i = 1; i < str.length; i++) {
+
+        if (str[i] != str[0]) {
+            return false;
+        }
+
+    }
+
+    return true;
+}
+
+
+console.log(repdigit(11));
+console.log(repdigit(66));
+console.log(repdigit(336));
+console.log(repdigit(444));
+console.log(repdigit(1151));
+
+//OZIM UCHUN
+
+
+444
+
+↓
+
+"444"
+
+↓
+
+4 == 4 == 4
+
+↓
+
+true
+
+Repdigit → Bir xil raqamlar takrorlangan son
+
+Digit → Raqam
+
+toString() → Sonni matnga aylantirish
+
+for → Har bir raqamni tekshirish
+
+111 ✅
+
+7777 ✅
+
+99999 ✅
+
+
+123 ❌
+
+336 ❌
+
+1151 ❌
