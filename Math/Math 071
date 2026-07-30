@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>71</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function primeFactors(num) {
+
+    let result = [];
+
+    for (let i = 2; i <= num; i++) {
+
+        while (num % i == 0) {
+
+            result.push(i);
+
+            num = num / i;
+
+        }
+
+    }
+
+    return result;
+}
+
+console.log(primeFactors(75));
+
+
+//OZIM UCHUN
+
+Prime Factor → Tub ko'paytuvchi
+
+push() → Arrayga qo'shish
+
+while → Qoldiqsiz bo'linib turgan ekan, davom et
+
+75 = 3 × 5 × 5
+
+18 = 2 × 3 × 3
+
+101 = 101
