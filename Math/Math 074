@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>74</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function hexToBinary(hex) {
+
+    let num = parseInt(hex, 16);
+
+    let binary = num.toString(2);
+
+    return binary;
+}
+
+console.log(hexToBinary("6F"));
+console.log(hexToBinary("7B"));
+
+
+//OZIM UCHUN
+
+Hexadecimal → 16 lik sanoq sistemasi
+
+Binary → 2 lik sanoq sistemasi
+
+parseInt()
+
+→ Hex sonni oddiy songa aylantiradi
+
+toString(2)
+
+→ Sonni binary qiladi
+
+
+Hex:
+
+0-9
+A-F
+
+
+Binary:
+
+0 va 1
+
+
+16 lik → 2 lik
+
+Hexadecimal → Binary
+
+parseInt(hex,16)
+
+↓
+
+toString(2)
