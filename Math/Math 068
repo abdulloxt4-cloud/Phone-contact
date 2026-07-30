@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>68</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function sumDigits(num) {
+
+    let sum = 0;
+
+    let numbers = num.toString();
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        sum = sum + Number(numbers[i]);
+
+    }
+
+    return sum;
+}
+
+console.log(sumDigits(6098));
+
+
+//OZIM UCHUN
+
+6098
+
+↓
+
+"6098"
+
+↓
+
+6
+0
+9
+8
+
+↓
+
+6 + 0 + 9 + 8
+
+↓
+
+23
+
+
+
+Sum → Yig'indi
+
+Digits → Raqamlar
+
+toString() → Sonni matnga aylantirish
+
+Number() → Matnni songa aylantirish
