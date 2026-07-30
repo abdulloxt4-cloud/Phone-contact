@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>69</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function isPrime(num) {
+
+    if (num < 2) return false;
+
+    for (let i = 2; i < num; i++) {
+
+        if (num % i == 0) {
+            return false;
+        }
+
+    }
+
+    return true;
+}
+
+function allPrime(n) {
+
+    for (let i = 2; i < n; i++) {
+
+        if (isPrime(i)) {
+            console.log(i);
+        }
+
+    }
+}
+
+allPrime(15);
+
+
+//OZIM UCHUN
+
+Prime → Tub son
+
+Below N → N gacha
+
+isPrime() → Tub sonni tekshiradi
+
+allPrime() → Barcha tub sonlarni chiqaradi
+
+15 gacha yuramiz
+
+↓
+
+2 tub ✅
+
+3 tub ✅
+
+4 tub emas ❌
+
+5 tub ✅
+
+...
+
+↓
+
+Natija:
+
+2 3 5 7 11 13
