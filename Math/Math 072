@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>72</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function pronic(num) {
+
+    for (let i = 0; i <= num; i++) {
+
+        if (i * (i + 1) == num) {
+            return true;
+        }
+
+    }
+
+    return false;
+}
+
+console.log(pronic(6));
+console.log(pronic(110));
+console.log(pronic(200));
+
+
+//OZIM UCHUN
+
+Pronic Number → Pronic son
+
+Consecutive Numbers → Ketma-ket sonlar
+
+Formula:
+
+n × (n + 1)
+
+Misollar:
+
+2 × 3 = 6 ✅
+
+10 × 11 = 110 ✅
+
+13 × 14 = 182
+
+14 × 15 = 210
+
+200 ❌
