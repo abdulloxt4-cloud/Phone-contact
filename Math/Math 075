@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>75</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function swapThree(a, b, c) {
+
+    let temp = a;
+
+    a = c;
+
+    c = b;
+
+    b = temp;
+
+    return [a, b, c];
+}
+
+console.log(swapThree(100, 200, 300));
+
+RESULT [300, 100, 200]
+
+//OZIM UCHUN
+Oldin:
+
+a = 100
+b = 200
+c = 300
+
+
+↓
+
+a ga c qiymati o'tadi
+
+a = 300
+
+
+↓
+
+b ga eski a qiymati o'tadi
+
+b = 100
+
+
+↓
+
+c ga eski b qiymati o'tadi
+
+c = 200
+
+
+Natija:
+
+300, 100, 200
+
+
