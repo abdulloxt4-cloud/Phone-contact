@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>79</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function triangularNumber(n) {
+
+    return n * (n + 1) / 2;
+
+}
+
+console.log(triangularNumber(1));
+console.log(triangularNumber(2));
+console.log(triangularNumber(3));
+console.log(triangularNumber(7));
+console.log(triangularNumber(11));
+
+//OZIM UCHUN
+
+n = 3
+
+↓
+
+3 × (3 + 1) / 2
+
+↓
+
+3 × 4 / 2
+
+↓
+
+6
+
+
+Triangular Number → Uchburchak son
+
+Dots → Nuqtalar
+
+Formula:
+
+n × (n + 1) / 2
+
+n → Qator soni
+
+
+1 qator:
+
+● = 1
+
+
+2 qator:
+
+●
+● ●
+
+= 3
+
+
+3 qator:
+
+●
+● ●
+● ● ●
+
+= 6
