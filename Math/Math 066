@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>66</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function isPrime(num) {
+
+    for (let i = 2; i < num; i++) {
+
+        if (num % i == 0) {
+            return false;
+        }
+
+    }
+
+    return true;
+}
+
+function twinPrime(num) {
+
+    if (isPrime(num + 2)) {
+        return num + 2;
+    }
+
+    if (isPrime(num - 2)) {
+        return num - 2;
+    }
+
+    return "Twin Prime yo'q";
+}
+
+console.log(twinPrime(41));
+
+
+//OZIM UCHUN
+
+Tub son
+
+↓
+
+Faqat 1 va o'ziga bo'linadi.
+
+Boshqa songa ham bo'linsa
+
+↓
+
+Tub son emas.
+
+41
+
+↓
+
+41 + 2 = 43
+
+↓
+
+43 tub sonmi?
+
+↓
+
+Ha
+
+↓
+
+Javob: 43
