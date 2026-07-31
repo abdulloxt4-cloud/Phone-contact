@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>82</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function meanDigits(num) {
+
+    let str = num.toString();
+
+    let sum = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        sum += Number(str[i]);
+
+    }
+
+    return sum / str.length;
+}
+
+console.log(meanDigits(11));
+console.log(meanDigits(66));
+console.log(meanDigits(336));
+console.log(meanDigits(444));
+console.log(meanDigits(1151));
+
+
+
+//OZIM UCHUN
+
+336
+
+↓
+
+3 + 3 + 6
+
+↓
+
+12
+
+↓
+
+Raqamlar soni = 3
+
+↓
+
+12 ÷ 3
+
+↓
+
+4
+
+
+Mean → O'rtacha qiymat
+
+Digits → Raqamlar
+
+Sum → Yig'indi
+
+toString() → Sonni matnga aylantirish
+
+str.length → Raqamlar soni
+
+Number() → Matnni songa aylantirish
+
+
