@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>88</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function orthogonal(a, b) {
+
+    let sum = 0;
+
+    for (let i = 0; i < a.length; i++) {
+
+        sum += a[i] * b[i];
+
+    }
+
+    return sum == 0;
+}
+
+console.log(orthogonal([2,4,1], [2,1,-8]));
+console.log(orthogonal([1,0,1], [0,0,1]));
+console.log(orthogonal([1,0,0], [0,1,0]));
+
+//OZIM UCHUN
+[2,4,1]
+
+[2,1,-8]
+
+↓
+
+2×2
+
++
+
+4×1
+
++
+
+1×(-8)
+
+↓
+
+4 + 4 - 8
+
+↓
+
+0
+
+↓
+
+true
+
+Vector → Vektor
+
+Orthogonal → Perpendikulyar (90°)
+
+Dot Product → Skalyar ko'paytma
+
+sum → Yig'indi
+
+for → Har bir elementni tekshirish
+
+sum == 0 → Orthogonal
