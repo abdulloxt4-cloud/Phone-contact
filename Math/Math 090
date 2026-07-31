@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>90</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function harshad(num) {
+
+    let str = num.toString();
+
+    let sum = 0;
+
+    for (let i = 0; i < str.length; i++) {
+
+        sum += Number(str[i]);
+
+    }
+
+    return num % sum == 0;
+}
+
+console.log(harshad(113));
+console.log(harshad(171));
+console.log(harshad(200));
+
+
+//OZIM UCHUN
+Harshad Number → Harshad son
+
+Digits → Raqamlar
+
+Sum → Yig'indi
+
+toString() → Sonni matnga aylantirish
+
+Number() → Matnni songa aylantirish
+
+% → Qoldiq operatori
+
+sum += → Raqamlarni qo'shib borish
+----------------------------------
+Harshad Number
+
+↓
+
+Son % Raqamlar yig'indisi == 0
+
+↓
+
+true
