@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>86</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function middle(text) {
+
+    let len = text.length;
+
+    if (len % 2 == 0) {
+
+        return text.slice(len / 2 - 1, len / 2 + 1);
+
+    } else {
+
+        return text.slice(len / 2, len / 2 + 1);
+
+    }
+
+}
+
+console.log(middle("abcd"));
+console.log(middle("abc"));
+console.log(middle("JavaScript"));
+
+//OZIM UCHUN
+"abcd"
+
+↓
+
+4 ta harf
+
+↓
+
+Juft
+
+↓
+
+O'rtadagi 2 ta
+
+↓
+
+bc
+
+String → Matn
+
+Middle → O'rta
+
+Character → Belgi (harf)
+
+length → Uzunligi
+
+slice() → Matndan bo'lak olish
+
+% 2 → Juft yoki toqligini tekshirish
+
+
