@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>87</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function sastry(num) {
+
+    let text = "" + num + (num + 1);
+
+    let root = Math.sqrt(Number(text));
+
+    return Number.isInteger(root);
+
+}
+
+console.log(sastry(27));
+console.log(sastry(328));
+console.log(sastry(28027683));
+
+
+
+//OZIM UCHUN
+
+328
+
+↓
+
+329
+
+↓
+
+328329
+
+↓
+
+√328329
+
+↓
+
+573
+
+↓
+
+573 × 573 = 328329
+
+↓
+
+true
+
+
+Sastry Number → Sastry son
+
+Concatenate → Yonma-yon yozish
+
+Math.sqrt() → Kvadrat ildiz
+
+Number() → Matnni songa aylantirish
+
+Number.isInteger() → Butun sonmi?
