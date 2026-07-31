@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>81</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+//JS
+
+function multiplyDigits(num) {
+
+    let str = num.toString();
+
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+
+        let digit = Number(str[i]);
+
+        result += digit * digit * digit;
+
+    }
+
+    return result;
+}
+
+console.log(multiplyDigits(11));
+console.log(multiplyDigits(66));
+console.log(multiplyDigits(336));
+console.log(multiplyDigits(444));
+console.log(multiplyDigits(1151));
+
+
+//OZIM UCHUN
+RESULT
+11
+
+216216
+
+2727216
+
+646464
+
+111251
+
+336
+
+↓
+
+3
+3
+6
+
+↓
+
+3³ = 27
+
+3³ = 27
+
+6³ = 216
+
+↓
+
+2727216
+-----------
+Digit → Raqam
+
+Cube → Kub (3-daraja)
+
+toString() → Sonni matnga aylantirish
+
+Number() → Matnni songa aylantirish
+
+result += → Natijani ketma-ket qo'shish
