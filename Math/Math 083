@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>83</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+//JS
+
+
+function missingNumber(arr) {
+
+    for (let i = 1; i <= arr.length + 1; i++) {
+
+        if (!arr.includes(i)) {
+            return i;
+        }
+
+    }
+
+}
+
+console.log(missingNumber([1,2,3,5,6,7]));
+console.log(missingNumber([2,3,4,5]));
