@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>84</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+function sumHighest(arr) {
+
+    arr.sort(function(a, b) {
+        return b - a;
+    });
+
+    return arr[0] + arr[1];
+}
+
+console.log(sumHighest([1,2,6,3,4,5,6,7]));
+console.log(sumHighest([2,3,4,5]));
+
+
+//OZIM UCHUN
+
+[1,2,6,3,4,5,6,7]
+
+↓
+
+Sort qilamiz
+
+↓
+
+[7,6,6,5,4,3,2,1]
+
+↓
+
+7 + 6
+
+↓
+
+13
+
+
+Array → Massiv
+
+Highest → Eng katta
+
+sort() → Tartiblash
+
+arr[0] → Eng katta son
+
+arr[1] → Ikkinchi eng katta son
+
+return → Natijani qaytarish
+
