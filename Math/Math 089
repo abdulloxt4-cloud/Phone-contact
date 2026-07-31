@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>89</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function divisibleSum(x, y, n) {
+
+    let sum = 0;
+
+    for (let i = x; i <= y; i++) {
+
+        if (i % n == 0) {
+
+            sum += i;
+
+        }
+
+    }
+
+    return sum;
+}
+
+console.log(divisibleSum(1, 5, 3));
+console.log(divisibleSum(100, 1000, 5));
+
+
+//OZIM UCHUN
+Range → Oraliq
+
+Divisible → Qoldiqsiz bo'linadigan
+
+Inclusive → Chegaralari ham kiradi
+
+sum → Yig'indi
+
+% → Qoldiq operatori
+
+sum += → Yig'indiga qo'shish
+
+for → x dan y gacha yurish
+-------------------------------
+i % n == 0
+
+↓
+
+Qoldiqsiz bo'linadi
+
+↓
+
+sum += i
