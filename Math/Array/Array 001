@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 1</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function is_array(input) {
+
+    return Array.isArray(input);
+
+}
+
+console.log(is_array("w3resource"));
+
+console.log(is_array([1,2,4,0]));
+
+
+//OZIM UCHUN
+
+Array → Massiv
+
+[] → Array belgisi
+
+Array.isArray() → Array ekanligini tekshiradi
+
+input → Kiruvchi qiymat
+
+return → Natijani qaytaradi
+
+true → Ha
+
+false → Yo'q
