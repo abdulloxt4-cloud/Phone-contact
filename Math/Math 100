@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>100</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function ugly(num) {
+
+    while (num % 2 == 0) {
+        num /= 2;
+    }
+
+    while (num % 3 == 0) {
+        num /= 3;
+    }
+
+    while (num % 5 == 0) {
+        num /= 5;
+    }
+
+    return num == 1;
+}
+
+console.log(ugly(12));
+console.log(ugly(18));
+console.log(ugly(19));
+
+//OZIM UCHUN
+Ugly Number → Ugly son
+
+while → Takrorlash
+
+% → Qoldiq operatori
+
+/= → Bo'lib borish
+
+2,3,5 → Ruxsat berilgan tub ko'paytuvchilar
+
+num == 1 → Ugly Number
+
+==================================================
+Faqat
+
+2
+
+3
+
+5
+
+ga bo'lib boramiz.
+
+↓
+
+Oxirida 1 qolsa
+
+↓
+
+true
+
+Aks holda
+
+↓
+
+false
+
+
