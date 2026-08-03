@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>99</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function oneDigit(num) {
+
+    while (num >= 10) {
+
+        let sum = 0;
+
+        let str = num.toString();
+
+        for (let i = 0; i < str.length; i++) {
+
+            sum += Number(str[i]);
+
+        }
+
+        num = sum;
+
+    }
+
+    return num;
+}
+
+console.log(oneDigit(47));
+console.log(oneDigit(9));
+
+
+//OZIM UCHUN
+
+Digits → Raqamlar
+
+Sum → Yig'indi
+
+toString() → Sonni matnga aylantirish
+
+Number() → Matnni songa aylantirish
+
+while → Takrorlash
+
+>=10 → 2 xonali yoki undan katta son
+
+============================================
+47
+
+↓
+
+11
+
+↓
+
+2
+
+↓
+
+1 xonali bo'lsa to'xtaydi
