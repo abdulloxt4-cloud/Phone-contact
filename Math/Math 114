@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>114</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function selfDividing(num) {
+
+    let str = num.toString();
+
+    for (let digit of str) {
+
+        digit = Number(digit);
+
+        if (digit == 0 || num % digit != 0) {
+
+            return false;
+
+        }
+
+    }
+
+    return true;
+}
+
+console.log(selfDividing(48));
+console.log(selfDividing(22));
+console.log(selfDividing(63));
+
+
+//OZIM UCHUN
+
+48
+
+↓
+
+4
+
+↓
+
+48 ÷ 4 ✅
+
+↓
+
+8
+
+↓
+
+48 ÷ 8 ✅
+
+↓
+
+true
+=============================================
+Self-Dividing Number → O'zini o'zi bo'luvchi son
+
+Digits → Raqamlar
+
+toString() → Sonni matnga aylantirish
+
+Number() → Matnni songa aylantirish
+
+for...of → Har bir raqamni olish
+
+% → Qoldiq operatori
+
+digit == 0 → 0 bo'lsa false
+
+num % digit == 0 → Qoldiqsiz bo'linadi
