@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>94</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function evenOdd(arr) {
+
+    let evenCount = 0;
+    let evenSum = 0;
+
+    let oddCount = 0;
+    let oddSum = 0;
+
+    for (let num of arr) {
+
+        if (num % 2 == 0) {
+
+            evenCount++;
+            evenSum += num;
+
+        } else {
+
+            oddCount++;
+            oddSum += num;
+
+        }
+
+    }
+
+    console.log(evenCount, evenSum, oddCount, oddSum);
+
+//OZIM UCHUN
+[1,2,3,4,5,6,7]
+
+↓
+
+Juft:
+
+2 4 6
+
+↓
+
+Soni = 3
+
+Yig'indisi = 12
+
+
+Toq:
+
+1 3 5 7
+
+↓
+
+Soni = 4
+
+Yig'indisi = 16
+===============================
+Even → Juft son
+
+Odd → Toq son
+
+Count → Soni
+
+Sum → Yig'indisi
+
+% 2 == 0 → Juft
+
+% 2 != 0 → Toq
+
+for...of → Har bir elementni olish
+
+}
+
+evenOdd([1,2,3,4,5,6,7]);
+evenOdd([2,3,5,1,2,0,3,4,2,3,4]);
