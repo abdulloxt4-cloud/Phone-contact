@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>97</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function excelTitle(n) {
+
+    let result = "";
+
+    while (n > 0) {
+
+        n--;
+
+        result = String.fromCharCode((n % 26) + 65) + result;
+
+        n = Math.floor(n / 26);
+
+    }
+
+    return result;
+}
+
+console.log(excelTitle(4));
+console.log(excelTitle(27));
+console.log(excelTitle(151));
+
+
+
+//OZIM UCHUN
+
+27
+
+↓
+
+26 = Z
+
+↓
+
+27 = AA
+
+↓
+
+Natija:
+
+AA
+
+================================
+Excel Column → Excel ustuni
+
+Title → Nomi
+
+String.fromCharCode() → Harfga aylantirish
+
+Math.floor() → Pastga yaxlitlash
+
+while → Takrorlash
