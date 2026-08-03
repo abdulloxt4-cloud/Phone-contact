@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>98</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function columnNumber(text) {
+
+    let result = 0;
+
+    for (let i = 0; i < text.length; i++) {
+
+        result = result * 26 + (text.charCodeAt(i) - 64);
+
+    }
+
+    return result;
+}
+
+console.log(columnNumber("C"));
+console.log(columnNumber("AD"));
+console.log(columnNumber("ZX"));
+
+//OZIM UCHUN
+
+AD
+
+↓
+
+A = 1
+
+↓
+
+1 × 26 + 4
+
+↓
+
+30
+======================================
+Excel Column → Excel ustuni
+
+Column Number → Ustun raqami
+
+charCodeAt() → Harfning ASCII kodini oladi
+
+-64 → A ni 1 ga aylantiradi
+
+*26 → Keyingi harf uchun joy ochadi
+
+for → Harflarni ketma-ket tekshirish
