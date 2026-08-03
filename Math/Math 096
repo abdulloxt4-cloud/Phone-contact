@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>96</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function trailingZeroes(n) {
+
+    let count = 0;
+
+    while (n >= 5) {
+
+        n = Math.floor(n / 5);
+
+        count += n;
+
+    }
+
+    return count;
+}
+
+console.log(trailingZeroes(4));
+console.log(trailingZeroes(9));
+console.log(trailingZeroes(10));
+console.log(trailingZeroes(23));
+console.log(trailingZeroes(35));
+
+
+//OZIM UCHUN
+10 = 2 × 5
+
+↓
+
+Factorialda 2 juda ko'p bo'ladi.
+
+Shuning uchun faqat 5 larni sanash kifoya.
+
+Har bir 5
+
+↓
+
+1 ta 0 beradi.
+=====================================================
+Factorial → Faktorial
+
+Trailing Zeroes → Oxiridagi 0 lar
+
+Math.floor() → Pastga yaxlitlash
+
+while → Takrorlash
+
+count → Sanoq
+
+/5 → 5 larni sanash
