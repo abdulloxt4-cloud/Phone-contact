@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>95</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function getChars(text) {
+
+    let words = text.split(" ");
+
+    let result = [];
+
+    for (let word of words) {
+
+        if (word.length % 2 == 0) {
+
+            result.push(word[word.length - 1]);
+
+        } else {
+
+            result.push(word[Math.floor(word.length / 2)]);
+
+        }
+
+    }
+
+    return result.join(", ");
+}
+
+console.log(getChars("Number of even numbers and their sum"));
+
+console.log(getChars("JavaScript Math and Numbers- Exercises Practice Solution"));
+
+
+//OZIM UCHUN
+
+r, f, n, b, n, e, u
+
+t, h, n, -, c, e, n
+
+==============================
+Word
+
+↓
+
+Uzunligini olamiz
+
+↓
+
+Juftmi?
+
+Ha
+
+↓
+
+Oxirgi harf
+
+
+Yo'q
+
+↓
+
+O'rtadagi harf
+
+
+↓
+
+Natijani saqlaymiz
+
+==========================
+Word → So'z
+
+split() → Gapni so'zlarga ajratish
+
+length → Uzunligi
+
+% 2 → Juft yoki toq
+
+Math.floor() → Pastga yaxlitlash
+
+push() → Arrayga qo'shish
+
+join(", ") → Vergul bilan birlashtirish
