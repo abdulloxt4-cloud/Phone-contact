@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 6</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let num = "025468";
+
+let text = "";
+
+for (let i = 0; i < num.length; i++) {
+
+    text = text + num[i];
+
+    if (num[i] % 2 == 0 && num[i + 1] % 2 == 0) {
+        text = text + "-";
+    }
+
+}
+
+//OZIM UCHUN
+for → Takrorlash
+
+i → Index (joy raqami)
+
+num[i] → Hozirgi raqam
+
+num[i+1] → Keyingi raqam
+
+length → Uzunlik
+
+%2==0 → Juft son tekshirish
+
+if → Agar
+
+&& → Va (ikkalasi ham)
+
+text = text + → Natijaga qo'shish
+
+console.log() → Natijani chiqarish
+
+console.log(text);
