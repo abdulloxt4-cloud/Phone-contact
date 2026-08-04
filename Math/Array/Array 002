@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 2</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function array_Clone(arr) {
+
+    return arr.slice();
+
+}
+
+console.log(array_Clone([1,2,4,0]));
+
+console.log(array_Clone([1,2,[4,0]]));
+
+//OZIM UCHUN
+Array → Massiv
+
+String → Matn
+
+Clone → Nusxa
+
+Original → Asl Array
+
+Copy → Nusxa Array
+
+Nested Array → Array ichidagi Array
+
+[] → Array yaratish
+
+arr → Array o'zgaruvchisi
+
+slice() → Arrayning nusxasini olish (Clone)
+
+Array.isArray() → Array ekanligini tekshirish
+
+() → Funksiyani yoki metodni ishga tushirish
+
+{} → Kod bloki (Function body)
+
+. → Metodni chaqirish
+
+return → Natijani qaytarish
+
+console.log() → Natijani ekranga chiqarish
+
+Element → Array ichidagi bitta qiymat
+
+Index → Elementning tartib raqami (0 dan boshlanadi)
+
+arr[0] → Birinchi element
+
+arr[1] → Ikkinchi element
+
+arr.length → Array ichidagi elementlar soni
+
+Primitive → Oddiy qiymatlar (Number, String, Boolean...)
+
+Reference → Xotiradagi manzilni ko'rsatish
+
+Shallow Copy → Faqat tashqi Array nusxalanadi
+
+Deep Copy → Ichidagi Nested Array ham nusxalanadi
