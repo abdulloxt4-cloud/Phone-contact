@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 3</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function first(arr, n) {
+
+    if (n == undefined) {
+        return arr[0];
+    }
+
+    if (n < 0) {
+        return [];
+    }
+
+    return arr.slice(0, n);
+
+}
+
+console.log(first([7,9,0,-2]));
+console.log(first([],3));
+console.log(first([7,9,0,-2],3));
+console.log(first([7,9,0,-2],6));
+console.log(first([7,9,0,-2],-3));
+
+
+//OZIM UCHUN
+| Kod              | Ma'nosi                           |
+| ---------------- | --------------------------------- |
+| `arr`            | Array saqlangan o'zgaruvchi       |
+| `[]`             | Array yaratish yoki element olish |
+| `arr[0]`         | Birinchi element                  |
+| `arr[1]`         | Ikkinchi element                  |
+| `arr.length`     | Elementlar soni                   |
+| `arr.slice(0,3)` | 0 dan 3 gacha (3 kirmaydi) olish  |
+
+
+arr[0] → Birinchi element
+
+arr.length → Elementlar soni
+
+slice(start,end) → Arrayning bir qismini olish
+
+start → Boshlanish indexi
+
+end → Tugash indexi (o'zi olinmaydi)
+
+undefined → Qiymat berilmagan
+
+n → Nechta element olish
+
+index → Tartib raqami (0 dan boshlanadi)
