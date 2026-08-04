@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 4</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function last(arr, n) {
+
+    if (n == undefined) {
+        return arr[arr.length - 1];
+    }
+
+    return arr.slice(-n);
+
+}
+
+console.log(last([7, 9, 0, -2]));
+
+console.log(last([7, 9, 0, -2], 3));
+
+console.log(last([7, 9, 0, -2], 6));
+
+//OZIM UCHUN
+Last → Oxirgi
+
+arr.length → Elementlar soni
+
+arr.length - 1 → Oxirgi index
+
+slice(-n) → Oxiridan n ta element olish
+
+-1 → Oxirgi element
+
+-2 → Oxirgi 2 ta
+
+-3 → Oxirgi 3 ta
