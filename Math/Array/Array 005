@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 5</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+let myColor = ["Red", "Green", "White", "Black"];
+
+console.log(myColor.join());
+
+console.log(myColor.join(","));
+
+console.log(myColor.join("+"));
+
+
+//OZIM UCHUN
+Array → Massiv
+
+String → Matn
+
+join() → Arrayni bitta String qilish
+
+join(",") → Vergul bilan qo'shish
+
+join("+") → Plus bilan qo'shish
+
+Separator → Ajratuvchi belgi
+
+"," → Vergul
+
+"+" → Plus
+
+"-" → Minus
+
+" " → Bo'sh joy
