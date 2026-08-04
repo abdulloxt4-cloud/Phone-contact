@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 8</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+let max = 0;
+let item = "";
+
+for (let i = 0; i < arr1.length; i++) {
+
+    let count = 0;
+
+    for (let j = 0; j < arr1.length; j++) {
+
+        if (arr1[i] == arr1[j]) {
+            count++;
+        }
+
+    }
+
+    if (count > max) {
+        max = count;
+        item = arr1[i];
+    }
+
+}
+
+console.log(item + " (" + max + " times)");
+
+//OZIM UCHUN
+===========================
+Bitta elementni olamiz
+
+↓
+
+Array ichida qidiramiz
+
+↓
+
+Necha marta borligini sanaymiz
+
+↓
+
+Eng kattasini tanlaymiz
+==============================
+count++ → nechta borligini sanaydi
+
+max → eng kattasini saqlaydi
+
+if → solishtiradi
