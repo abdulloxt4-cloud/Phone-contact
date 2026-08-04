@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array 9</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let text = "The Quick Brown Fox";
+
+let result = "";
+
+for (let i = 0; i < text.length; i++) {
+
+    if (text[i] == text[i].toUpperCase()) {
+        result += text[i].toLowerCase();
+    } else {
+        result += text[i].toUpperCase();
+    }
+
+}
+
+console.log(result);
+
+//OZIM UCHUN
+Swap Case → Katta/kichik harfni almashtirish
+
+String → Matn
+
+Character → Belgi
+
+toUpperCase() → Katta harf qilish
+
+toLowerCase() → Kichik harf qilish
+
+if → Tekshirish
+
+for → Har bir belgidan o'tish
+
+======================================
+
+toUpperCase()
+↓
+
+katta harf
+
+
+toLowerCase()
+↓
+
+kichik harf
