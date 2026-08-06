@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>16-mashq</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let start = 2000; // Boshlanish yili
+let end = 2010; // Tugash yili
+
+for (let year = start; year <= end; year++) { // Har bir yil
+
+    // Kabisa yilini tekshirish
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+
+        console.log(year);
+
+    }
+
+}
+
+//OZIM UCHUN
+
+% → qoldiq operatori.
+year % 4 == 0 → 4 ga qoldiqsiz bo'linadi.
+&& → ikkala shart ham rost.
+|| → kamida bittasi rost.
+
+start → Boshlanish yili
+
+end → Tugash yili
+
+year → Hozirgi yil
+
+for → Har bir yilni tekshirish
+
+% → Qoldiq
+
+== 0 → Qoldiqsiz bo'linsa
+
+&& → Va
+
+|| → Yoki
+
+!= → Teng emas
