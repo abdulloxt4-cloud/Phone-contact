@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>11</title>
+</head>
+<body>
+
+<h2>Sum of Squares in Array</h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let arr = [1, 2, 3];   // Array
+
+let sum = 0;           // Yig'indi
+
+for (let num of arr) { // Har bir elementni oladi
+    sum += num * num;  // Kvadratini yig'indiga qo'shadi
+}
+
+console.log(sum);      
