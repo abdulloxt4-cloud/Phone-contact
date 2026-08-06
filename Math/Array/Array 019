@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>19</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+//JS
+let array1 = [1, 0, 2, 3, 4];
+let array2 = [3, 5, 6, 7, 8, 13];
+
+let result = [];
+
+let max = Math.max(array1.length, array2.length); // Uzun Array
+
+for (let i = 0; i < max; i++) { // Index
+
+    result[i] = (array1[i] || 0) + (array2[i] || 0);
+
+}
+
+console.log(result);
+
+//OZIM UCHUN
+
+array1[i] → Birinchi Array elementi.
+array2[i] → Ikkinchi Array elementi.
+|| 0 → Agar element bo'lmasa, 0 deb hisoblaydi.
+Natija yangi result Arrayga yoziladi.
+
+array1 → Birinchi Array
+
+array2 → Ikkinchi Array
+
+result → Yangi Array
+
+max → Eng katta uzunlik
+
+i → Index
+
+|| 0 → Element bo'lmasa 0 olish
