@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>14</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+//JS
+let fruits = ["Apple", "Banana", "apple", "Orange", "banana"];
+
+let newArray = [];
+
+for (let fruit of fruits) {
+
+    let lowerFruit = fruit.toLowerCase();
+
+    if (!newArray.includes(lowerFruit)) {
+        newArray.push(lowerFruit);
+    }
+
+}
+
+console.log(newArray);
+
+//OZiM UCHUN
+fruits → Asosiy Array
+
+newArray → Yangi Array
+
+fruit → Hozirgi element
+
+lowerFruit → Kichik harfga o'tgan element
+
+toLowerCase() → Kichik harf qilish
+
+includes() → Bor yoki yo'qligini tekshirish
+
+! → Yo'q bo'lsa
+
+push() → Arrayga qo'shish
