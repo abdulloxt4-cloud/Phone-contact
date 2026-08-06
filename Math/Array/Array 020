@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>20</title>
+</head>
+<body>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let numbers = [1, 2, 2, 3, 4, 4, 5];
+
+let duplicate = [];
+
+for (let num of numbers) { // Har bir element
+
+    if (numbers.indexOf(num) != numbers.lastIndexOf(num)) { // Takrorlanganmi?
+
+        if (!duplicate.includes(num)) { // Oldin qo'shilmaganmi?
+
+            duplicate.push(num); // Qo'shish
+
+        }
+
+    }
+
+}
+
+console.log(duplicate);
+
+//OZIM UCHUN
+
+indexOf() → elementning birinchi indexi.
+
+lastIndexOf() → elementning oxirgi indexi.
+
+Agar ikkalasi bir xil bo'lmasa, demak element takrorlangan.
+
+includes() → bir xil elementni yana qayta qo'shib yubormaslik uchun ishlatiladi.
+numbers → Asosiy Array
+
+duplicate → Takrorlangan Array
+
+num → Hozirgi element
+
+indexOf() → Birinchi o'rni
+
+lastIndexOf() → Oxirgi o'rni
+
+includes() → Bor yoki yo'qligini tekshirish
+
+push() → Arrayga qo'shish
