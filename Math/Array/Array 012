@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>12</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+//JS
+
+let arr = [1, 2, 3, 4]; // Array
+
+let sum = 0; // Yig'indi
+let product = 1; // Ko'paytma
+
+for (let num of arr) { // Har bir element
+    sum += num; // Qo'shib borish
+    product *= num; // Ko'paytirib borish
+}
+
+console.log(sum);
+console.log(product);
