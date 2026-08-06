@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>13-mashq</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let arr = []; // Bo'sh Array
+
+arr.push(10); // Element qo'shish
+arr.push(20); // Element qo'shish
+arr.push(30); // Element qo'shish
+
+console.log(arr);
+
+//KEY WORD
+[] → Bo'sh Array.
+push() → Array oxiriga yangi element qo'shadi.
+arr.push(10) → 10 ni Array ichiga qo'shadi.
