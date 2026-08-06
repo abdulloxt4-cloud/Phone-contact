@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>17</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.sort(() => Math.random() - 0.5);
+
+console.log(numbers);
+
+//OZIM UCHUN
+numbers → Array
+
+sort() → Tartiblash
+
+Math.random() → Tasodifiy son
+
+-0.5 → Aralashtirish uchun ishlatiladi
