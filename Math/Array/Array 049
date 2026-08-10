@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function thirdSmallest(arr) {
+    arr.sort((a, b) => a - b);
+
+    return arr[2];
+}
+
+let numbers = [2, 3, 5, 7, 1];
+
+let result = thirdSmallest(numbers);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+// Smallest = eng kichik
+// Third = uchinchi
+// Array = ro‘yxat
+// sort() = tartiblash
+// a - b = kichikdan kattaga
+// index = joylashuv
+// return = natijani qaytarish
+[2, 3, 5, 7, 1]
+
+↓
+
+[1, 2, 3, 5, 7]
+index 0 → 1
+index 1 → 2
+index 2 → 3  ← uchinchi
