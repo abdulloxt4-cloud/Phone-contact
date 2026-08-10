@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function num_string_range(start, end, step) {
+    let result = [];
+
+    for (
+        let i = start.charCodeAt(0);
+        i <= end.charCodeAt(0);
+        i += step
+    ) {
+        result.push(String.fromCharCode(i));
+    }
+
+    return result;
+}
+
+let result = num_string_range("a", "z", 2);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHUN
+// Fill = to‘ldirish
+// Array = qiymatlar ro‘yxati
+// Range = oraliq
+// Start = boshlanish
+// End = tugash
+// Step = qadam
+// charCodeAt() = harfni raqamga aylantiradi
+// fromCharCode() = raqamni harfga aylantiradi
+// push() = arrayga qo‘shadi
+// return = natijani qaytaradi
