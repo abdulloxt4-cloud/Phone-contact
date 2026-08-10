@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function randomItem(arr) {
+    let index = Math.floor(Math.random() * arr.length);
+
+    return arr[index];
+}
+
+let arr = ["Ali", "Vali", "Hasan"];
+
+let result = randomItem(arr);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHuN
+// Random = tasodifiy
+// Item = element
+// Array = qiymatlar ro‘yxati
+// Math.random() = 0 va 1 orasida tasodifiy son
+// Math.floor() = pastga qarab yaxlitlaydi
+// length = array uzunligi
+// index = elementning joylashuvi
+// return = natijani qaytaradi
+["Ali", "Vali", "Hasan"]
+       ↓
+tasodifiy index tanlanadi
+       ↓
+0 yoki 1 yoki 2
+       ↓
+shu indexdagi element olinadi
