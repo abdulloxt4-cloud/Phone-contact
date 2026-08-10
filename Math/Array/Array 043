@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function unzip(arr) {
+    let result = [];
+
+    for (let i = 0; i < arr[0].length; i++) {
+        let group = [];
+
+        for (let item of arr) {
+            if (item[i] !== undefined) {
+                group.push(item[i]);
+            }
+        }
+
+        result.push(group);
+    }
+
+    return result;
+}
+
+let result = unzip([
+    ["a", 1, true],
+    ["b", 2, false]
+]);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//JS
+// Unzip = ajratish
+// Array = ro‘yxat
+// Element = qiymat
+// index = joylashuv
+// push() = arrayga qo‘shish
+// for = takrorlash
+// length = uzunlik
+// return = natijani qaytarish
+1-qator:
+a → b
+↓
+["a", "b"]
+
+2-qator:
+1 → 2
+↓
+[1, 2]
+
+3-qator:
+true → false
+↓
+[true, false]
