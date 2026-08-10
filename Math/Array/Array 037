@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function array_filled(count, value) {
+    let result = [];
+
+    for (let i = 0; i < count; i++) {
+        result.push(value);
+    }
+
+    return result;
+}
+
+let result = array_filled(3, "default value");
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+// Filled = to‘ldirilgan
+// Array = ro‘yxat
+// String = matn
+// Value = qiymat
+// Count = nechta bo‘lishi
+// for = takrorlash
+// push() = arrayga qo‘shish
+// return = natijani qaytarish
+count = 3
+value = "default value"
+
+1 → qo‘sh
+2 → qo‘sh
+3 → qo‘sh
+
+["default value", "default value", "default value"]
