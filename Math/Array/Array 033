@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function emptyArray(arr) {
+    let newArray = arr.slice();
+
+    newArray.length = 0;
+
+    return newArray;
+}
+
+let arr = [1, 2, 3, 4];
+
+let result = emptyArray(arr);
+
+console.log(result);
+console.log(arr);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+// Empty = bo‘shatish
+// Array = qiymatlar ro‘yxati
+// slice() = arraydan nusxa olish
+// length = array uzunligi
+// return = natijani qaytarish
+original array
+[1, 2, 3, 4]
+       ↓
+slice() → nusxa
+       ↓
+nusxani bo‘shatamiz
+       ↓
+[]
