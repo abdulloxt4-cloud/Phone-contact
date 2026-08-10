@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function nthlargest(arr, n) {
+    let numbers = arr.slice();
+
+    numbers.sort((a, b) => b - a);
+
+    return numbers[n - 1];
+}
+
+let arr = [43, 56, 23, 89, 88, 90, 99, 652];
+
+let result = nthlargest(arr, 4);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+  //OZIM UCHUN
+  // Nth = n-o‘rin
+// Largest = eng katta
+// Array = sonlar ro‘yxati
+// sort() = tartiblash
+// reverse() = teskari qilish
+// slice() = nusxa olish
+// return = natijani qaytarish
+Bu sonlarni kattadan kichikka tartiblaydi:
+
+[652, 99, 90, 89, 88, 56, 43, 23]
