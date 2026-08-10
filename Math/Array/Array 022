@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+// Union = ikki arrayni birlashtirish
+// concat() = arraylarni qo‘shish
+// Set = takroriy qiymatlarni olib tashlash
+// ... = Setni arrayga aylantirish
+// sort() = tartiblash
+
+function union(arr1, arr2) {
+    return [...new Set(arr1.concat(arr2))].sort((a, b) => a - b);
+}
+
+console.log(union([1, 2, 3], [100, 2, 1, 10]));
+
+document.getElementById("result").innerHTML =
+    union([1, 2, 3], [100, 2, 1, 10]);
