@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function array_filled(count, value) {
+    let result = [];
+
+    for (let i = 0; i < count; i++) {
+        result.push(value);
+    }
+
+    return result;
+}
+
+let result = array_filled(6, 0);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHUN
+// Filled = to‘ldirilgan
+// Array = ro‘yxat
+// Value = qiymat
+// Count = nechta bo‘lishi
+// push() = arrayga qo‘shadi
+// for = takrorlaydi
+// return = natijani qaytaradi
+count = 6
+value = 0
+
+0 → qo‘sh
+0 → qo‘sh
+0 → qo‘sh
+0 → qo‘sh
+0 → qo‘sh
+0 → qo‘sh
+
+[0, 0, 0, 0, 0, 0]
