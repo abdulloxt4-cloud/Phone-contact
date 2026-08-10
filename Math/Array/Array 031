@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function remove_array_element(arr, element) {
+    return arr.filter(function(item) {
+        return item !== element;
+    });
+}
+
+let arr = [2, 5, 9, 6];
+
+let result = remove_array_element(arr, 5);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHUN
+// Remove = olib tashlash
+// Element = array ichidagi qiymat
+// filter() = kerakli elementlarni ajratish
+// !== = teng emas
+// return = natijani qaytarish
