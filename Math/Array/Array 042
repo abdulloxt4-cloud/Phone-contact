@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function difference(arr1, arr2) {
+    let result = [];
+
+    let all = arr1.concat(arr2);
+
+    for (let item of all) {
+        if (!result.includes(item)) {
+            result.push(item);
+        }
+    }
+
+    return result;
+}
+
+let result = difference([1, 2, 3], [100, 2, 1, 10]);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHUN
+// Unique = takrorlanmaydigan
+// Elements = elementlar
+// Array = ro‘yxat
+// Duplicate = takrorlangan
+// concat() = arraylarni birlashtiradi
+// includes() = element borligini tekshiradi
+// push() = element qo‘shadi
+// return = natijani qaytaradi
+2 ta array
+    ↓
+concat()
+    ↓
+bitta array
+    ↓
+har birini tekshirish
+    ↓
+bor bo‘lsa → qo‘shma
+yo‘q bo‘lsa → qo‘sh
+    ↓
+Unique array
