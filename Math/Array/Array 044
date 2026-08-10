@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function indexOn(arr) {
+    let result = {};
+
+    for (let item of arr) {
+        let id = item.id;
+
+        let value = {
+            name: item.name
+        };
+
+        result[id] = value;
+    }
+
+    return result;
+}
+
+let result = indexOn([
+    { id: 10, name: "apple" },
+    { id: 20, name: "orange" }
+]);
+
+console.log(result);
+
+document.getElementById("result").innerHTML =
+
+//OZIM UCHUN
+// Object = key-value ma'lumot
+// Key = kalit
+// Value = qiymat
+// Array = ro‘yxat
+// id = key sifatida ishlatiladi
+// delete = propertyni o‘chirish
+// push() = qo‘shish
+// return = natijani qaytarish
+id = 10
+name = apple
+
+↓
+
+"10": { name: "apple" }
+
+
+id = 20
+name = orange
+
+↓
+
+"20": { name: "orange" }
