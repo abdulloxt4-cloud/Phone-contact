@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function filter_array_values(arr) {
+    return arr.filter(Boolean);
+}
+
+let arr = [58, '', 'abcd', true, null, false, 0];
+
+let result = filter_array_values(arr);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+// Filter = saralash
+// Array = ro‘yxat
+// Values = qiymatlar
+// Falsy = false hisoblanadigan qiymatlar
+// false = yolg‘on
+// null = bo‘sh qiymat
+// 0 = nol
+// "" = bo‘sh string
+// filter() = kerakli elementlarni ajratadi
+// Boolean = true yoki false qiladi
+// return = natijani qaytaradi
+Truthy qiymatlarni qoldiradi, falsy qiymatlarni olib tashidi.
+58      ✅
+""      ❌
+"abcd"  ✅
+true    ✅
+null    ❌
+false   ❌
+0       ❌
