@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function merge_array(arr1, arr2) {
+    let result = arr1.slice();
+
+    for (let item of arr2) {
+        if (!result.includes(item)) {
+            result.push(item);
+        }
+    }
+
+    return result;
+}
+
+let array1 = [1, 2, 3];
+let array2 = [2, 30, 1];
+
+console.log(merge_array(array1, array2));
+
+document.getElementById("result").innerHTML =
+    merge_array(array1, array2);
+
+//OZIM UCHUN
+// Merge = birlashtirish
+// Array = ro‘yxat
+// Duplicate = takroriy element
+// concat() = arraylarni birlashtiradi
+// includes() = element borligini tekshiradi
+// push() = arrayga element qo‘shadi
+// return = natijani qaytaradi
+array1 + array2
+       ↓
+har bir elementni tekshir
+       ↓
+bor bo‘lsa → qo‘shma
+yo‘q bo‘lsa → qo‘sh
+       ↓
+takrorlanmas array
