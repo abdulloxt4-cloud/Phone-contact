@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function rangeBetween(start, end) {
+    let result = [];
+
+    for (let i = start; i <= end; i++) {
+        result.push(i);
+    }
+
+    return result;
+}
+
+let result = rangeBetween(4, 7);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHUN
+// Range = oraliq
+// Between = orasida
+// Integer = butun son
+// Array = ro‘yxat
+// Step = qadam
+// for = takrorlash
+// push() = arrayga qo‘shish
+// return = natijani qaytarish
+start = 4
+end = 7
+
+4 → qo‘sh
+5 → qo‘sh
+6 → qo‘sh
+7 → qo‘sh
+
+[4, 5, 6, 7]
