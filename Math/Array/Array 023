@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+function difference(arr1, arr2) {
+    let a = arr1.flat(Infinity);
+    let b = arr2.flat(Infinity);
+
+    let result = a.concat(b).filter(function(item, index, array) {
+        return array.indexOf(item) === index &&
+               !(a.includes(item) && b.includes(item));
+    });
+
+    return result.sort((a, b) => a - b);
+}
+
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+
+console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
+
+//OZIM UCHUN
+// Difference = ikki arraydagi farqli elementlar
+// concat() = arraylarni qo‘shish
+// flat(Infinity) = nested arrayni to‘liq ochish
+// includes() = element borligini tekshirish
+// filter() = kerakli elementlarni ajratish
+// sort() = tartiblash
