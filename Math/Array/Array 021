@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function flatten(arr, shallow) {
+    let result = [];
+
+    arr.forEach(function(item) {
+        if (Array.isArray(item)) {
+            if (shallow) {
+                result = result.concat(item);
+            } else {
+                result = result.concat(flatten(item));
+            }
+        } else {
+            result.push(item);
+        }
+    });
+
+    return result;
+}
+
+let arr = [1, [2], [3, [[4]]], [5, 6]];
+
+document.getElementById("result").innerHTML =
+    flatten(arr) + "<br>" + flatten(arr, true);
+
+//OZIM UCHUN
+flatten      → arrayni tekislaydi
+nested       → ichma-ich array
+Array.isArray() → array ekanini tekshiradi
+forEach      → elementlarni bittalab ko‘radi
+push()       → bitta element qo‘shadi
+concat()     → arraylarni birlashtiradi
+shallow      → faqat 1 qavat ochish
+true         → 1 qavat
+false        → hamma qavat
+return       → natijani qaytaradi
+rekursiya    → function o‘zini yana chaqiradi
+Array bo‘lsa → ichiga kir
+Oddiy son bo‘lsa → result ga qo‘sh
+shallow true → 1 qavat
+shallow yo‘q → hammasini och
