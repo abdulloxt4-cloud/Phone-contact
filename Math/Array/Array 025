@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function sortByTitle(arr) {
+    return arr.sort(function(a, b) {
+        return a.title.localeCompare(b.title);
+    });
+}
+
+let library = [
+    { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
+    { author: "Steve Jobs", title: "Walter Isaacson", libraryID: 4264 },
+    { author: "Suzanne Collins", title: "Mockingjay: The Final Book of The Hunger Games", libraryID: 3245 }
+];
+
+console.log(sortByTitle(library));
+
+//OZIM UCHUN
+array
+ ↓
+objectlarni oladi
+ ↓
+har bir objectdan title ni oladi
+ ↓
+titlelarni solishtiradi
+ ↓
+alfavit bo‘yicha tartiblaydi
+// sort() = arrayni tartiblash
+// title = object ichidagi nom
+// localeCompare() = matnlarni alfavit bo‘yicha solishtirish
