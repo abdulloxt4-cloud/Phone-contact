@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function sumNumbers(arr) {
+    let sum = 0;
+
+    for (let item of arr) {
+        if (typeof item === "number") {
+            sum += item;
+        }
+    }
+
+    return sum;
+}
+
+let numbers = [2, "11", 3, "a2", false, 5, 7, 1];
+
+let result = sumNumbers(numbers);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+// Mixed Array = har xil qiymatlar
+// Number = son
+// typeof = data type ni tekshiradi
+// for = takrorlash
+// if = shart
+// += = qo‘shib borish
+// return = natijani qayta
+sum = 0
+
+2  → sum = 2
+"11" → o'tkazib yuboradi
+3  → sum = 5
+"a2" → o'tkazib yuboradi
+false → o'tkazib yuboradi
+5  → sum = 10
+7  → sum = 17
+1  → sum = 18
