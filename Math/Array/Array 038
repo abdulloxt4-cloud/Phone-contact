@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function move(arr, from, to) {
+    let item = arr.splice(from, 1)[0];
+
+    arr.splice(to, 0, item);
+
+    return arr;
+}
+
+console.log(move([10, 20, 30, 40, 50], 0, 2));
+console.log(move([10, 20, 30, 40, 50], -1, -2));
+
+//OZIM UCHUN
+// Move = ko‘chirish
+// Element = array ichidagi qiymat
+// Index = elementning joylashuvi
+// splice() = elementni olib tashlash yoki qo‘shish
+// pop() = oxirgi elementni olish
+// unshift() = boshiga qo‘shish
+// return = natijani qaytarish
+10 20 30 40 50
+↑        ↑
+olamiz   2-indexga qo‘yamiz
+
+20 30 10 40 50
+[20, 30, 10, 40, 50]
+[10, 20, 30, 50, 40]
