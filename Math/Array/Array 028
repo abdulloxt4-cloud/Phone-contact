@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function longestCommon(arr) {
+    let word = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        while (!arr[i].startsWith(word)) {
+            word = word.slice(0, -1);
+        }
+    }
+
+    return word;
+}
+
+let result = longestCommon(["go", "google"]);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHUN 
+// Common = umumiy
+// Longest = eng uzun
+// Starting = boshlang‘ich
+// Substring = stringning bir qismi
+// Array = elementlar to‘plami
+// String = matn
+// arr[0] = birinchi element
+// length = uzunlik
+// for = takrorlash
+// while = shart bajarilguncha takrorlash
+// startsWith() = shu bilan boshlanishini tekshiradi
+// slice() = stringning bir qismini oladi
+// return = natijani qaytaradi
