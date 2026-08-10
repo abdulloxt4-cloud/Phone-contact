@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function getValues(arr, property) {
+    return arr.map(function(item) {
+        return item[property];
+    });
+}
+
+let people = [
+    { name: "Ali", age: 15 },
+    { name: "Vali", age: 16 },
+    { name: "Hasan", age: 17 }
+];
+
+let result = getValues(people, "name");
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+//OZIM UCHUN
+
+// Property = object ichidagi xususiyat
+// map() = har bir elementdan yangi qiymat olish
+// object[property] = property qiymatini olish
+array
+ ↓
+har bir object
+ ↓
+kerakli property
+ ↓
+qiymatini olamiz
+ ↓
+yangi array
