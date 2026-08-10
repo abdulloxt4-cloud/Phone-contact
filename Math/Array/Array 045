@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+//JS
+function unique(arr) {
+    let result = [];
+
+    for (let item of arr) {
+        if (!result.includes(item)) {
+            result.push(item);
+        }
+    }
+
+    return result;
+}
+
+let result = unique([1, 2, 2, 3, 4, 4, 5]);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+
+
+//OZIM UCHUN
+// Unique = takrorlanmaydigan
+// Values = qiymatlar
+// Array = ro‘yxat
+// Duplicate = takrorlangan
+// includes() = borligini tekshiradi
+// push() = arrayga qo‘shadi
+// return = natijani qaytaradi
+item result ichida YO‘Q bo‘lsa
+        ↓
+     push()
+        ↓
+     qo‘shamiz
+1 → yo‘q → qo‘shiladi
+2 → yo‘q → qo‘shiladi
+2 → bor  → qo‘shilmaydi
+3 → yo‘q → qo‘shiladi
+4 → yo‘q → qo‘shiladi
+4 → bor  → qo‘shilmaydi
+5 → yo‘q → qo‘shiladi
