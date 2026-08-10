@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="result"></h2>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+function array_range(start, end) {
+    let result = [];
+
+    for (let i = start; i <= end; i++) {
+        result.push(i);
+    }
+
+    return result;
+}
+
+let result = array_range(1, 4);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+
+// Range = oraliq
+// Integer = butun son
+// Array = ro‘yxat
+// Start = boshlanish
+// End = tugash
+// for = takrorlash
+// push() = arrayga qo‘shish
+// ++ = 1 taga oshirish
+// return = natijani qaytarish
+start = 1
+end = 4
+
+i = 1 → qo‘sh
+i = 2 → qo‘sh
+i = 3 → qo‘sh
+i = 4 → qo‘sh
+
+[1, 2, 3, 4]
