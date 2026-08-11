@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Stack</title>
+</head>
+<body>
+
+    <h2>Count Stack Elements</h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+let count = stack.length;
+
+console.log("Stack:", stack);
+console.log("Count:", count);
+
+//FOR MY-SELF
+Stack: [10, 20, 30, 40]
+Count: 4
+====================
+[10, 20, 30, 40]
+ ↓   ↓   ↓   ↓
+ 1   2   3   4
