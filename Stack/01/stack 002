@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Stack</title>
+</head>
+<body>
+
+    <h2>Sort Stack Descending</h2>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+let stack = [20, 5, 30, 10];
+
+console.log("Oldin:", stack);
+
+stack.sort((a, b) => b - a);
+
+console.log("Keyin:", stack);
+
+//FOR MY-SELF
+Stack → oxirgi kirgan → birinchi chiqadi
+sort  → elementlarni tartiblaydi
+
+Oldin: [20, 5, 30, 10]
+Keyin: [30, 20, 10, 5]
+
+stack
+ ↓
+[20, 5, 30, 10]
+
+sort()
+ ↓
+[30, 20, 10, 5]
