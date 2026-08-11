@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Stack</title>
+</head>
+<body>
+
+    <h2>Clear Stack</h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+console.log("Oldin:", stack);
+
+stack.length = 0;
+
+console.log("Keyin:", stack);
+
+//FOR MY-SELF
+Oldin: [10, 20, 30, 40]
+Keyin: []
+
+[10, 20, 30, 40]
+      ↓
+length = 4
+============================
+length    → elementlar soni
+length = 0 → barcha elementlarni o‘chiradi
+clear     → tozalash
+stack     → Stack
