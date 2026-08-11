@@ -1,0 +1,58 @@
+//Stack ---> Last In → First Out assosiysi ishi Oxirgi kirgan → Birinchi chiqadi. 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stack1</title>
+</head>
+<body>
+
+    <h2>Stack Operations</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+
+let stack = [];
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log("Stack:", stack);
+
+let removed = stack.pop();
+console.log("Removed:", removed);
+
+console.log("Stack:", stack);
+
+let top = stack[stack.length - 1];
+console.log("Top:", top);
+
+let empty = stack.length == 0;
+console.log("Empty:", empty);
+//FOR MY-SELF\
+==========================================
+Stack       → LIFO tartibida ma'lumot saqlaydi
+push()      → element qo‘shadi
+pop()       → oxirgi elementni olib tashlaydi
+removed     → olib tashlangan elementni saqlaydi
+top         → eng tepada turgan element
+length      → elementlar soni
+length - 1  → oxirgi index
+empty       → Stack bo‘shmi yoki yo‘qmi
+==          → qiymatni solishtiradi
+console.log → natijani Console'ga chiqaradi
+=========================================
+push → [10, 20, 30]
+                 ↓
+pop  → 30 chiqadi
+                 ↓
+Stack → [10, 20]
+                 ↓
+top → 20
+                 ↓
+empty → false
