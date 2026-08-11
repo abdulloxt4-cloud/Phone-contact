@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Max Min Stack</title>
+</head>
+<body>
+
+    <h2>Max & Min in Stack</h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [20, 5, 30, 10];
+
+let max = Math.max(...stack);
+let min = Math.min(...stack);
+
+console.log("Stack:", stack);
+console.log("Maximum:", max);
+console.log("Minimum:", min);
+
+//FOR MY-SELF
+Stack: [20, 5, 30, 10]
+Maximum: 30
+Minimum: 5
+
