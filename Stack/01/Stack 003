@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Stack Ascending</title>
+</head>
+<body>
+
+    <h2>Sort Stack Ascending</h2>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+//JS
+let stack = [20, 5, 30, 10];
+
+console.log("Oldin:", stack);
+
+stack.sort((a, b) => a - b);
+
+console.log("Keyin:", stack);
+//FOR MY-SELF
+Oldin: [20, 5, 30, 10]
+Keyin: [5, 10, 20, 30]
+======================
+[20, 5, 30, 10]
+        ↓
+      sort()
+        ↓
+[5, 10, 20, 30]
