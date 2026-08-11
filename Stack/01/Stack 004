@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Stack</title>
+</head>
+<body>
+
+    <h2>Reverse Stack</h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+console.log("Oldin:", stack);
+
+stack.reverse();
+
+console.log("Keyin:", stack);
+
+//FOR MY-SELF
+TORI NARSANI TESKARI QILIB BERAR EKAN
+Oldin: [10, 20, 30, 40]
+Keyin: [40, 30, 20, 10]
+==========================
+Stack       → LIFO tartibida ishlaydigan ma'lumotlar
+reverse()   → elementlarni teskarisiga aylantiradi
+Oldin       → reverse qilishdan oldingi Stack
+Keyin       → reverse qilgandan keyingi Stack
+============================================
+sort()      → tartiblaydi
+reverse()   → teskarisiga aylantiradi
