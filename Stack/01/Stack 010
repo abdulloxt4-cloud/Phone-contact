@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top and Bottom</title>
+</head>
+<body>
+
+    <h2>Top & Bottom of Stack</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+let top = stack[stack.length - 1];
+let bottom = stack[0];
+
+console.log(top);
+console.log(bottom);
+
+document.getElementById("result").innerHTML =
+    top + "<br>" + bottom;
+
+//OZIM UCHUN
+top      → oxirgi element
+bottom   → birinchi element
+stack[0] → birinchi element
+length-1 → oxirgi index
