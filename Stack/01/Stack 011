@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotate Stack Left</title>
+</head>
+<body>
+
+    <h2>Rotate Stack Left</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+let first = stack.shift();
+
+stack.push(first);
+
+console.log(stack);
+
+document.getElementById("result").innerHTML = stack;
+//OZIM UCHUN
+rotate() → aylantirish tushunchasi
+left     → chapga
+shift()  → birinchi elementni olib tashlaydi
+push()   → oxiriga qo‘shadi
+first    → birinchi element
+=============================
+[10, 20, 30, 40]
+ ↓
+shift()
+ ↓
+10 chiqadi
+
+[20, 30, 40]
+ ↓
+push(10)
+ ↓
+[20, 30, 40, 10]
+
