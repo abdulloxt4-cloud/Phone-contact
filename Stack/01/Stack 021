@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linked List Stack</title>
+</head>
+<body>
+
+    <h2>Linked List Stack</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = {
+    top: null,
+    next: null
+};
+
+stack.top = 10;
+stack.next = 20;
+
+let removed = stack.top;
+stack.top = stack.next;
+
+let empty = stack.top == null;
+
+console.log(removed);
+console.log(stack.top);
+console.log(empty);
+
+document.getElementById("result").innerHTML =
+    removed + "<br>" +
+    stack.top + "<br>" +
+    empty;
+
+//KEY WORDS
+top  → yuqoridagi element
+next → keyingi element
+removed → olib tashlangan element
+empty → bo‘shmi?
+null → hech narsa yo‘q
+10 → 20
+↑
+Top
+10 chiqadi
+
+20
+↑
+Top
+==================
+10
+20
+false
