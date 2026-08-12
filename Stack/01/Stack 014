@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Element</title>
+</head>
+<body>
+
+    <h2>Remove Specific Element</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+let element = 20;
+
+let index = stack.indexOf(element);
+
+stack.splice(index, 1);
+
+console.log(stack);
+
+document.getElementById("result").innerHTML = stack;
+//OZIM UCHUN
+index → qaysi joydan
+1     → nechta element
+[10, 20, 30, 40]
+     ↓
+indexOf(20)
+     ↓
+index = 1
+     ↓
+splice(1, 1)
+     ↓
+[10, 30, 40]
