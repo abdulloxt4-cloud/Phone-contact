@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Compare Two Stacks</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack1 = [10, 20, 30];
+let stack2 = [10, 20, 30];
+
+let result = JSON.stringify(stack1) == JSON.stringify(stack2);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN 
+JSON.stringify() nima?
+
+Arrayni matn ko‘rinishiga aylantiradi.
+[10, 20, 30]
+      ↓
+"10,20,30"
+Compare        → solishtirish
+JSON.stringify → arrayni matnga aylantiradi
