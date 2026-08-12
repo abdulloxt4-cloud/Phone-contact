@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Duplicates</title>
+</head>
+<body>
+
+    <h2>Remove Duplicates from Stack</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 20, 30, 40, 40];
+
+let result = [];
+
+for (let element of stack) {
+    if (!result.includes(element)) {
+        result.push(element);
+    }
+}
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+Duplicate  → takrorlangan qiymat
+Remove     → olib tashlash
+result     → yangi natija arrayi
+includes() → borligini tekshiradi
+!          → teskarisi
+push()     → element qo‘shadi
+element    → hozir tekshirilayotgan qiymat
