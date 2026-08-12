@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Middle Element</title>
+</head>
+<body>
+
+    <h2>Middle Element</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40, 50];
+
+let middle = Math.floor(stack.length / 2);
+
+console.log(stack[middle]);
+
+document.getElementById("result").innerHTML = stack[middle];
+//OZIM UCHUN
+10  [20  30]  40
+      ↑   ↑
+    Middle
+middle     → o‘rta
+length     → elementlar soni
+Math.floor → pastga yaxlitlaydi
+index      → elementning joylashuvi
