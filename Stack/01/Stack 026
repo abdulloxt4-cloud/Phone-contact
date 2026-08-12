@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Check Subset Stack</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack1 = [10, 20];
+let stack2 = [10, 20, 30, 40];
+
+let result = stack1.every(element => stack2.includes(element));
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//KEY WORDS
+Subset    → kichik to‘plam
+every()   → hammasini tekshiradi
+includes()→ borligini tekshiradi
+true      → hammasi bor
+false     → kamida bittasi yo‘q
+
+Stack1
+[10, 20]
+   ↓
+Stack2 ichidan qidir
+   ↓
+10 → bor
+20 → bor
+   ↓
+true
+stack1 = [10, 20]
+
+stack2 = [10, 20, 30, 40]
+
+10 → stack2 ichida bor
+20 → stack2 ichida bor
+
+        ↓
+
+true
