@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Move Nth to Top</title>
+</head>
+<body>
+
+    <h2>Move Nth from Bottom to Top</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40, 50];
+
+let n = 3;
+
+let index = n - 1;
+
+let element = stack.splice(index, 1);
+
+stack.push(element[0]);
+
+console.log(stack);
+
+document.getElementById("result").innerHTML = stack;
+//OZIM UCHUN
+[10, 20, 30, 40, 50]
+ ↑   ↑   ↑
+ 1   2   3
