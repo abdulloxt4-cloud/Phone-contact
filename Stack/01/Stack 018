@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Move Nth to Top</title>
+</head>
+<body>
+
+    <h2>Move Nth from Top to Top</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack = [10, 20, 30, 40, 50];
+
+let n = 3;
+
+let index = stack.length - n;
+
+let element = stack.splice(index, 1);
+
+stack.push(element[0]);
+
+console.log(stack);
+
+document.getElementById("result").innerHTML = stack;
+//OZIM UCHUN
+[10, 20, 30, 40, 50]
+        ↓
+      30 ni top
+        ↓
+[10, 20, 40, 50]
+        ↓
+      30 ni push
+        ↓
+[10, 20, 40, 50, 30]
+Nth       → nechanchi
+Top       → eng oxirgi element
+length    → elementlar soni
+index     → elementning joyi
+splice()  → olib tashlaydi
+push()    → oxiriga qo‘shadi
