@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nth Element from Bottom</title>
+</head>
+<body>
+
+    <h2>Nth Element from Bottom</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack = [10, 20, 30, 40, 50];
+
+let n = 3;
+
+let element = stack[n - 1];
+
+console.log(element);
+
+document.getElementById("result").innerHTML = element;
+//OZIM UCHUN
+[10, 20, 30, 40, 50]
+ ↑
+Bottom
+Nth       → nechanchi
+Bottom    → birinchi element
+n         → nechanchi element kerakligi
+index     → element joylashuvi
+length    → elementlar soni
