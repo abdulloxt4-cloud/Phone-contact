@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Union of Two Stacks</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack1 = [10, 20, 30];
+let stack2 = [30, 40, 50];
+
+let stack = stack1.concat(stack2);
+
+let result = stack.filter((element, index) => stack.indexOf(element) == index);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+stack1 = [10, 20, 30]
+stack2 = [30, 40, 50]
+with concat ichiga qoshvoradi tipo 1,2,3 qilib
+[10, 20, 30, 30, 40, 50]
+Union      → birlashtirish
+concat()   → Stacklarni birlashtiradi
+filter()   → kerakli elementlarni ajratadi
+indexOf()  → birinchi indexni topadi
+Duplicate  → takrorlangan qiymat
