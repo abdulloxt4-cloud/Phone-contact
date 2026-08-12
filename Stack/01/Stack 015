@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swap Top Two</title>
+</head>
+<body>
+
+    <h2>Swap Top Two Elements</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+let first = stack.pop();
+let second = stack.pop();
+
+stack.push(first);
+stack.push(second);
+
+console.log(stack);
+
+document.getElementById("result").innerHTML = stack;
+//OZIM UCHUN
+[10, 20, 30, 40]
+          ↓   ↓
+         30  40
+          ↓   ↓
+         40  30
+          ↓
+[10, 20, 40, 30]
+Swap    → joyini almashtirish
+Top     → eng yuqoridagi element
+pop()   → oxirgi elementni oladi
+push()  → oxiriga qo‘shadi
+first   → birinchi olingan element
+second  → ikkinchi olingan element
