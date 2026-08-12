@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Stack from Array</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let array = [10, 20, 30];
+
+let stack = [];
+
+for (let element of array) {
+    stack.push(element);
+}
+
+console.log(stack);
+
+document.getElementById("result").innerHTML = stack;
+//OZIM UCHUN
+Array
+[10, 20, 30]
+      ↓
+har birini ol
+      ↓
+push()
+      ↓
+Stack
+[10, 20, 30]
+
+array = [10, 20, 30]
+
+stack = []
+10 → push → [10]
+20 → push → [10, 20]
+30 → push → [10, 20, 30]
+
+Array     → ro‘yxat
+Stack     → LIFO ma'lumotlar
+for...of  → har bir elementni oladi
+element   → hozir olinayotgan qiymat
+push()    → Stackga qo‘shadi
