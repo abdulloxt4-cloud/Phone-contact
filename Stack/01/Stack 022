@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Stack to Array</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack = [10, 20, 30];
+
+let array = [...stack];
+
+console.log(array);
+
+document.getElementById("result").innerHTML = array;
+//KEY WORDS
+stack
+  ↓
+[...stack]
+  ↓
+array
+  ↓
+[10, 20, 30]
+... → Stackdagi elementlarni olib beradi.
+=====================================
+Stack → ma'lumotlar to‘plami
+Array → ro‘yxat
+...   → elementlarni yoyadi
+array → yangi array
