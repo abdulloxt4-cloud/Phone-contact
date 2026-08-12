@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotate Stack Right</title>
+</head>
+<body>
+
+    <h2>Rotate Stack Right</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+let last = stack.pop();
+
+stack.unshift(last);
+
+console.log(stack);
+
+document.getElementById("result").innerHTML = stack;
+
+//OZIM UCHUN
+11-daka xuddi ushani ong tarafga qilish mantiq bir xil
+rotate     → aylantirish
+right      → o‘ngga
+pop()      → oxiridan oladi
+unshift()  → boshiga qo‘shadi
+last       → oxirgi element
