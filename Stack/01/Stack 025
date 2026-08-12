@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Copy Stack</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+  //JS
+  let stack = [10, 20, 30];
+
+let copy = [...stack];
+
+console.log(copy);
+
+document.getElementById("result").innerHTML = copy;
+//KEY WORDS
+Copy     → nusxa
+...      → elementlarni yoyadi
+stack    → original Stack
+copy     → nusxa Stack
+stack → [10, 20, 30]
+copy  → [10, 20, 30]
+stack
+[10, 20, 30]
+     ↓
+[...stack]
+     ↓
+copy
+[10, 20, 30]
