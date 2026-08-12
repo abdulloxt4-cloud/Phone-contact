@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Common Elements</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack1 = [10, 20, 30, 40];
+let stack2 = [30, 40, 50, 60];
+
+let result = stack1.filter(element => stack2.includes(element));
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//KEY WORDS
+stack1 = [10, 20, 30, 40]
+
+10 → stack2da yo‘q → olmaymiz
+20 → stack2da yo‘q → olmaymiz
+30 → stack2da bor → olamiz
+40 → stack2da bor → olamiz
+
+↓
+
+[30, 40]
+Common     → umumiy
+filter()   → keraklilarni ajratadi
+includes() → borligini tekshiradi
+result     → natija
