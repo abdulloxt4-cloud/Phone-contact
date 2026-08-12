@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Element in Stack 8</title>
+</head>
+<body>
+
+    <h2>Check Element in Stack</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let stack = [10, 20, 30, 40];
+
+let element = 20;
+
+let result = stack.includes(element);
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//OZIM UCHUN
+[10, 20, 30, 40]
+        ↓
+      20 bormi?
+        ↓
+      true
+element     → tekshirilayotgan qiymat
+includes()  → bor yoki yo‘qligini tekshiradi
+result      → natija
+
