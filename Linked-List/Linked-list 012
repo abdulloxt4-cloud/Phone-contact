@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+let list = [10, 20, 30];
+
+let size = list.length;
+
+console.log(size);
+
+document.getElementById("result").innerHTML = size;
+//SELF
+[10, 20, 30]
+3
+Size → o‘lcham
+length → elementlar soni
+list → Linked List
