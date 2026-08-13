@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+list.unshift(5);
+
+console.log(list);
+document.getElementById("result").innerHTML = list;
+//SELF
+[10, 20, 30]
+      ↓
+[5, 10, 20, 30]
+Beginning → bosh
+Insert → qo‘shish
+unshift() → boshiga qo‘shadi
