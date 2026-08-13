@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+let search = 20;
+
+let index = list.indexOf(search);
+
+console.log(index);
+document.getElementById("result").innerHTML = index;
+//SELF
+10 → 20 → 30
+10 → 20 → 30
+ ↓    ↓    ↓
+ 0    1    2
+indexOf() → elementning indexini topadi
+index → joylashuv
+search → qidirilayotgan element
+-1 → topilmadi
