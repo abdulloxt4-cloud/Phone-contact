@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+list.splice(2, 0, 25);
+
+console.log(list);
+document.getElementById("result").innerHTML = list;
+//SELF
+===========================
+2 → 2-index joyga bor
+0 → hech narsani o‘chirma
+25 → yangi qiymatni qo‘sh
+==========================
+[10, 20, 30]
+       ↓
+[10, 20, 25, 30]
+===========================
+Insert  → qo‘shish
+Position → joy
+splice() → qo‘shish/o‘chirish
+0       → hech narsa o‘chirma
+============================
