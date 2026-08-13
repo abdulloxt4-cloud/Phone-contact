@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+let reverse = list.reverse();
+
+console.log(reverse);
+document.getElementById("result").innerHTML = reverse;
+//SELF
+[10, 20, 30]
+      ↓
+[30, 20, 10]
+Reverse → teskari
+reverse() → teskari tartibga o‘tkazadi
