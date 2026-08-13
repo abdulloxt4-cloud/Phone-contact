@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+let count = list.length;
+
+console.log(count);
+document.getElementById("result").innerHTML = count;
+//SELF
+[10, 20, 30]
+     ↓
+length
+     ↓
+3
+DLL → Doubly Linked List
+count → sanash
+length → elementlar soni
