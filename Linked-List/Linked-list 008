@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let stack = [10, 20, 30, 20];
+let search = 20;
+
+let index = stack.indexOf(search);
+
+console.log(index);
+
+document.getElementById("result").innerHTML = index;
+//SELF
+[10, 20, 30, 20]
+     ↑
+   1-index
+indexOf() → birinchi indexni topadi
+search    → qidirilayotgan qiymat
+index     → joylashuv
+-1        → topilmadi
