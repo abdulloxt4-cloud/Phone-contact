@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+let str = list.join(" ");
+
+console.log(str);
+document.getElementById("result").innerHTML = str;
+//SELF
+[10, 20, 30]
+     ↓
+join(" ")
+     ↓
+"10 20 30"
+join() → arrayni Stringga birlashtiradi
+String → matn
+" " → orasiga bo‘sh joy qo‘yadi
+10 20 30
