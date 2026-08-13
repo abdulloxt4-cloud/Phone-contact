@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+list[1] = 50;
+
+console.log(list);
+document.getElementById("result").innerHTML = list;
+//SELF
+[10, 20, 30]
+     ↓
+  index 1
+     ↓
+[10, 50, 30]
+Update → o‘zgartirish
+Index  → joylashuv
+Value  → qiymat
