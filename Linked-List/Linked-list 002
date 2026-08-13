@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Reverse Linked List</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let node1 = { value: 10, next: null };
+let node2 = { value: 20, next: null };
+let node3 = { value: 30, next: null };
+
+node1.next = node2;
+node2.next = node3;
+
+let result = node3.value + " → " +
+             node2.value + " → " +
+             node1.value;
+
+console.log(result);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+Linked List o‘zi:
+10 → 20 → 30
+
+Ekranga:
+30 → 20 → 10
+===========================
+node1       node2       node3
+  ↓           ↓           ↓
+10     →     20     →     30
+============================
+SLL       → Singly Linked List
+n         → nechta Node
+Node      → bitta element
+next      → keyingi Node
+reverse   → teskari
+value     → qiymat
+display   → ekranga chiqarish
