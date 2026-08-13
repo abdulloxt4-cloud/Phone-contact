@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [];
+
+let result = list.length == 0;
+
+console.log(result);
+document.getElementById("result").innerHTML = result;
+//SELF
+list = []
+   ↓
+length = 0
+   ↓
+true
+empty  → bo‘sh
+length → elementlar soni
+true   → bo‘sh
+false  → bo‘sh emas
