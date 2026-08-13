@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Singly Linked List</h2>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let node1 = { value: 10, next: null };
+let node2 = { value: 20, next: null };
+let node3 = { value: 30, next: null };
+
+node1.next = node2;
+node2.next = node3;
+
+console.log(node1.value);
+console.log(node1.next.value);
+console.log(node1.next.next.value);
+
+document.getElementById("result").innerHTML =
+    node1.value + " → " +
+    node1.next.value + " → " +
+    node1.next.next.value;
+//FOR MY-SELF
+Singly Linked List → bir tomonlama bog‘langan ro‘yxat
+Node               → bitta element
+value              → qiymat
+next               → keyingi Node
+null               → hech narsa yo‘q
+node1               → birinchi Node
+node2               → ikkinchi Node
+node3               → uchinchi Node
+.next               → keyingi Nodega o‘tadi
+.value              → Node ichidagi qiymatni oladi
+document            → HTML sahifani boshqaradi
+getElementById()    → HTML elementini topadi
+innerHTML           → HTML ichiga natija chiqaradi
