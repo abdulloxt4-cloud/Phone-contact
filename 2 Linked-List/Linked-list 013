@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+let result = list.includes(20);
+
+console.log(result);
+document.getElementById("result").innerHTML = result;
+//SELF
+includes() → borligini tekshiradi
+true       → bor
+false      → yo‘q
+present    → mavjud / bor
