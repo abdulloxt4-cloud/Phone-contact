@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+list.push(40);
+
+console.log(list);
+document.getElementById("result").innerHTML = list;
+//SELF
+[10, 20, 30]
+      ↓
+[10, 20, 30, 40]
+End → oxir
+Insert → qo‘shish
+push() → oxiriga qo‘shadi
