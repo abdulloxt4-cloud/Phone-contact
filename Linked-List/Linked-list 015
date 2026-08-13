@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let node1 = { value: 10, next: null };
+let node2 = { value: 20, next: null };
+let node3 = { value: 30, next: null };
+
+node1.next = node2;
+node2.next = node3;
+
+let arr = [];
+let current = node1;
+
+while (current) {
+    arr.push(current.value);
+    current = current.next;
+}
+
+console.log(arr);
+document.getElementById("result").innerHTML = arr;
+//SELF
+10 → Arrayga qo‘sh
+20 → Arrayga qo‘sh
+30 → Arrayga qo‘sh
+Convert → aylantirish
+Array → massiv
+push() → Arrayga qo‘shish
+current → hozirgi Node
+next → keyingi Node
