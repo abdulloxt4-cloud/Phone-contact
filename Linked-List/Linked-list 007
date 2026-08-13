@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let node1 = { value: 10, next: null };
+let node2 = { value: 20, next: null };
+let node3 = { value: 30, next: null };
+
+node1.next = node2;
+node2.next = node3;
+
+let node = node1.next;
+
+console.log(node.value);
+
+document.getElementById("result").innerHTML = node.value;
+//SELF
+Get     → olish
+Node    → element
+value   → qiymat
+next    → keyingi Node
+node1
+ ↓ next
+node2
+ ↓ value
+20
