@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let head = null;
+
+let empty = head == null;
+
+console.log(empty);
+
+document.getElementById("result").innerHTML = empty;
+//SELF
+head = null
+   ↓
+bo‘sh
+   ↓
+true
+Empty → bo‘sh
+head  → birinchi Node
+null  → hech qanday Node yo‘q
+true  → bo‘sh
+false → bo‘sh emas
