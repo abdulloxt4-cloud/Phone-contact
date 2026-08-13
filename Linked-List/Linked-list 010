@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+//JS
+
+let head = { value: 10, next: null };
+
+head = null;
+
+console.log(head);
+
+document.getElementById("result").innerHTML = head;
+//SELF
+head → null
+Empty → bo‘shatish
+head  → birinchi Node
+null  → hech qanday Node yo‘q
