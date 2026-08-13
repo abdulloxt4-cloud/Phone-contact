@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let node1 = { value: 10, prev: null, next: null };
+let node2 = { value: 20, prev: node1, next: null };
+let node3 = { value: 30, prev: node2, next: null };
+
+node1.next = node2;
+node2.next = node3;
+
+console.log(node1);
+
+document.getElementById("result").innerHTML = "10 ⇄ 20 ⇄ 30";
+//OZIM UCHUN
+Doubly → ikki tomonlama
+Linked List → bog‘langan ro‘yxat
+DLL → Doubly Linked List
+prev → oldingi Node
+next → keyingi Node
+value → qiymat
+
+Singly Linked List 10 → 20 → 30
+Doubly Linked List 10 ⇄ 20 ⇄ 30 
