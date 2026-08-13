@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+let search = 20;
+
+let result = list.includes(search);
+
+console.log(result);
+document.getElementById("result").innerHTML = result;
+//SELF
+includes() → borligini tekshiradi
+search     → qidirilayotgan element
+true       → bor
+false      → yo‘q
