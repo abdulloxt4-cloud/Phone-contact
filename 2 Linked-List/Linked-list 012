@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="result"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let list = [10, 20, 30];
+
+let index = list.indexOf(20);
+
+console.log(index);
+document.getElementById("result").innerHTML = index;
+//SELF
+indexOf() → indexni topadi
+index → joylashuv
+-1 → topilmadi
