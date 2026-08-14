@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function diff_to_GMT(date) {
+    let min = -date.getTimezoneOffset();
+    let hour = min / 60;
+
+    return (hour >= 0 ? "+" : "-") + Math.abs(hour).toFixed(3);
+}
+
+let dt = new Date();
+
+console.log(diff_to_GMT(dt));
+
+//SELF
+getTimezoneOffset() → GMT bilan farqni minutda beradi
+Math.abs()           → musbat qiladi
+  getTimezoneOffset() → farqni minutda
+/ 60                → soatga
+toFixed(3)          → 3 ta kasr raqami
