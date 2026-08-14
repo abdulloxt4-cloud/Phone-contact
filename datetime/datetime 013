@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minutes to Hours</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function timeConvert(minutes) {
+    let hours = Math.floor(minutes / 60);
+    let mins = minutes % 60;
+
+    return minutes + " minutes = " + hours + " hour(s) and " + mins + " minute(s).";
+}
+
+console.log(timeConvert(200));
+//SELF
+200 daqiqa
+   ↓
+3 soat + 20 daqiqa
+  Math.floor(minutes / 60) → soat
+minutes % 60             → qolgan daqiqa
