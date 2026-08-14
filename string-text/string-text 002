@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function is_Blank(text) {
+    return text.length == 0;
+}
+
+console.log(is_Blank(""));
+console.log(is_Blank("abc"));
+//SELF
+""      → uzunligi 0 → true
+"abc"   → uzunligi 3 → false
+length → uzunlikni topadi
+== 0   → bo‘shligini tekshiradi
