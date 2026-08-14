@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function truncate_string(text, count) {
+    return text.slice(0, count);
+}
+
+console.log(truncate_string("Robin Singh", 4));
+//SELF
+Robin Singh
+↑↑↑↑
+Robi
+slice(0, count) → boshidan count ta belgi oladi
