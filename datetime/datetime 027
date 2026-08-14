@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function short_months(date) {
+    let months = [
+        "Jan", "Feb", "Mar", "Apr",
+        "May", "Jun", "Jul", "Aug",
+        "Sep", "Oct", "Nov", "Dec"
+    ];
+
+    return months[date.getMonth()];
+}
+
+let dt = new Date(2015, 10, 1);
+
+console.log(short_months(dt));
+//SELF
+getMonth() → oy raqami
+months[]   → oy nomi
