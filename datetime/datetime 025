@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function full_month(date) {
+    let months = [
+        "January", "February", "March",
+        "April", "May", "June",
+        "July", "August", "September",
+        "October", "November", "December"
+    ];
+
+    return months[date.getMonth()];
+}
+
+let dt = new Date(2015, 10, 1);
+
+console.log(full_month(dt));
+//SELF
+getMonth() → oy raqami
+months[...] → oy nomi
