@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function minutes_with_leading_zeros(date) {
+    return String(date.getMinutes()).padStart(2, "0");
+}
+
+let dt = new Date(1989, 10, 1);
+
+console.log(minutes_with_leading_zeros(dt));
+//SELF
+getMinutes() → minut
+padStart()   → 2 xonali qiladi
+  0  → "00"
+5  → "05"
+9  → "09"
+15 → "15"
+59 → "59"
