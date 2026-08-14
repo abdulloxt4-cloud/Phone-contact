@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Minutes</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function add_minutes(date, minutes) {
+    date.setMinutes(date.getMinutes() + minutes);
+    return date;
+}
+
+console.log(add_minutes(new Date(2014, 10, 2), 30).toString());
+//SELF
+getMinutes() → daqiqani olish
+setMinutes() → daqiqani o‘zgartirish
