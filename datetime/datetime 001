@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Date Object</title>
+</head>
+<body>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function is_date(input) {
+    return input instanceof Date;
+}
+
+console.log(is_date("October 13, 2014 11:13:00"));
+console.log(is_date(new Date(86400000)));
+console.log(is_date(new Date(99, 5, 24, 11, 33, 30, 0)));
+console.log(is_date([1, 2, 4, 0]));
+//SELF
+Date bo‘lsa     → true
+Date bo‘lmasa   → false
+  instanceof → object turi nima ekanini tekshiradi
+
+input instanceof Date
+        ↓
+   Date objectmi?
