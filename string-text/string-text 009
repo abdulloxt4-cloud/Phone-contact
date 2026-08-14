@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function capitalize_Words(text) {
+    return text.split(" ").map(word =>
+        word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(" ");
+}
+
+console.log(capitalize_Words("js string exercises"));
+
+//SELF
+js        → Js
+string    → String
+exercises → Exercises
+split()       → so‘zlarga ajratadi
+map()         → har bir so‘z ustida ishlaydi
+charAt()      → birinchi harfni oladi
+toUpperCase() → katta harf qiladi
+slice()       → qolgan qismini oladi
+join()        → so‘zlarni qayta birlashtiradi
