@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function string_parameterize(text) {
+    return text.toLowerCase().replace(/ /g, "-").replace(".", "");
+}
+
+console.log(string_parameterize("Robin Singh from USA."));
+
+//SELF
+toLowerCase() → kichik harf qiladi
+replace()     → belgilarni almashtiradi
+hammasini kichik harf qilamiz
+bo‘sh joylarni - qilamiz
+. kabi belgilarni olib tashlaymiz
