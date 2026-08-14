@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function get_timezone(date) {
+    return date.toString().match(/\((.*?)\)/)[1];
+}
+
+let dt = new Date();
+
+console.log(get_timezone(dt));
+//SELF
+toString() → Date ni text qiladi
+match()    → kerakli qismini topadi
+[1]        → qavs ichidagi timezone nomini oladi
