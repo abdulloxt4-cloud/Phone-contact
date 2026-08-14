@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+  function day_of_the_month(date) {
+    return String(date.getDate()).padStart(2, "0");
+}
+
+let d = new Date(2015, 10, 1);
+
+console.log(day_of_the_month(d));
+//SELF
+getDate()  → kunni oladi
+padStart() → yetishmagan joyiga 0 qo‘shadi
+  1  → 01
+9  → 09
+10 → 10
+25 → 25
