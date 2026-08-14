@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function internet_time(date) {
+    let seconds = date.getHours() * 3600;
+    seconds += date.getMinutes() * 60;
+    seconds += date.getSeconds();
+
+    return Math.floor(seconds / 86.4);
+}
+
+let dt = new Date(1989, 10, 1);
+
+console.log(internet_time(dt));
+//SELF
+getHours()   → soat
+getMinutes() → minut
+getSeconds() → sekund
+Math.floor() → pastga yaxlitlaydi
+  1 kun = 1000 beat
+1 beat = 86.4 sekund
