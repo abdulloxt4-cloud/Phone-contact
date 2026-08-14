@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quarter of Year</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function quarter_of_the_year(date) {
+    return Math.floor(date.getMonth() / 3) + 1;
+}
+
+console.log(quarter_of_the_year(new Date(2015, 1, 21)));
+console.log(quarter_of_the_year(new Date(2015, 10, 18)));
+//SELF
+October → getMonth() = 9
+  Math.floor(9 / 3) + 1
+= 3 + 1
+= 4
+  1-quarter → January, February, March
+2-quarter → April, May, June
+3-quarter → July, August, September
+4-quarter → October, November, December
