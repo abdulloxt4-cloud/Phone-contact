@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function daylights_savings(date) {
+    let jan = new Date(date.getFullYear(), 0, 1);
+
+    return date.getTimezoneOffset() < jan.getTimezoneOffset();
+}
+
+let dt = new Date();
+
+console.log(daylights_savings(dt));
+//SELF
+true → Daylight Saving Time
+  false → Daylight Saving Time emas
+  getTimezoneOffset() → timezone farqi
+true                → DST mavjud
+false               → DST mavjud emas
