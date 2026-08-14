@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function capitalize(text) {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+console.log(capitalize("js string exercises"));
+
+//SELF
+charAt()       → belgini oladi
+toUpperCase()  → katta harf qiladi
+slice()        → qolgan qismini oladi
