@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function am_pm(date) {
+    let hour = date.getHours();
+
+    if (hour < 12) {
+        return "am";
+    }
+
+    return "pm";
+}
+
+let dt = new Date(2015, 10, 1, 10);
+
+console.log(am_pm(dt));
+//SELF
+getHours() → soat
+< 12       → am
+>= 12      → pm
