@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function is_string(input) {
+    return typeof input == "string";
+}
+
+console.log(is_string("w3resource"));
+console.log(is_string([1, 2, 4, 0]));
+//SELF
+typeof → turini tekshiradi
+string → text/matn
+true → String
+false → String emas
