@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function abbrev_name(name) {
+    let a = name.split(" ");
+    return a[0] + " " + a[1][0] + ".";
+}
+
+console.log(abbrev_name("Robin Singh"));
+
+//SELF
+split() → so‘zlarga ajratadi
+slice() → kerakli qismini oladi
+split(" ") → so‘zlarga ajratadi
+[0]        → birinchi so‘z
+[1][0]     → ikkinchi so‘zning birinchi harfi
