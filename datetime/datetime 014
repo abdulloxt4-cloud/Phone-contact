@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Days in Year</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function days_of_a_year(year) {
+    return new Date(year, 1, 29).getDate() === 29 ? 366 : 365;
+}
+
+console.log(days_of_a_year(2015));
+console.log(days_of_a_year(2016));
+//SELF
+29-fevral bor-yo‘qligini tekshiradi.
+
+Agar 29-fevral bo‘lsa:
+
+366 kun
+
+bo‘lmasa:
+
+365 kun
+
+? : esa if/else'ning qisqa ko‘rinishi:
+
+shart ? true_natiija : false_natija
