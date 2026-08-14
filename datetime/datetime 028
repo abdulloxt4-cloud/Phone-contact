@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function full_year(date) {
+    return date.getFullYear();
+}
+
+let dt = new Date(2015, 10, 1);
+
+console.log(full_year(dt));
+//SELF
+getDate()      → kun
+getMonth()     → oy (0–11)
+getFullYear()  → yil
