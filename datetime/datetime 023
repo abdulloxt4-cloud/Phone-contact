@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function english_ordinal_suffix(date) {
+    let day = date.getDate();
+
+    if (day == 1) return "1st";
+    if (day == 2) return "2nd";
+    if (day == 3) return "3rd";
+
+    return day + "th";
+}
+
+let dt = new Date(2015, 10, 1);
+
+console.log(english_ordinal_suffix(dt));
+//SELF
+1 → st
+2 → nd
+3 → rd
+qolgan → th
+  1st
+2nd
+3rd
+4th
+5th
