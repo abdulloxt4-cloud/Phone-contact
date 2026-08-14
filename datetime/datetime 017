@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unix to Time</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function unix_to_time(timestamp) {
+    return new Date(timestamp * 1000);
+}
+
+console.log(unix_to_time(0));
+
+//SELF
+Date()       → sana yaratadi
+getTime()    → Unix timestampga o‘xshash millisekund beradi
+  Unix timestamp — 1970-yil 1-yanvardan boshlab vaqtni sekundlarda hisoblaydigan raqam.
