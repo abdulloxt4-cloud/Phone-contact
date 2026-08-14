@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function numeric_month(date) {
+    return String(date.getMonth() + 1).padStart(2, "0");
+}
+
+let dt = new Date(2015, 10, 1);
+
+console.log(numeric_month(dt));
+//SELF
+1  → 01
+5  → 05
+9  → 09
+11 → 11
+  getMonth() + 1 → haqiqiy oy raqami
+padStart()     → 2 xonali qiladi
