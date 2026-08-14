@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Min Date</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function min_date(dates) {
+    let min = new Date(dates[0]);
+
+    for (let date of dates) {
+        if (new Date(date) < min) {
+            min = new Date(date);
+        }
+    }
+
+    return min;
+}
+
+console.log(min_date([
+    '2015/02/01',
+    '2015/02/02',
+    '2015/01/03'
+]));
+//SELF
+2015/02/01
+      ↓
+2015/02/02  → katta, o‘zgarmaydi
+      ↓
+2015/01/03  → kichik, min shu bo‘ladi
+  max → >
+min → <
