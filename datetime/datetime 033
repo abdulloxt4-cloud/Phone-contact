@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function hours_with_zeroes(date) {
+    let hour = date.getHours();
+
+    if (hour == 0) {
+        hour = 12;
+    }
+
+    if (hour > 12) {
+        hour = hour - 12;
+    }
+
+    return String(hour).padStart(2, "0");
+}
+
+let dt = new Date(1989, 10, 1);
+
+console.log(hours_with_zeroes(dt));
+
+//SELF
+getHours() → soatni oladi
+if         → tekshiradi
+padStart() → oldiga 0 qo‘shadi
+00 → 12
+01 → 01
+10 → 10
+13 → 01
+15 → 03
+23 → 11
