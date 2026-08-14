@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function short_Days(date) {
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[date.getDay()];
+}
+
+let dt = new Date(2015, 10, 1);
+
+console.log(short_Days(dt));
+
+//SELF
+Monday    → Mon
+Tuesday   → Tue
+Wednesday → Wed
+Thursday  → Thu
+Friday    → Fri
+Saturday  → Sat
+Sunday    → Sun
