@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function swapcase(text) {
+    return text.split("").map(x => {
+        if (x == x.toUpperCase()) {
+            return x.toLowerCase();
+        }
+
+        return x.toUpperCase();
+    }).join("");
+}
+
+console.log(swapcase("AaBbc"));
+
+//SELF
+split()        → harflarga ajratadi
+toUpperCase()  → katta qiladi
+toLowerCase()  → kichik qiladi
+join()         → qayta birlashtiradi
