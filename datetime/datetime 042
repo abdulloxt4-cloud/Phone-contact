@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function add_weeks(date, weeks) {
+    date.setDate(date.getDate() + weeks * 7);
+    return date;
+}
+
+let dt = new Date(2014, 10, 2);
+
+console.log(add_weeks(dt, 10).toString());
+
+//SELF
+getDate() → kunni OLADI
+setDate() → kunni O‘ZGARTIRADI
+1 hafta   → 7 kun
+10 hafta = 70 kun
+2014-11-02 + 70 kun = 2015-01-11
+  getDate()  → kunni oladi
+setDate()  → kunni o‘zgartiradi
