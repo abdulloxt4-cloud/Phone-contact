@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yesterday</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function yesterday(date) {
+    let d = new Date(date);
+
+    d.setDate(d.getDate() - 1);
+
+    return d;
+}
+
+console.log(yesterday('Nov 15, 2014'));
+console.log(yesterday('Nov 16, 2015'));
+console.log(yesterday('Nov 17, 2016'));
+//SELF
+d.setDate(...)
+  Nov 15
+   ↓
+- 1 kun
+   ↓
+Nov 14
+  getDate() → kunni oladi
+setDate() → kunni o‘zgartiradi
