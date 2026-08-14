@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function ISO8601_week_no(date) {
+    let start = new Date(date.getFullYear(), 0, 1);
+    let days = Math.floor((date - start) / (1000 * 60 * 60 * 24));
+
+    return Math.ceil((days + start.getDay() + 1) / 7);
+}
+
+let dt = new Date(2015, 10, 1);
+
+console.log(ISO8601_week_no(dt));
+//SELF
+1 hafta = 7 kun
+kunlar / 7 = hafta
+  3.2 → 4
+7.1 → 8
+  getDay()    → hafta kuni
+Math.floor() → pastga yaxlitlash
+Math.ceil()  → yuqoriga yaxlitlash
