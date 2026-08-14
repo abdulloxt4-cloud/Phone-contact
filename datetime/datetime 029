@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function sort_year(date) {
+    return String(date.getFullYear()).slice(-2);
+}
+
+let dt = new Date(1989, 10, 1);
+
+console.log(sort_year(dt));
+//SELF
+getFullYear() → yil
+String()      → text
+slice(-2)     → oxirgi 2 ta belgi
+  1979 → "79"
+2004 → "04"
+2015 → "15"
