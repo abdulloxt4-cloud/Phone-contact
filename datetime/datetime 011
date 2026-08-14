@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Max Date</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function max_date(dates) {
+    let max = new Date(dates[0]);
+
+    for (let date of dates) {
+        if (new Date(date) > max) {
+            max = new Date(date);
+        }
+    }
+
+    return max;
+}
+
+console.log(max_date([
+    '2015/02/01',
+    '2015/02/02',
+    '2015/01/03'
+]));
+//SELF
+2015/02/01
+      ↓
+2015/02/02  ← kattaroq
+      ↓
+2015/01/03  ← kichikroq
+  max → eng katta
+new Date() → sanaga aylantirish
+> → kattaroq sanani tekshirish
+for...of → arrayni bittalab aylanish
