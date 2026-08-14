@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function hours_without_zeroes(date) {
+    return date.getHours();
+}
+
+let dt = new Date(1989, 10, 1);
+
+console.log(hours_without_zeroes(dt));
+//SELF
+0 → 00:00
+1 → 01:00
+12 → 12:00
+15 → 15:00
+23 → 23:00
+  
