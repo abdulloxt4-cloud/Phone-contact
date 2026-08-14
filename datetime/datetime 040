@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function timezone_offset_in_seconds(date) {
+    return -date.getTimezoneOffset() * 60;
+}
+
+let dt = new Date();
+
+console.log(timezone_offset_in_seconds(dt));
+
+//SELF
+330 × 60 = 19800
+  -330 minut
+getTimezoneOffset() → farqni minutda beradi
+* 60                → minutni sekundga aylantiradi
+-                   → timezone yo‘nalishini to‘g‘rilaydi
