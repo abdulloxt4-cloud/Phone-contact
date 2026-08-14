@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Age</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+  //JS
+  function calculate_age(birth) {
+    let today = new Date();
+
+    return today.getFullYear() - birth.getFullYear();
+}
+
+console.log(calculate_age(new Date(1982, 11, 4)));
+console.log(calculate_age(new Date(1962, 1, 1)));
+
+//SELF
+today → bugungi sana
+birth → tug‘ilgan sana
+getFullYear() → yil
+age-- → 1 yosh kamaytirish
+new Date()      → sana yaratadi
+getFullYear()   → yilni oladi
+getMonth()      → oyni oladi
+getDate()       → kunni oladi
