@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function string_endsWith(text, word) {
+    if (word == "") {
+        return false;
+    } else {
+        return text.endsWith(word);
+    }
+}
+
+console.log(string_endsWith("JS PHP PYTHON", "PYTHON"));
+console.log(string_endsWith("JS PHP PYTHON", ""));
+//SELF
+endsWith() → oxirida bormi?
+startsWith() → boshida bormi?
