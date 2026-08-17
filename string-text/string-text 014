@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function insert(text, word, position) {
+    if (word == undefined) {
+        return text;
+    }
+
+    if (position == undefined) {
+        position = 0;
+    }
+
+    return text.slice(0, position) + word + text.slice(position);
+}
+
+console.log(insert("We are doing some exercises."));
+console.log(insert("We are doing some exercises.", "JavaScript "));
+console.log(insert("We are doing some exercises.", "JavaScript ", 18));
+//SELF
+We are doing some exercises.
+JavaScript We are doing some exercises.
+We are doing some JavaScript exercises.
+slice() → Stringni bo‘ladi
++       → Stringlarni birlashtiradi
