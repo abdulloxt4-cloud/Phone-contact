@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function case_insensitive_search(text, word) {
+    if (text.toLowerCase().includes(word.toLowerCase())) {
+        return "Matched";
+    } else {
+        return "Not Matched";
+    }
+}
+
+console.log(case_insensitive_search("JavaScript Exercises", "exercises"));
+console.log(case_insensitive_search("JavaScript Exercises", "Exercises"));
+console.log(case_insensitive_search("JavaScript Exercises", "Exercisess"));
+//SELF
+toLowerCase() → katta-kichik harfni bir xil qiladi
+includes()    → ichida bormi?
+"JavaScript Exercises" → "javascript exercises"
+"Exercises"            → "exercises"
