@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function Uncapitalize(text) {
+    return text.charAt(0).toLowerCase() + text.slice(1);
+}
+
+console.log(Uncapitalize("Js string exercises"));
+//SELF
+charAt(0)     → birinchi harf
+toLowerCase() → kichik qiladi
+slice(1)      → qolgan qism
