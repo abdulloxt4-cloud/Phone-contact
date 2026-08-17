@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function uncamelize(text, symbol) {
+    if (symbol == undefined) {
+        symbol = " ";
+    }
+
+    return text.replace(/[A-Z]/g, x => symbol + x.toLowerCase());
+}
+
+console.log(uncamelize("helloWorld"));
+console.log(uncamelize("helloWorld", "-"));
+console.log(uncamelize("helloWorld", "_"));
+//SELF
+replace() → kerakli joyni almashtiradi
+hello world
+hello-world
+hello_world
