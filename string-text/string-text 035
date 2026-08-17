@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function strip_html_tags(text) {
+    return text.replace(/<[^>]*>/g, "");
+}
+
+console.log(strip_html_tags("<p><strong><em>PHP Exercises</em></strong></p>"));
+//SELF
+<...>   → HTML tag
+replace → olib tashlaydi
+""      → o‘chiradi
