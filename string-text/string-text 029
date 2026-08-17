@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function search_word(text, word) {
+    let words = text.split(" ");
+    let count = 0;
+
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].replace(",", "") == word) {
+            count++;
+        }
+    }
+
+    return "'" + word + "' was found " + count + " times.";
+}
+
+console.log(search_word("The quick brown fox", "fox"));
+console.log(search_word("aa, bb, cc, dd, aa", "aa"));
+//SELF
+split()   → so‘zlarga bo‘ladi
+replace() → vergulni olib tashlaydi
+count++   → topilganini sanaydi
