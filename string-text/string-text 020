@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function formatted_string(length, num, side) {
+    if (side == "l") {
+        return String(num).padStart(length, "0");
+    } else {
+        return String(num).padEnd(length, "0");
+    }
+}
+
+console.log(formatted_string(4, 123, "l"));
+console.log(formatted_string(8, 123, ""));
+//SELF
+padStart() → chapdan qo‘shadi
+padEnd()   → o‘ngdan qo‘shadi
+length     → kerakli uzunlik
+"123" → chapdan 0 → "0123"
+"123" → o‘ngdan 0 → "12300000"
