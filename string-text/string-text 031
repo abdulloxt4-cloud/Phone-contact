@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function escape_html(text) {
+    return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/'/g, "&#39;")
+        .replace(/"/g, "&quot;");
+}
+
+console.log(escape_html("PHP & MySQL"));
+console.log(escape_html("3 > 2"));
+//SELF
+replace() → almashtiradi
+
+& → &amp;
+< → &lt;
+> → &gt;
+' → &#39;
+" → &quot;
