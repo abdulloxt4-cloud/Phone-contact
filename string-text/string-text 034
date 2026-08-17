@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function sentenceCase(text) {
+    let words = text.split(" ");
+
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase();
+    }
+
+    return words.join(" ");
+}
+
+console.log(sentenceCase("PHP exercises. python exercises."));
+//SELF
+split()       → so‘zlarga bo‘ladi
+charAt(0)     → birinchi harfni oladi
+toUpperCase() → katta qiladi
+toLowerCase() → kichik qiladi
+slice(1)      → 1-belgidan keyingi qismini oladi
+join(" ")     → String qilib qaytaradi
