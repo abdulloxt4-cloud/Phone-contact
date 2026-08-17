@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function truncate(text, count) {
+    return text.split(" ").slice(0, count).join(" ");
+}
+
+console.log(truncate("The quick brown fox jumps over the lazy dog", 4));
+
+//SELF
+split() → so‘zlarga bo‘ladi
+slice() → kerakli so‘zlarni oladi
+join()  → qayta String qiladi
