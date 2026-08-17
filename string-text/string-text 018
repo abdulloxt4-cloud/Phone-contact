@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function count(text, word, matchCase) {
+    if (matchCase == false) {
+        text = text.toLowerCase();
+        word = word.toLowerCase();
+    } else {
+        matchCase = true;
+    }
+
+    let count = 0;
+
+    for (let i = 0; i < text.length; i++) {
+        if (text.slice(i, i + word.length) == word) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(count("The quick brown fox jumps over the lazy dog", "the"));
+console.log(count("The quick brown fox jumps over the lazy dog", "fox", false));
+//SELF
+The → topildi → count++
+the → topildi → count++
+slice() → Stringdan qism oladi
+for     → String bo‘ylab yuradi
+count++ → topilganini sanaydi
