@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function reverse_binary(num) {
+    let binary = num.toString(2);
+
+    let reverse = binary.split("").reverse().join("");
+
+    return parseInt(reverse, 2);
+}
+
+console.log(reverse_binary(100));
+console.log(reverse_binary(1134));
+//SELF
+toString(2) → Decimal → Binary
+split("")   → belgilarni Array qiladi
+reverse()   → teskarisiga aylantiradi
+join("")    → yana String qiladi
+parseInt( , 2) → Binary → Decimal
+Decimal
+   ↓
+Binary
+   ↓
+Reverse
+   ↓
+Decimal
