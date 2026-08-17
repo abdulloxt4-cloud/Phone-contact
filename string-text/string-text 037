@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function compare_strings(text1, text2) {
+    return text1.toLowerCase() == text2.toLowerCase();
+}
+
+console.log(compare_strings("abcd", "AbcD"));
+console.log(compare_strings("ABCD", "Abce"));
+//SELF
+toLowerCase() → katta-kichik farqini yo‘qotadi
+==             → ikkisini solishtiradi
