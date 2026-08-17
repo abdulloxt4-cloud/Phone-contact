@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function subStrAfterChars(text, char, type) {
+    let pos = text.indexOf(char);
+
+    if (type == "a") {
+        return text.slice(0, pos);
+    } else {
+        return text.slice(pos + 1);
+    }
+}
+
+console.log(subStrAfterChars("w3resource: JavaScript Exercises", ":", "a"));
+console.log(subStrAfterChars("w3resource: JavaScript Exercises", "E", "b"));
+//JS
+indexOf() → joylashuvni topadi
+slice()   → qismni oladi
+w3resource: JavaScript Exercises
+          ↑
+        index
