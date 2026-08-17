@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function string_chop(text, size) {
+    if (size == undefined) {
+        return [text];
+    }
+
+    let result = [];
+
+    for (let i = 0; i < text.length; i += size) {
+        result.push(text.slice(i, i + size));
+    }
+
+    return result;
+}
+
+console.log(string_chop("w3resource"));
+console.log(string_chop("w3resource", 2));
+console.log(string_chop("w3resource", 3));
+//SELF
+slice() → bo‘lak oladi
+push()  → Arrayga qo‘shadi
+for     → qayta-qayta ishlatadi
+["w3resource"]
+["w3", "re", "so", "ur", "ce"]
+["w3r", "eso", "urc", "e"]
