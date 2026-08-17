@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function repeat_string(text, count) {
+    if (count == undefined) {
+        return "Error in string or count";
+    } else {
+        return text.repeat(count);
+    }
+}
+
+console.log(repeat_string("a", 4));
+console.log(repeat_string("a"));
+//SELF
+repeat() → Stringni takrorlaydi
+undefined → qiymat berilmagan
