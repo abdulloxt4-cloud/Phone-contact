@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function zeroFill(num, length, sign) {
+    let number = String(num);
+
+    if (sign == "-") {
+        number = "+" + number;
+    }
+
+    return number.padStart(length, "0");
+}
+
+console.log(zeroFill(120, 5, "-"));
+console.log(zeroFill(29, 4));
+//SELF
+String()   → sonni String qiladi
+padStart() → chapdan qo‘shadi
+"29"
+ ↓
+"0029"
+"120"
+ ↓
+"+120"
+ ↓
+"+00120"
