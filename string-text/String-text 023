@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function strip(text) {
+    return text.trim();
+}
+
+console.log(strip("w3resource "));
+console.log(strip(" w3resource"));
+console.log(strip(" w3resource "));
+//SELF
+trim() → boshidagi + oxiridagi bo‘sh joylarni o‘chiradi
+" w3resource "
+ ↑           ↑
+bo‘sh joylar
