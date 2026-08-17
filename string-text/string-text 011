@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function camelize(text) {
+    let a = text.split(" ");
+
+    return a[0] + a[1].charAt(0).toUpperCase() + a[1].slice(1);
+}
+
+console.log(camelize("JavaScript Exercises"));
+console.log(camelize("JavaScript exercises"));
+//SELF
+split()       → so‘zlarga bo‘ladi
+toUpperCase() → katta harf qiladi
+slice()       → qolgan qismini oladi
+join()        → birlashtiradi
+"JavaScript Exercises"
+          ↓
+      split(" ")
+          ↓
+["JavaScript", "Exercises"]
+          ↓
+birinchi so‘z + ikkinchi so‘zning katta harfi + qolgan qismi
+          ↓
+"JavaScriptExercises"
