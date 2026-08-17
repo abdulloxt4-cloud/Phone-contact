@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function remove_non_ascii(text) {
+    return text.replace(/[^ -~]/g, "");
+}
+
+console.log(remove_non_ascii("???????PHP-MySQL??????"));
+//SELF
+replace() → topilgan belgilarni almashtiradi
+""        → hech narsa, ya'ni o‘chiradi
+???????PHP-MySQL??????
+       ↓
+   PHP-MySQL
