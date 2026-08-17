@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function alphabetize_string(text) {
+    return text.replace(/ /g, "").split("").sort().join("");
+}
+
+console.log(alphabetize_string("United States"));
+
+//SELF
+replace() → bo‘sh joyni olib tashlaydi
+split()   → harflarga bo‘ladi
+sort()    → tartiblaydi
+join()    → qayta String qiladi
