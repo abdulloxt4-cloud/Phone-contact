@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function humanize_format(num) {
+    if (num == undefined) {
+        num = 1;
+    }
+
+    let last = num % 10;
+
+    if (last == 1) {
+        return num + "st";
+    } else if (last == 2) {
+        return num + "nd";
+    } else if (last == 3) {
+        return num + "rd";
+    } else {
+        return num + "th";
+    }
+}
+
+console.log(humanize_format());
+console.log(humanize_format(1));
+console.log(humanize_format(8));
+console.log(humanize_format(301));
+console.log(humanize_format(402));
+//SELF
+1st
+1st
+8th
+301st
+402nd
+last = num % 10
