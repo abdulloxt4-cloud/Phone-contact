@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function text_truncate(text, length, end) {
+    if (length == undefined) {
+        return text;
+    } else if (end == undefined) {
+        end = "...";
+    }
+
+    if (text.length > length) {
+        return text.slice(0, length - end.length) + end;
+    } else {
+        return text;
+    }
+}
+
+console.log(text_truncate("We are doing JS string exercises."));
+console.log(text_truncate("We are doing JS string exercises.", 19));
+console.log(text_truncate("We are doing JS string exercises.", 15, "!!"));
+//SELF
+We are doing JS string exercises.
+We are doing JS ...
+We are doing !!
+length → uzunligini topadi
+slice() → Stringdan bir qismini oladi
