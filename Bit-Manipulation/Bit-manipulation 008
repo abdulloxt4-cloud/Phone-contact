@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function binary_log(num) {
+
+    let count = 0;
+
+    while (num > 1) {
+        num = num >> 1;
+        count++;
+    }
+
+    return count;
+}
+
+console.log(binary_log(1));
+console.log(binary_log(2));
+console.log(binary_log(4));
+console.log(binary_log(32));
+
+//SELF
+2⁰ = 1  → log₂(1) = 0
+2¹ = 2  → log₂(2) = 1
+2² = 4  → log₂(4) = 2
+2⁵ = 32 → log₂(32) = 5
+32 → 100000
+          ↑
+       5 ta 0
+log₂(32) = 5
