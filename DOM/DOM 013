@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Resize</title>
+</head>
+<body>
+
+    <h2 id="result"></h2>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let result = document.getElementById("result");
+
+window.onresize = function () {
+    result.innerHTML = "Width: " + window.innerWidth +
+                       "<br>Height: " + window.innerHeight;
+};
+//SELF
+window → brauzer oynasi
+onresize → oyna o‘lchami o‘zgarganda
+innerWidth → oyna eni
+innerHeight → oyna bo‘yi
+getElementById() → ID orqali elementni topadi
+innerHTML → HTML ichiga ma'lumot chiqaradi
+<br> → yangi qator
