@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function count_zero_bits(num) {
+
+    if (!Number.isInteger(num)) {
+        return "Parameter value is not an Integer!";
+    }
+
+    let binary = num.toString(2);
+    let count = 0;
+
+    for (let bit of binary) {
+        if (bit == "0") {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(count_zero_bits(45));
+console.log(count_zero_bits(17));
+console.log(count_zero_bits(15.5));
+//SELF
+45
+↓
+101101
+↓
+0 larni sanaymiz
+↓
+2
