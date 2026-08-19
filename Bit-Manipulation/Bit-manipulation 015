@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function max_min(a, b) {
+
+    let max;
+    let min;
+
+    if (a > b) {
+        max = a;
+        min = b;
+    } else if (b > a) {
+        max = b;
+        min = a;
+    } else {
+        max = a;
+        min = b;
+    }
+
+    return [max, min];
+}
+
+console.log(max_min(12, 15));
+console.log(max_min(-7, -5));
+//SELF
+Max → katta qiymat
+Min → kichik qiymat
