@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function non_repeated(arr) {
+
+    let result = 0;
+
+    for (let num of arr) {
+        result = result ^ num;
+    }
+
+    if (arr.length == 1) {
+        return arr[0];
+    } else if (result == 0) {
+        return 0;
+    } else {
+        return result;
+    }
+}
+
+console.log(non_repeated([1]));
+console.log(non_repeated([1, 2, 3]));
+console.log(non_repeated([1, 2, 8, 3, 1, 2, 3, 8, 6, 6, 7]));
+//SELF
+^ → XOR
+
+bir xil ^ bir xil → 0
+
+5 ^ 5 → 0
+7 ^ 7 → 0
+10 ^ 10 → 0
+1 ^ 1 = 0
+2 ^ 2 = 0
+3 ^ 3 = 0
+6 ^ 6 = 0
+1 ^ 2 ^ 8 ^ 3 ^ 1 ^ 2 ^ 3 ^ 8 ^ 6 ^ 6 ^ 7
