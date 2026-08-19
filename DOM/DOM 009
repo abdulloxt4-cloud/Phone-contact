@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Count Dropdown Items</title>
+</head>
+
+<body>
+
+Select your favorite Color:
+
+<select id="mySelect">
+    <option>Red</option>
+    <option>Green</option>
+    <option>Blue</option>
+    <option>White</option>
+</select>
+
+<input
+    type="button"
+    onclick="getOptions()"
+    value="Count and Output all items"
+>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function getOptions() {
+
+    let select = document.getElementById("mySelect");
+
+    let count = select.options.length;
+
+    alert("Items: " + count);
+}
+//SELF
+options
+↓
+length
+↓
+nechta item borligini sanash
