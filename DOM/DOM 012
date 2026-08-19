@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highlight Bold</title>
+</head>
+<body>
+
+    <p>
+        This is a <b>simple</b> paragraph with <b>bold</b> words.
+    </p>
+
+    <a href="#" id="link">Mouse over here</a>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let link = document.getElementById("link");
+let bold = document.getElementsByTagName("b");
+
+link.onmouseover = function () {
+    bold[0].style.backgroundColor = "yellow";
+    bold[1].style.backgroundColor = "yellow";
+};
+//SELF
+b → qalin yozuv
+a → link
+id → elementga nom beradi
+getElementById() → ID orqali elementni topadi
+getElementsByTagName() → teg orqali elementni topadi
+onmouseover → sichqoncha ustiga kelganda
+style.backgroundColor → fon rangini o‘zgartiradi
+bold[0] → 1-qalin so‘z
+bold[1] → 2-qalin so‘z
