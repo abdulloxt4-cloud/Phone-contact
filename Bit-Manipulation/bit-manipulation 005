@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function odd_even(num) {
+
+    if (typeof num != "number") {
+        return "Parameter value must be number!";
+    }
+
+    if ((num & 1) == 1) {
+        return num + " is an odd number.";
+    } else {
+        return num + " is an even number.";
+    }
+}
+
+console.log(odd_even(1));
+console.log(odd_even(4));
+console.log(odd_even(9));
+console.log(odd_even("15"));
+//SELF
+num & 1
+
+0 → Even (juft)
+1 → Odd (toq)
+
+1 is an odd number.
+4 is an even number.
+9 is an odd number.
+Parameter value must be number!
