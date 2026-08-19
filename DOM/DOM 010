@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sphere Volume</title>
+</head>
+
+<body>
+
+<form>
+    <p>Input radius value and get the volume of a sphere.</p>
+
+    Radius
+    <br>
+    <input type="text" id="radius">
+
+    <br>
+
+    Volume
+    <br>
+    <input type="text" id="volume" value="0.0000">
+
+    <br>
+
+    <button type="button" onclick="calculate()">Calculate</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function calculate() {
+
+    let radius = Number(document.getElementById("radius").value);
+
+    let volume = (4 / 3) * Math.PI * radius * radius * radius;
+
+    document.getElementById("volume").value = volume.toFixed(4);
+}
+//SELF
+Radius input
+     ↓
+.value
+     ↓
+Number()
+     ↓
+radius
+     ↓
+4/3 × π × r³
+     ↓
+toFixed(4)
+     ↓
+Volume input
+Inputdan .value orqali ma'lumot olamiz → JavaScriptda hisoblaymiz → natijani boshqa inputning .value iga joylaymiz.
