@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function turn_off_bit(num, k) {
+
+    let mask = 1 << k;
+
+    num = num & ~mask;
+
+    return num;
+}
+
+console.log(turn_off_bit(30, 3));
+//SELF
+11110
+10111
+-----
+10110
+1 << k
+→ kerakli bitni topadi
+
+~mask
+→ o‘sha joyni 0 qilish uchun mask tayyorlaydi
+
+num & ~mask
+→ k-bitni 0 qiladi
