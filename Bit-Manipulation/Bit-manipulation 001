@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function opposite_signs(a, b) {
+
+    if (typeof a != "number" || typeof b != "number") {
+        return "Parameters value must be number!";
+    } else if (a < 0 && b > 0) {
+        return "Signs are opposite";
+    } else if (a > 0 && b < 0) {
+        return "Signs are opposite";
+    } else {
+        return "Signs are not opposite";
+    }
+}
+
+console.log(opposite_signs(100, -100));
+console.log(opposite_signs(100, 100));
+console.log(opposite_signs("100", 100));
+//SELF
+a < 0 va b > 0
+→ biri manfiy, biri musbat
+→ opposite
+
+a > 0 va b < 0
+→ biri musbat, biri manfiy
+→ opposite
+================================
+typeof → qiymat turini tekshiradi
+< 0    → manfiy
+> 0    → musbat
+&&     → va
+||     → yoki
