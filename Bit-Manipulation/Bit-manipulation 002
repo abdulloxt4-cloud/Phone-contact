@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function swap(a, b) {
+
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+    return [a, b];
+}
+
+console.log(swap(12, 15));
+//SELF
+^ → XOR
+a ^ b → bitlarni solishtiradi
+3 ta XOR → ikki qiymatni almashtirish
+a = 12
+b = 15
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+a = 15
+b = 12
