@@ -1,0 +1,55 @@
+DOM nima?
+DOM (Document Object Model) — JavaScript orqali HTML sahifadagi elementlarni topish, o‘zgartirish, qo‘shish yoki o‘chirish uchun ishlatiladi.
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS DOM paragraph style</title>
+</head>
+
+<body>
+
+<p id="text">JavaScript Exercises - w3resource</p>
+
+<button id="jsstyle" onclick="js_style()">Style</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function js_style() {
+
+    let text = document.getElementById("text");
+
+    text.style.color = "red";
+    text.style.fontSize = "30px";
+    text.style.fontFamily = "Arial";
+}
+//SELF
+text
+ ↓
+style
+ ↓
+color
+ ↓
+red
+document
+   ↓
+HTML document
+   ↓
+getElementById()
+   ↓
+kerakli elementni topamiz
+   ↓
+style / text / value / ...
+   ↓
+elementni o‘zgartiramiz
+1. Elementni topish
+2. Elementni o‘zgartirish
+3. Elementning matnini o‘zgartirish
+4. Style o‘zgartirish
+5. Element yaratish
+6. Elementni o‘chirish
+7. Event bilan ishlash
+8. Inputdan ma'lumot olish
