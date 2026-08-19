@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function swap_bits(num, p1, p2) {
+
+    let bit1 = (num >> p1) & 1;
+    let bit2 = (num >> p2) & 1;
+
+    if (bit1 != bit2) {
+        num = num ^ (1 << p1);
+        num = num ^ (1 << p2);
+    } else if (bit1 == bit2) {
+        return num;
+    }
+
+    return num;
+}
+
+console.log(swap_bits(245, 2, 1));
+//SELF
+245 → 11110101
+7 6 5 4 3 2 1 0
+1 1 1 1 0 1 0 1
+>>  → kerakli bitni o‘ngga olib keladi
+& 1 → bitni ajratib oladi
+<<  → 1 ni kerakli positionga olib boradi
+^   → bitni almashtiradi
