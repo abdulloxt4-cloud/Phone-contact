@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function turn_on_bit(num, k) {
+
+    let mask = 1 << k;
+
+    num = num | mask;
+
+    return num;
+}
+
+console.log(turn_on_bit(33, 3));
+//SELF
+5 4 3 2 1 0
+1 0 0 0 0 1
+    ↑
+   k=3
+<< → chapga surish
+|  → OR
+k  → bit positioni
