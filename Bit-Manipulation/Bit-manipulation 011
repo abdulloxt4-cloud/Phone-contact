@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function check_bit(num, k) {
+
+    k = k - 1;
+
+    let bit = (num >> k) & 1;
+
+    if (bit == 1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(check_bit(33, 1));
+console.log(check_bit(33, 2));
+//SELF
+>> k → kerakli bitni o‘ngga olib keladi
+& 1  → o‘sha bitni ajratib oladi
+
+1 → true
+0 → false
