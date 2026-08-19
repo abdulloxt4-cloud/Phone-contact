@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function next_power_of_two(num) {
+
+    if (typeof num != "number") {
+        return "It must be number!";
+    }
+
+    let power = 1;
+
+    while (power < num) {
+        power = power * 2;
+    }
+
+    return power;
+}
+
+console.log(next_power_of_two(1));
+console.log(next_power_of_two(4));
+console.log(next_power_of_two(9));
+console.log(next_power_of_two("15"));
+//SELF
+
+9 dan kichik, shuning uchun 2 ga ko‘paytirib boramiz:
+
+1 → 2 → 4 → 8 → 16
+
+16 endi 9 dan katta:
+
+16 > 9
+
+Shuning uchun:
+
+16
+
+qaytariladi.
+
+ Eng muhim qism
+while (power < num) {
+    power = power * 2;
+}
+
+Ya'ni:
+
+Sonimizga yetguncha 2 ga ko‘paytirib boramiz.
