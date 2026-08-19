@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function power_of_four(num) {
+
+    if (typeof num != "number") {
+        return "It must be number!";
+    } else if (num <= 0) {
+        return false;
+    } else if ((num & (num - 1)) != 0) {
+        return false;
+    } else if (num % 4 != 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+console.log(power_of_four(256));
+console.log(power_of_four(4));
+console.log(power_of_four(2));
+console.log(power_of_four("16"));
+//SELF
+typeof       → qiymat turini tekshiradi
+number       → son
+&            → AND
+num - 1      → sondan 1 ayirish
+% 4          → 4 ga bo‘linishini tekshirish
+1    → true
+4    → true
+16   → true
+64   → true
+256  → true
+
+2    → false
+8    → false
+32   → false
+4⁰ = 1
+4¹ = 4
+4² = 16
+4³ = 64
+4⁴ = 256
+4⁵ = 1024
