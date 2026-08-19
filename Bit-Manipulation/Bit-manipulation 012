@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+//JS
+function rightmost_set_bit(num) {
+
+    let binary = num.toString(2);
+
+    for (let i = binary.length - 1; i >= 0; i--) {
+
+        if (binary[i] == "1") {
+            return binary.length - i;
+        } else if (binary[i] == "0") {
+            continue;
+        }
+    }
+}
+
+console.log(rightmost_set_bit(34));
+console.log(rightmost_set_bit(104));
+//SELF
+Set bit       → 1
+Rightmost     → o‘ng tomondagi
+Rightmost set → o‘ng tomondagi birinchi 1
