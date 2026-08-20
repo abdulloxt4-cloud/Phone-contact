@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Own and Inherited Properties</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let parent = {
+    city: "Tashkent"
+};
+
+let student = Object.create(parent);
+
+student.name = "Abdulloh";
+student.age = 20;
+
+function getProperties(obj) {
+    let properties = [];
+
+    for (let key in obj) {
+        properties.push(key);
+    }
+
+    return properties;
+}
+
+document.getElementById("result").innerHTML =
+    getProperties(student);
+//SELF
+parent → asosiy object
+
+Object.create(parent)
+→ parentni studentga prototype sifatida bog‘laydi
+
+student.name
+→ studentning o‘z propertysi
+
+student.age
+→ studentning o‘z propertysi
+
+city
+→ parentdan inherited property
+
+for...in
+→ own + inherited propertylarni aylanib chiqadi
+
+push()
+→ property nomini arrayga qo‘shadi
+
+return
+→ natijani qaytaradi
