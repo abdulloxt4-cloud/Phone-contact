@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Values</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let student = {
+    name: "Abdulloh",
+    age: 20,
+    city: "Tashkent"
+};
+
+function getValues(obj) {
+    return Object.values(obj);
+}
+
+let result = getValues(student);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+Nega Object.values()?
+
+Object:
+
+name → "Abdulloh"
+age → 20
+city → "Tashkent"
+Object.values() → barcha value'larni oladi
+value → propertyning qiymati
+Object → key:value ma'lumot
+function → vazifani bajaruvchi kod
+return → natijani qaytaradi
+innerHTML → natijani sahifaga chiqaradi
