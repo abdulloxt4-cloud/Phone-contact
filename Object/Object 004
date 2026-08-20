@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reading Status</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let library = [
+    {
+        author: "Bill Gates",
+        title: "The Road Ahead",
+        readingStatus: true
+    },
+    {
+        author: "Steve Jobs",
+        title: "Walter Isaacson",
+        readingStatus: true
+    },
+    {
+        author: "Suzanne Collins",
+        title: "Mockingjay: The Final Book of The Hunger Games",
+        readingStatus: false
+    }
+];
+
+for (let book of library) {
+    let status = book.readingStatus ? "O'qilgan" : "O'qilmagan";
+
+    document.getElementById("result").innerHTML +=
+        "Kitob: " + book.title + "<br>" +
+        "Muallif: " + book.author + "<br>" +
+        "Holati: " + status + "<br><br>";
+}
+//SELF
+Array → bir nechta ma'lumotni saqlaydi
+
+Object → har bir kitobning ma'lumotlarini saqlaydi
+
+for...of → array elementlarini bittadan oladi
+
+book.title → title qiymatini oladi
+
+book.author → author qiymatini oladi
+
+book.readingStatus → true/false qiymatini oladi
+
+true → o'qilgan
+
+false → o'qilmagan
+
+? : → shartni qisqa yozish usuli
+
+innerHTML += → yangi natijani qo‘shib boradi
+library → objectlar saqlangan array
+
+for...of → library ichidagi kitoblarni bittadan oladi
+
+book.title → kitob nomini oladi
+
+book.author → muallif nomini oladi
+
+book.readingStatus → true yoki false holatini oladi
+
+? : → true bo‘lsa "O'qilgan", false bo‘lsa "O'qilmagan"
+
+innerHTML += → har bir kitobni oldingi natijaning yoniga qo‘shadi
