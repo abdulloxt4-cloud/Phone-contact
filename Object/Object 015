@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object to Key-Value Pairs</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//SELF
+let student = {
+    name: "Abdulloh",
+    age: 20,
+    city: "Tashkent"
+};
+
+function toPairs(obj) {
+    return Object.entries(obj);
+}
+
+let result = toPairs(student);
+
+document.getElementById("result").innerHTML =
+    JSON.stringify(result);
+//SELF
+student → object
+
+Object.entries(obj)
+→ key va value'larni juft qilib oladi
+
+return → natijani qaytaradi
+
+JSON.stringify()
+→ natijani chiroyli matn ko‘rinishida chiqaradi
+
+innerHTML → sahifaga chiqaradi
+Object.keys()     → faqat key
+Object.values()   → faqat value
+Object.entries()  → key + value
