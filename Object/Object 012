@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parse URL</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function parseURL(url) {
+    let link = new URL(url);
+
+    return {
+        protocol: link.protocol,
+        host: link.host,
+        pathname: link.pathname,
+        search: link.search,
+        hash: link.hash
+    };
+}
+
+let result = parseURL("https://example.com:8080/path/page.html?name=Ali#about");
+
+document.getElementById("result").innerHTML =
+    "Protocol: " + result.protocol + "<br>" +
+    "Host: " + result.host + "<br>" +
+    "Path: " + result.pathname + "<br>" +
+    "Search: " + result.search + "<br>" +
+    "Hash: " + result.hash;
+//SELF
+return → natijani qaytaradi
+URL → internetdagi manzil
+
+new URL() → URLni objectga aylantiradi
+
+protocol → https/http
+
+host → domen
+
+pathname → sahifa yo‘li
+
+search → query parameterlar
+
+hash → # dan keyingi qism
+
+return → natijani qaytaradi
