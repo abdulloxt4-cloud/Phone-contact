@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Object Properties</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let student = {
+    name: "David Rayy",
+    sclass: "VI",
+    rollno: 12
+};
+
+let properties = Object.keys(student);
+
+document.getElementById("result").innerHTML = properties;
+//SELF
+student → object
+Object.keys(student) → objectdagi property nomlarini oladi
+properties → olingan propertylarni saqlaydi
+innerHTML → natijani sahifaga chiqaradi
+Object → ma'lumotlarni key:value qilib saqlaydi
+property → object ichidagi xususiyat
+Object.keys() → barcha property nomlarini oladi
+innerHTML → natijani HTMLga chiqaradi
