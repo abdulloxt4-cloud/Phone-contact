@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw Rectangle</title>
+</head>
+<body>
+
+    <canvas id="canvas" width="300" height="200"></canvas>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
+ctx.strokeRect(50, 50, 200, 100);
+//SELF
+canvas → chizish uchun HTML elementi
+getElementById() → canvasni topadi
+getContext("2d") → 2D chizish imkonini beradi
+strokeRect() → rectangle chizadi
+x, y → boshlanish koordinatasi
+width → eni
+height → bo‘yi
