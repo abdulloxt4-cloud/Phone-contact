@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Clock</title>
+</head>
+<body>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function clock() {
+    let date = new Date();
+
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    console.log(hours + ":" + minutes + ":" + seconds);
+}
+
+setInterval(clock, 1000);
+//SELF
+new Date() → hozirgi vaqtni oladi
+
+getHours() → soatni oladi
+
+getMinutes() → minutni oladi
+
+getSeconds() → sekundni oladi
+
+console.log() → vaqtni console'ga chiqaradi
+
+setInterval(clock, 1000)
+→ clock funksiyasini har 1000 ms = 1 sekundda ishlatadi
