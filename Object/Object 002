@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Property</title>
+</head>
+<body>
+
+    <p id="before"></p>
+    <p id="after"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let student = {
+    name: "Abdulloh",
+    sclass: "VI",
+    rollno: 12
+};
+
+document.getElementById("before").innerHTML =
+    "Before: " + JSON.stringify(student);
+
+delete student.rollno;
+
+document.getElementById("after").innerHTML =
+    "After: " + JSON.stringify(student);
+//SELF
+student → object
+delete student.rollno → rollno propertyni o‘chiradi
+JSON.stringify() → objectni oddiy matn ko‘rinishida chiqaradi
+innerHTML → natijani sahifaga chiqaradi
+delete → propertyni o‘chiradi
+rollno → o‘chiriladigan property
+JSON.stringify() → objectni string ko‘rinishiga aylantiradi
+innerHTML → natijani HTMLga chiqaradi
