@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Methods</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function all_properties(obj) {
+    return Object.getOwnPropertyNames(obj);
+}
+
+let result = all_properties(Array);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+Array → JavaScriptdagi Array objecti
+
+Object.getOwnPropertyNames(obj)
+→ objectning o‘zidagi barcha property nomlarini oladi
+
+all_properties()
+→ propertylarni qaytaradi
+
+result → natijani saqlaydi
+
+innerHTML → natijani sahifaga chiqaradi
+Object → ma'lumot/propertylarni saqlaydi
+
+Array → JavaScriptdagi array objecti
+
+Object.getOwnPropertyNames()
+→ objectning barcha property nomlarini oladi
+
+function → qayta ishlatiladigan kod
+
+return → natijani qaytaradi
+
+innerHTML → natijani HTMLga chiqaradi
