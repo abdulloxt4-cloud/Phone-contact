@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw Circle</title>
+</head>
+<body>
+
+    <canvas id="canvas" width="300" height="200"></canvas>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(150, 100, 50, 0, 2 * Math.PI);
+ctx.stroke();
+//SELF
+canvas → chizish joyi
+getContext("2d") → 2D chizish rejimi
+beginPath() → yangi chizishni boshlaydi
+arc() → doira/yoy chizadi
+150, 100 → doiraning markazi
+50 → radius
+2 * Math.PI → to‘liq aylana
+stroke() → chizilgan chiziqni ko‘rsatadi
