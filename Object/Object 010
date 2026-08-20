@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Object Array</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let library = [
+    {
+        title: "The Road Ahead",
+        author: "Bill Gates",
+        libraryID: 1254
+    },
+    {
+        title: "Walter Isaacson",
+        author: "Steve Jobs",
+        libraryID: 4264
+    },
+    {
+        title: "Mockingjay: The Final Book of The Hunger Games",
+        author: "Suzanne Collins",
+        libraryID: 3245
+    }
+];
+
+library.sort(function(a, b) {
+    return b.libraryID - a.libraryID;
+});
+
+document.getElementById("result").innerHTML =
+    JSON.stringify(library);
+//SELF
+sort() → arrayni saralaydi
+function(a, b) → taqqoslanayotgan 2 ta object
+libraryID → saralash uchun ishlatilgan property
+b - a → kamayish tartibi
+a - b → o‘sish tartibi
+JSON.stringify() → objectni stringga aylantiradi
+library → objectlardan iborat array
+
+sort() → arrayni saralaydi
+
+a.libraryID → birinchi objectning IDsi
+
+b.libraryID → ikkinchi objectning IDsi
+
+b.libraryID - a.libraryID
+→ katta IDni oldinga chiqaradi
+
+JSON.stringify()
+→ objectlarni o‘qishga qulay string ko‘rinishida chiqaradi
