@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MoveTo Diagram</title>
+</head>
+<body>
+
+    <canvas id="canvas" width="400" height="300"></canvas>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+
+ctx.moveTo(50, 50);
+ctx.lineTo(150, 50);
+
+ctx.moveTo(50, 100);
+ctx.lineTo(150, 100);
+
+ctx.moveTo(50, 150);
+ctx.lineTo(150, 150);
+
+ctx.stroke();
+//SELF
+beginPath() → chizishni boshlaydi
+moveTo() → kerakli nuqtaga boradi, chiziq chizmaydi
+lineTo() → shu nuqtadan boshqa nuqtaga chiziq chizadi
+stroke() → chiziqlarni ekranga chiqaradi
+canvas → chizish joyi
+getContext("2d") → 2D rejim
+beginPath() → chizishni boshlaydi
+moveTo() → nuqtaga boradi
+lineTo() → chiziq chizadi
+stroke() → chiziqni ko‘rsatadi
