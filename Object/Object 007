@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Subsets</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let str = "dog";
+let result = [];
+
+for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j <= str.length; j++) {
+        result.push(str.slice(i, j));
+    }
+}
+
+document.getElementById("result").innerHTML = result;
+//SELF
+str → "dog"
+
+i → boshlanish indexi
+
+j → tugash joyi
+
+slice(i, j) → stringning kerakli qismini oladi
+
+push() → topilgan qismni result arrayiga qo‘shadi
+
+length → string uzunligini beradi
+string → matn
+
+length → string uzunligi
+
+for → takrorlash
+
+slice() → stringning bir qismini oladi
+
+push() → arrayga element qo‘shadi
+
+index → belgining joylashuvi
+
+result → natijalarni saqlaydigan array
