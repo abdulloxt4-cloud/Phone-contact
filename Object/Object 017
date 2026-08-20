@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Property</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let student = {
+    name: "Abdulloh",
+    age: 20,
+    city: "Uzbekistan"
+};
+
+function checkProperty(obj, property) {
+    return property in obj;
+}
+
+let result = checkProperty(student, "age");
+
+document.getElementById("result").innerHTML = result;
+//SELF
+in → property mavjudligini tekshiradi
+true → property bor
+false → property yo‘q
+function → tekshiruvni bajaradi
+obj → tekshirilayotgan object
+property → qidirilayotgan property
+return → natijani qaytaradi
