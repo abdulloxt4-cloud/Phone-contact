@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circle Area & Perimeter</title>
+</head>
+<body>
+
+    <input id="radius" type="number" placeholder="Radius">
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+
+    area() {
+        return Math.PI * this.radius ** 2;
+    }
+
+    perimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+}
+
+function calculate() {
+    let radius = Number(document.getElementById("radius").value);
+
+    let circle = new Circle(radius);
+
+    document.getElementById("result").innerHTML =
+        "Area: " + circle.area() + "<br>" +
+        "Perimeter: " + circle.perimeter();
+}
+//SELF
+input → user radius kiritadi
+value → radiusni oladi
+Number() → qiymatni songa aylantiradi
+new Circle() → Circle object yaratadi
+area() → doira yuzasini hisoblaydi
+perimeter() → doira perimetrini hisoblaydi
+Math.PI → π qiymati
+** 2 → radiusni kvadrat qiladi
+area() → faqat yuzani hisoblaydi
+
+perimeter() → faqat perimetrni hisoblaydi
