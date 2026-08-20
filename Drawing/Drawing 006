@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diagonal Circles</title>
+</head>
+<body>
+
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
+for (let i = 0; i < 10; i++) {
+    let color = i * 25;
+
+    ctx.beginPath();
+    ctx.arc(50 + i * 30, 50 + i * 30, 15, 0, 2 * Math.PI);
+
+    ctx.fillStyle = "rgb(" + color + "," + color + "," + color + ")";
+    ctx.fill();
+}
+//SELF
+for → 10 ta doira yaratadi
+arc() → doira chizadi
+50 + i * 30 → doiralarni diagonal joylashtiradi
+fillStyle → doira rangini beradi
+fill() → doirani ichidan bo‘yaydi
+color → oqdan qoraga o‘tishni beradi
+arc() → doira chizadi
+fillStyle → rang beradi
+fill() → ichini bo‘yaydi
+rgb() → rangni belgilaydi
+i → loopdagi tartib raqami
+moveTo() → kerakli nuqtaga boradi
