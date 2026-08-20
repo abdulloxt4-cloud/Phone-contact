@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intersecting Rectangles</title>
+</head>
+<body>
+
+    <canvas id="canvas" width="400" height="250"></canvas>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "blue";
+ctx.fillRect(50, 50, 200, 100);
+
+ctx.fillStyle = "rgba(255, 0, 0, 0.5)";
+ctx.fillRect(150, 100, 200, 100);
+//SELF
+fillStyle → rectangle rangini beradi
+fillRect() → rectangle chizadi
+rgba(..., 0.5) → 50% shaffof qiladi
+50, 50 → boshlanish koordinatasi
+200, 100 → eni va bo‘yi
