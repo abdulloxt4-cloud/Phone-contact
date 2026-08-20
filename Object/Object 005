@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cylinder Volume</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+class Cylinder {
+    constructor(radius, height) {
+        this.radius = radius;
+        this.height = height;
+    }
+
+    volume() {
+        return Math.PI * this.radius ** 2 * this.height;
+    }
+}
+
+let cylinder = new Cylinder(5, 10);
+
+document.getElementById("result").innerHTML =
+    cylinder.volume().toFixed(4);
+//SELF
+class Cylinder → Cylinder object uchun class yaratdik
+
+constructor() → radius va heightni qabul qiladi
+
+this.radius → radiusni object ichida saqlaydi
+
+this.height → heightni object ichida saqlaydi
+
+volume() → cylinder hajmini hisoblaydi
+
+Math.PI → π qiymati
+
+** 2 → radiusni kvadratga oshiradi
+
+toFixed(4) → natijani 4 ta kasr xonasi bilan chiqaradi
+class → objectlar uchun qolip
+
+constructor() → object yaratilganda ishlaydi
+
+this → shu objectni bildiradi
+
+new → classdan yangi object yaratadi
+
+volume() → hajmni hisoblaydi
+
+Math.PI → π
+
+** 2 → kvadrat
+
+toFixed(4) → 4 ta kasr xonasi
