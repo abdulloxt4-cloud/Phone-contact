@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Length</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let student = {
+    name: "Abdulloh",
+    sclass: "VI",
+    rollno: 12
+};
+
+let length = Object.keys(student).length;
+
+document.getElementById("result").innerHTML = length;
+//SELF
+student → object
+
+Object.keys(student)
+→ objectdagi property nomlarini oladi
+
+.length
+→ nechta property borligini sanaydi
+
+Natija → 3
+Object.keys() → property nomlarini oladi
+length → sonini hisoblaydi
+property → object ichidagi ma'lumot
+innerHTML → natijani sahifaga chiqaradi
