@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swap Keys and Values</title>
+</head>
+<body>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+let student = {
+    name: "Abdulloh",
+    age: 20,
+    city: "Uzbekistan"
+};
+
+function swap(obj) {
+    let result = {};
+
+    for (let key in obj) {
+        result[obj[key]] = key;
+    }
+
+    return result;
+}
+
+let newObject = swap(student);
+
+document.getElementById("result").innerHTML =
+    JSON.stringify(newObject);
+//SELF
+for...in → object propertylarini aylanish
+
+key → eski key
+
+obj[key] → eski value
+
+result → yangi object
+
+result[obj[key]] = key → key va value joyini almashtiradi
+
+return → yangi objectni qaytaradi
+
+JSON.stringify() → natijani matn ko‘rinishida chiqaradi
