@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Null</title>
+</head>
+<body>
+
+    <h2>Validate Null</h2>
+
+    <button onclick="checkNull()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkNull() {
+    let value = null;
+
+    let result = value == null;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+null       → true
+"Hello"    → false
+0          → false
+undefined  → false
+null → qiymat yo‘q
+==  → aynan tengligini tekshiradi
