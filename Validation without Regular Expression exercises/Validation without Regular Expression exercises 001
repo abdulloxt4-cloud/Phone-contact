@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Boolean</title>
+</head>
+<body>
+
+    <h2>Validate Boolean</h2>
+
+    <button onclick="checkBoolean()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+  //JS
+  function checkBoolean() {
+    let value = true;
+
+    let result = typeof value == "boolean";
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+true    → true
+false   → true
+"true"  → false
+123     → false
+  typeof → qiymat turini tekshiradi
+boolean → true yoki false turi
+=== → aynan tengligini tekshiradi
