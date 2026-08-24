@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Time</title>
+</head>
+<body>
+
+    <h2>Validate Time String</h2>
+
+    <input id="time" placeholder="HH:MM">
+    <button onclick="checkTime()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkTime() {
+    let time = document.getElementById("time").value;
+
+    let result = /^(?:[01]\d|2[0-3]):[0-5]\d$/.test(time);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+[01]\d  → 00–19
+2[0-3]  → 20–23
+:       → ikki nuqta
+[0-5]\d → 00–59
+12:30 → true
+09:45 → true
+23:59 → true
+25:10 → false
+12:70 → false
