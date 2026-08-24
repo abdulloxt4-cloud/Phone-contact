@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Vowels</title>
+</head>
+<body>
+
+    <h2>Count Vowels</h2>
+
+    <input id="text" placeholder="Enter text">
+    <button onclick="countVowels()">Count</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function countVowels() {
+    let text = document.getElementById("text").value;
+
+    let vowels = text.match(/[aeiou]/gi);
+
+    let result = vowels ? vowels.length : 0;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+[aeiou] → a, e, i, o, u ni qidiradi
+g → hammasini qidiradi
+i → katta-kichik harqni farqlamaydi
+Masalan:
+
+United States
+
+Unlilar:
+
+U → i → e → a → e
