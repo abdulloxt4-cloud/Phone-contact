@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Pure JSON Object</title>
+</head>
+<body>
+
+    <h2>Validate Pure JSON Object</h2>
+
+    <button onclick="checkObject()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkObject() {
+    let value = { name: "Abdulloh" };
+
+    let result =
+        typeof value == "object" &&
+        value !== null &&
+        Object.getPrototypeOf(value) === Object.prototype;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+typeof                  → type tekshiradi
+Object.getPrototypeOf() → objectning prototype'ini tekshiradi
+Object.prototype        → oddiy object prototype'i
+null                    → qiymat yo'q
+{ name: "Ali" } → true
+null            → false
+[1, 2, 3]       → false
+123             → false
+"Hello"         → false
