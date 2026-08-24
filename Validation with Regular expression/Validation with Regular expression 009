@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate URL</title>
+</head>
+<body>
+
+    <h2>Validate URL</h2>
+
+    <input id="url" placeholder="Enter URL">
+    <button onclick="checkURL()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkURL() {
+    let url = document.getElementById("url").value;
+
+    let pattern = /^(https?:\/\/)?[\w-]+(\.[\w-]+)+$/;
+
+    let result = pattern.test(url);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+^              → boshidan
+https?         → http yoki https
+:\/\/          → ://
+[\w-]+         → domen nomi
+(\.[\w-]+)+    → .com, .uz kabi qism
+$              → oxirigacha
+https://google.com → true
+http://example.com → true
+google.com         → true
+hello              → false
