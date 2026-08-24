@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Hex Color</title>
+</head>
+<body>
+
+    <h2>Validate Hex Color</h2>
+
+    <input id="color" placeholder="#FF0000">
+    <button onclick="checkColor()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkColor() {
+    let color = document.getElementById("color").value;
+
+    let result = /^#([0-9A-F]{3}|[0-9A-F]{6})$/i.test(color);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+#           → # belgisi bo‘lishi kerak
+[0-9A-F]   → 0–9 yoki A–F
+{3}        → 3 ta belgi
+{6}        → 6 ta belgi
+|          → yoki
+i          → katta-kichik harfni farqlamaydi
+#FFF      → true
+#FF0000   → true
+#12AB34   → true
+#GGG      → false
+FF0000    → false
+#12345    → false
