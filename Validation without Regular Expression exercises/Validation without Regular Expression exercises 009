@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Char</title>
+</head>
+<body>
+
+    <h2>Validate Char</h2>
+
+    <button onclick="checkChar()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkChar() {
+    let value = "A";
+
+    let result = typeof value === "string" && value.length === 1;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+"A"      → true
+"7"      → true
+"@"      → true
+"Hello"  → false
+123      → false
+""       → false
+typeof  → type tekshiradi
+string  → matn turi
+length  → belgilar sonini beradi
+=== 1   → aynan 1 ta belgi
+&&      → ikkala shart ham bajarilishi kerak
