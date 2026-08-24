@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thousands Separator</title>
+</head>
+<body>
+
+    <h2>Thousands Separator</h2>
+
+    <input id="number" placeholder="Enter number">
+    <button onclick="formatNumber()">Format</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function formatNumber() {
+    let number = document.getElementById("number").value;
+
+    let result = Number(number).toLocaleString();
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+1000      → 1,000
+10000.23  → 10,000.23
+100000    → 100,000
