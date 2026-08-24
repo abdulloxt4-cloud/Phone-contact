@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Number</title>
+</head>
+<body>
+
+    <h2>Validate Number</h2>
+
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkNumber() {
+    let value = 123;
+
+    let result = typeof value == "number";
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+123       → true
+12.5      → true
+"123"     → false
+"Hello"   → false
+typeof  → qiymat turini tekshiradi
+number  → son turi
