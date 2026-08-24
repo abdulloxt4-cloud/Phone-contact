@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate SSN</title>
+</head>
+<body>
+
+    <h2>Validate SSN</h2>
+
+    <input id="ssn" placeholder="123-45-6789">
+    <button onclick="checkSSN()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkSSN() {
+    let ssn = document.getElementById("ssn").value;
+
+    let result = /^\d{3}-\d{2}-\d{4}$/.test(ssn);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+\d{3} → 3 ta raqam
+-     → tire
+\d{2} → 2 ta raqam
+-     → tire
+\d{4} → 4 ta raqam
+123-45-6789 → true
+12-345-6789 → false
+123456789   → false
+123-45-678  → false
