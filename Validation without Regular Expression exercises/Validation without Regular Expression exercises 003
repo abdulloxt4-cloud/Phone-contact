@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate NaN</title>
+</head>
+<body>
+
+    <h2>Validate NaN</h2>
+
+    <button onclick="checkNaN()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkNaN() {
+    let value = NaN;
+
+    let result = Number.isNaN(value);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+NaN     → true
+123     → false
+"Hello" → false
+NaN             → Not a Number
+Number.isNaN()  → qiymat NaN ekanini tekshiradi
