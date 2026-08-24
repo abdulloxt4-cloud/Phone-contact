@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Value Equality</title>
+</head>
+<body>
+
+    <h2>Check Value Equality</h2>
+
+    <button onclick="checkValue()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkValue() {
+    let value1 = 10;
+    let value2 = 10;
+
+    let result = value1 == value2;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+10 == 10       → true
+10 == "10"     → false
+"hello" == "hello" → true
+10 === 20       → false
+==  → qiymat va type aynan bir xilmi?
+true → bir xil
+false → bir xil emas
