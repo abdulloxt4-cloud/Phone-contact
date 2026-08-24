@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate HTML</title>
+</head>
+<body>
+
+    <h2>Validate HTML Content</h2>
+
+    <input id="html" placeholder="Enter HTML">
+    <button onclick="checkHTML()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkHTML() {
+    let html = document.getElementById("html").value;
+
+    let result = /<[^>]+>/.test(html);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+<       → HTML tag boshlanishi
+[^>]    → > bo‘lmagan belgilar
++       → 1 yoki undan ko‘p
+>       → tag yopilishi
+<p>Hello</p> → true
+<div>Test</div> → true
+Hello → false
