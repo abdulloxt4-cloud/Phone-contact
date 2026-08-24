@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Object</title>
+</head>
+<body>
+
+    <h2>Validate Object</h2>
+
+    <button onclick="checkObject()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkObject() {
+    let value = { name: "Abdulloh" };
+
+    let result = typeof value == "object" && value !== null;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+{ name: "Ali" } → true
+[1, 2, 3]       → true
+null            → false
+123             → false
+"Hello"         → false
+typeof → qiymat turini tekshiradi
+object → obyekt turi
+!== null → null emasligini tekshiradi
+&& → ikkala shart ham true bo‘lishi kerak
