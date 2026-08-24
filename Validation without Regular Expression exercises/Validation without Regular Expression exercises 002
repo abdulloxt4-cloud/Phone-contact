@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Error</title>
+</head>
+<body>
+
+    <h2>Validate Error</h2>
+
+    <button onclick="checkError()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkError() {
+    let value = new Error("Something went wrong");
+
+    let result = value instanceof Error;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+new Error(...) → true
+"Error"       → false
+123           → false
+new Error()      → Error yaratadi
+instanceof       → obyekt qaysi turga tegishli ekanini tekshiradi
+Error            → xatolik obyekti
