@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Pattern</title>
+</head>
+<body>
+
+    <h2>Email Pattern</h2>
+
+    <input id="email" placeholder="Enter email">
+    <button onclick="checkEmail()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkEmail() {
+    let email = document.getElementById("email").value;
+
+    let pattern = /^[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+(\.[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+$/;
+
+    let result = pattern.test(email);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+^                 → boshidan
+[A-Za-z0-9...]    → ruxsat berilgan belgilar
++                 → 1 yoki undan ko‘p
+\.                → nuqta
+*                 → takrorlanishi mumkin
+@                 → emailning @ qismi
+[A-Za-z0-9-]+     → domain
+(\.[...]+)+       → .com, .uz kabi qism
+$                 → oxirigacha
+test@gmail.com       → true
+Abdulloh123@mail.com → true
+test..mail@gmail.com → false
+.test@gmail.com      → false
+test@gmail           → false
