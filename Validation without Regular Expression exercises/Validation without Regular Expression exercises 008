@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate RegExp</title>
+</head>
+<body>
+
+    <h2>Validate RegExp</h2>
+
+    <button onclick="checkRegExp()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkRegExp() {
+    let value = /^[A-Z]+$/;
+
+    let result = value instanceof RegExp;
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+/^[A-Z]+$/   → true
+"^[A-Z]+$"   → false
+123          → false
+RegExp       → Regular Expression
+instanceof   → obyekt qaysi turga tegishli ekanini tekshiradi
+true         → RegExp
+false        → RegExp emas
