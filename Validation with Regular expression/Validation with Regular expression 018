@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Domain</title>
+</head>
+<body>
+
+    <h2>Validate Domain</h2>
+
+    <input id="domain" placeholder="example.com">
+    <button onclick="checkDomain()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkDomain() {
+    let domain = document.getElementById("domain").value;
+
+    let result = /^[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+$/.test(domain);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+[a-zA-Z0-9-]+  → harf, raqam yoki -
+\.              → nuqta
+(...)+          → nuqta bilan yana bir qism
+^               → boshidan
+$               → oxirigacha
+google.com    → true
+example.uz    → true
+my-site.com   → true
+google        → false
+hello@com     → false
