@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate UK Post Code</title>
+</head>
+<body>
+
+    <h2>Validate UK Post Code</h2>
+
+    <input id="postcode" placeholder="Enter postcode">
+    <button onclick="checkPostcode()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkPostcode() {
+    let postcode = document.getElementById("postcode").value;
+
+    let result = /^[A-Z]{1,2}\d[A-Z\d]? \d[A-Z]{2}$/i.test(postcode);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+[A-Z]{1,2} → 1 yoki 2 ta harf
+\d          → raqam
+[A-Z\d]?    → harf yoki raqam, bo‘lishi ham mumkin
+space       → bo‘sh joy
+\d          → raqam
+[A-Z]{2}    → 2 ta harf
+i           → katta-kichik harfni farqlamaydi
+SW1A 1AA → true
+M1 1AE   → true
+EC1A 1BB → true
+12345    → false
+SW1A1AA  → false
