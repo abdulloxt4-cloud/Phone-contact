@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Hexadecimal</title>
+</head>
+<body>
+
+    <h2>Validate Hexadecimal</h2>
+
+    <input id="hex" placeholder="Enter hexadecimal">
+    <button onclick="checkHex()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkHex() {
+    let hex = document.getElementById("hex").value;
+
+    let result = /^[0-9A-F]+$/i.test(hex);
+
+    document.getElementById("result").innerHTML = result;
+//SELF
+[0-9] → raqamlar
+[A-F] → A dan F gacha
++     → 1 yoki undan ko‘p
+i     → katta-kichik harfni farqlamayd
+FF     → true
+A12B   → true
+123ABC → true
+G123   → false
+12XZ   → false
