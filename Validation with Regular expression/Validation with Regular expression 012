@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate US Zip Code</title>
+</head>
+<body>
+
+    <h2>Validate US Zip Code</h2>
+
+    <input id="zip" placeholder="Enter ZIP code">
+    <button onclick="checkZip()">Check</button>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function checkZip() {
+    let zip = document.getElementById("zip").value;
+
+    let result = /^\d{5}$/.test(zip);
+
+    document.getElementById("result").innerHTML = result;
+}
+//SELF
+^       → boshidan
+\d      → raqam
+{5}     → aynan 5 ta
+$       → oxirigacha
+12345   → true
+10001   → true
+1234    → false
+123456  → false
+12a45   → false
