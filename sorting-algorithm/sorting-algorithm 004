@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertion Sort</title>
+</head>
+<body>
+
+    <h2>Insertion Sort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function insertionSort(arr) {
+
+    for (let i = 1; i < arr.length; i++) {
+
+        let current = arr[i];
+        let j = i - 1;
+
+        while (j >= 0 && arr[j] > current) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+
+        arr[j + 1] = current;
+    }
+
+    return arr;
+}
+
+let numbers = [5, 2, 8, 1, 3];
+
+document.getElementById("result").innerHTML = insertionSort(numbers);
+//SELF
+current → hozir joylashtirayotgan element
+
+j → current'dan oldingi index
+
+while → shart true bo‘lguncha takrorlaydi
+
+arr[j + 1] = arr[j]
+→ kattaroq elementni o‘ngga suradi
+
+arr[j + 1] = current
+→ current'ni kerakli joyga qo‘yadi
+5 | 2 8 1 3
+↓
+2 ni ol → 5 dan kichik → oldiga qo‘y
+↓
+2 5 | 8 1 3
+↓
+8 ni ol → joyida
+↓
+2 5 8 | 1 3
+↓
+1 ni ol → boshiga qo‘y
+↓
+1 2 5 8 | 3
+↓
+3 ni kerakli joyga qo‘y
+↓
+1 2 3 5 8
+Quick Sort     → pivot bilan bo‘ladi
+Merge Sort     → bo‘ladi, keyin birlashtiradi
+Heap Sort      → eng kattani topib oxiriga chiqaradi
+Insertion Sort → bittadan olib, joyiga qo‘yadi
