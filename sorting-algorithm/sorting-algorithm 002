@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merge Sort</title>
+</head>
+<body>
+
+    <h2>Merge Sort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function mergeSort(arr) {
+
+    if (arr.length <= 1) {
+        return arr;
+    }
+
+    let mid = Math.floor(arr.length / 2);
+
+    let left = arr.slice(0, mid);
+    let right = arr.slice(mid);
+
+    left = mergeSort(left);
+    right = mergeSort(right);
+
+    let result = [];
+
+    while (left.length && right.length) {
+
+        if (left[0] < right[0]) {
+            result.push(left.shift());
+        } else {
+            result.push(right.shift());
+        }
+    }
+
+    return result.concat(left, right);
+}
+//SELF
+MERGE SORT
+
+1. Arrayni ol
+       ↓
+2. Ikkiga bo‘l
+       ↓
+3. Yana ikkiga bo‘l
+       ↓
+4. 1 ta element qolguncha davom et
+       ↓
+5. Ikkala tomonni solishtir
+       ↓
+6. Kichigini result'ga qo‘sh
+       ↓
+7. Qolganlarini qo‘sh
+       ↓
+8. Tayyor tartiblangan array
+[5, 2, 8, 1, 3]
+
+      BO‘LAMIZ
+          ↓
+
+[5, 2]    [8, 1, 3]
+
+    ↓           ↓
+
+[5] [2]    [8] [1] [3]
+
+      ENDİ BIRLASHTIRAMIZ
+
+[2, 5]    [1, 3, 8]
+
+          ↓
+
+[1, 2, 3, 5, 8]
