@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shell Sort</title>
+</head>
+<body>
+
+    <h2>Shell Sort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function shellSort(arr) {
+
+    let gap = Math.floor(arr.length / 2);
+
+    while (gap > 0) {
+
+        for (let i = gap; i < arr.length; i++) {
+
+            let temp = arr[i];
+            let j = i;
+
+            while (j >= gap && arr[j - gap] > temp) {
+                arr[j] = arr[j - gap];
+                j = j - gap;
+            }
+
+            arr[j] = temp;
+        }
+
+        gap = Math.floor(gap / 2);
+    }
+
+    return arr;
+}
+
+let numbers = [8, 3, 5, 1, 7, 2];
+
+document.getElementById("result").innerHTML = shellSort(numbers);
+//SELF
+Shell Sort → GAP
+
+gap katta → uzoq elementlarni solishtiradi
+gap kichik → yaqin elementlarni solishtiradi
+gap 1     → oxirgi tartiblash
+Quick Sort      → pivot
+Merge Sort      → bo‘l + birlashtir
+Heap Sort       → heap + eng katta
+Insertion Sort  → bittadan joyiga qo‘y
+Selection Sort  → eng kichigini top
+Shell Sort      → GAP bilan uzoq elementlarni solishtir
