@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Word Index</title>
+</head>
+<body>
+
+    <h2>Find Word Index Positions</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function findIndexes(text, word) {
+
+    let indexes = [];
+
+    for (let i = 0; i <= text.length - word.length; i++) {
+
+        if (text.substring(i, i + word.length) == word) {
+            indexes.push(i);
+        }
+    }
+
+    return indexes;
+}
+
+let text = "the quick brown fox jumps over the lazy dog.";
+let word = "the";
+
+let result = findIndexes(text, word);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+STRING
+  ↓
+har bir indexni tekshir
+  ↓
+shu joydan WORD chiqadimi?
+  ↓
+HA → indexni saqla
+  ↓
+davom et
+  ↓
+BARCHA INDEXLAR
+substring() → stringdan qism oladi
+push()      → topilgan indexni arrayga qo‘shadi
