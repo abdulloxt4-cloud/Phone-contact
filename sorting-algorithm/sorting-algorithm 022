@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lowest Insert Index</title>
+</head>
+<body>
+
+    <h2>Find Lowest Insert Index</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function lowestInsertIndex(arr, value) {
+
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] >= value) {
+            return i;
+        }
+    }
+
+    return arr.length;
+}
+
+let numbers = [1, 2, 2, 3, 5];
+
+let result = lowestInsertIndex(numbers, 2);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+ARRAY
+ ↓
+VALUE
+ ↓
+chapdan qidir
+ ↓
+birinchi >= value
+ ↓
+INDEX
+20 → Lowest Insert Index
+22 → Lowest Insert Index (Array)
