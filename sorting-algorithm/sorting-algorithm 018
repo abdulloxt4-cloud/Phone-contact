@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Objects by Property Order</title>
+</head>
+<body>
+
+    <h2>Sort Objects by Property Order</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function sortObjects(arr, property, orders) {
+
+    return arr.sort(function(a, b) {
+
+        return orders.indexOf(a[property]) -
+               orders.indexOf(b[property]);
+
+    });
+}
+
+let students = [
+    { name: "Ali", grade: "B" },
+    { name: "Vali", grade: "A" },
+    { name: "Hasan", grade: "C" }
+];
+
+let orders = ["C", "A", "B"];
+
+let result = sortObjects(students, "grade", orders);
+
+document.getElementById("result").innerHTML =
+    result.map(student => student.name + " - " + student.grade).join("<br>");
+//SELF
+16. Sort Objects by Properties
+→ property bo‘yicha oddiy tartib
+→ asc / desc
+
+18. Sort Objects by Property Order
+→ property bo‘yicha
+→ LEKIN tartibni o‘zimiz beramiz
+→ orders = ["C", "A", "B"]
