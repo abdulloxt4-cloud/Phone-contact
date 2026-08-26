@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jump Search</title>
+</head>
+<body>
+
+    <h2>Jump Search Index</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function jumpSearch(arr, value) {
+
+    let step = Math.floor(Math.sqrt(arr.length));
+    let start = 0;
+    let end = step;
+
+    while (start < arr.length && arr[end - 1] < value) {
+        start = end;
+        end = end + step;
+    }
+
+    for (let i = start; i < end && i < arr.length; i++) {
+
+        if (arr[i] == value) {
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let result = jumpSearch(numbers, 7);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+SORTED ARRAY
+     ↓
+BLOCK SIZE top
+     ↓
+SAKRAB TEKSHIR
+     ↓
+Kerakli blokni top
+     ↓
+Shu blokni BITTALAB tekshir
+     ↓
+TOPILDI → INDEX
+     ↓
+Topilmasa → -1
+Linear Search
+→ 1 → 2 → 3 → 4 → 5 ...
+
+Binary Search
+→ o‘rtasini olib 2 qismga bo‘ladi
+
+Ternary Search
+→ 3 qismga bo‘ladi
+
+Jump Search
+→ BLOK-BLOK SAKRAYDI
+→ keyin kerakli blok ichida Linear Search qiladi
