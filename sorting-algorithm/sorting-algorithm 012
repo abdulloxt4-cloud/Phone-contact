@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flash Sort</title>
+</head>
+<body>
+
+    <h2>Flash Sort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function flashSort(arr) {
+
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+
+    let result = [];
+
+    for (let i = min; i <= max; i++) {
+
+        for (let j = 0; j < arr.length; j++) {
+
+            if (arr[j] == i) {
+                result.push(arr[j]);
+            }
+        }
+    }
+
+    return result;
+}
+
+let numbers = [10, 2, 8, 4, 6, 2];
+
+document.getElementById("result").innerHTML = flashSort(numbers);
+//SELF
+Array
+  ↓
+MIN va MAX ni top
+  ↓
+Qiymatlar diapazonini bil
+  ↓
+Elementlar qayerga tushishini taxmin qil
+  ↓
+Joylashtir
+  ↓
+Tartiblangan array
+Counting Sort
+→ har bir qiymatni SANAYDI
+
+Flash Sort
+→ qiymatning DIAPAZONI va taxminiy JOYIDAN foydalanadi
