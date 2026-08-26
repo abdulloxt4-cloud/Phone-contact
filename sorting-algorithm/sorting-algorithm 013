@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pancake Sort</title>
+</head>
+<body>
+
+    <h2>Pancake Sort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function pancakeSort(arr) {
+
+    for (let size = arr.length; size > 1; size--) {
+
+        let maxIndex = 0;
+
+        // Eng kattasini topish
+        for (let i = 1; i < size; i++) {
+            if (arr[i] > arr[maxIndex]) {
+                maxIndex = i;
+            }
+        }
+
+        // Eng kattasini boshiga olib kelish
+        if (maxIndex != 0) {
+            arr.splice(0, maxIndex + 1, ...arr.slice(0, maxIndex + 1).reverse());
+        }
+
+        // Eng kattasini oxiriga qo'yish
+        arr.splice(0, size, ...arr.slice(0, size).reverse());
+    }
+
+    return arr;
+}
+
+let numbers = [5, 2, 8, 1, 3];
+
+document.getElementById("result").innerHTML = pancakeSort(numbers);
+//SELF
+[5, 2, 8, 1, 3]
+        ↓
+eng kattani top → 8
+        ↓
+8 ni tepaga olib kel
+        ↓
+flip
+        ↓
+8 ni oxiriga olib bor
+        ↓
+yana keyingi eng kattasi
+        ↓
+[1, 2, 3, 5, 8]
+Counting Sort  → SANAYDI
+Flash Sort     → DIAPAZON + JOY
+Pancake Sort   → FLIP
