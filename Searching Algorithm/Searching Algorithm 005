@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interpolation Search</title>
+</head>
+<body>
+
+    <h2>Interpolation Search Index</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function interpolationSearch(arr, value) {
+
+    let low = 0;
+    let high = arr.length - 1;
+
+    while (low <= high && value >= arr[low] && value <= arr[high]) {
+
+        let pos = Math.floor(
+            low + ((value - arr[low]) * (high - low)) /
+            (arr[high] - arr[low])
+        );
+
+        if (arr[pos] == value) {
+            return pos;
+        }
+
+        if (arr[pos] < value) {
+            low = pos + 1;
+        } else {
+            high = pos - 1;
+        }
+    }
+
+    return -1;
+}
+
+let numbers = [1, 7, 13, 14, 15, 26, 37, 48, 99, 110];
+
+let result = interpolationSearch(numbers, 99);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+SORTED ARRAY
+      ↓
+LOW + HIGH
+      ↓
+QIYMAT QAYERDA BO‘LISHINI TAXMIN QIL
+      ↓
+POS INDEX
+      ↓
+TOPILDIMI?
+  ↓          ↓
+ HA          YO‘Q
+  ↓           ↓
+INDEX     chap/o‘ng tomonni qisqartir
+1. Find Word Index
+→ string ichidan word indexlarini topadi
+
+2. Linear Search
+→ bittalab qidiradi
+
+3. Ternary Search
+→ 3 qismga bo‘lib qidiradi
+
+4. Jump Search
+→ blok-blok sakrab qidiradi
+
+5. Interpolation Search
+→ qiymatga qarab joyini TAXMIN qilib qidiradi
