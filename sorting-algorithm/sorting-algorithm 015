@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bucket Sort</title>
+</head>
+<body>
+
+    <h2>Bucket Sort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function bucketSort(arr) {
+
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+
+    let bucketCount = 5;
+    let buckets = [];
+
+    // Bucketlarni yaratish
+    for (let i = 0; i < bucketCount; i++) {
+        buckets.push([]);
+    }
+
+    // Sonlarni bucketlarga joylash
+    for (let i = 0; i < arr.length; i++) {
+
+        let index = Math.floor(
+            ((arr[i] - min) / (max - min + 1)) * bucketCount
+        );
+
+        buckets[index].push(arr[i]);
+    }
+
+    // Har bir bucketni sort qilish
+    for (let i = 0; i < buckets.length; i++) {
+        buckets[i].sort((a, b) => a - b);
+    }
+
+    // Bucketlarni birlashtirish
+    let result = [];
+
+    for (let i = 0; i < buckets.length; i++) {
+        result = result.concat(buckets[i]);
+    }
+
+    return result;
+}
+
+let numbers = [29, 10, 45, 20, 35, 15, 40];
+
+document.getElementById("result").innerHTML = bucketSort(numbers);
+//SELF
+Counting Sort → har bir son NECHA MARTA borligini sanaydi
+
+Bucket Sort → sonlarni GURUHLARGA/BUCKETLARGA ajratadi
+               → har bir guruhni sort qiladi
+               → birlashtiradi
+
+[10, 15]
++
+[20, 29]
++
+[35]
++
+[40, 45]
+
+↓
+
+[10, 15, 20, 29, 35, 40, 45]
+ARRAY
+  ↓
+MIN + MAX
+  ↓
+BUCKETLARGA AJRAT
+  ↓
+HAR BIR BUCKETNI SORT QIL
+  ↓
+BUCKETLARNI BIRLASHTIR
+  ↓
+TARTIBLANGAN ARRAY
