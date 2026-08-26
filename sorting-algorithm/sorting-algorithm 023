@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highest Insert Index</title>
+</head>
+<body>
+
+    <h2>Find Highest Insert Index</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function highestInsertIndex(arr, value) {
+
+    let index = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] <= value) {
+            index = i + 1;
+        }
+    }
+
+    return index;
+}
+
+let numbers = [1, 2, 2, 3, 5];
+
+let result = highestInsertIndex(numbers, 2);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+LOWEST INSERT INDEX
+→ birinchi mos joy
+
+[1, 2, 2, 3, 5]
+    ↑
+   1
+HIGHEST INSERT INDEX
+→ oxirgi mos joydan keyingi index
+
+[1, 2, 2, 3, 5]
+        ↑
+        3
+LOWEST  → BIRINCHI
+HIGHEST → OXIRGI
