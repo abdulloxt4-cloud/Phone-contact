@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Characters</title>
+</head>
+<body>
+
+    <h2>Sort Characters in String</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function sortCharacters(str) {
+
+    return str.split("").sort().join("");
+}
+
+let text = "javascript";
+
+let result = sortCharacters(text);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+"javascript"
+      ↓
+split("")
+      ↓
+["j","a","v","a","s","c","r","i","p","t"]
+      ↓
+sort()
+      ↓
+["a","a","c","i","j","p","r","s","t","v"]
+      ↓
+join("")
+      ↓
+"aacijprstv"
+split("") → stringni array qiladi
+sort()    → tartiblaydi
+join("")  → arrayni string qiladi
