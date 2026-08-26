@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lowest Insert Index</title>
+</head>
+<body>
+
+    <h2>Find Lowest Insert Index</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function lowestIndex(arr, value) {
+
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] >= value) {
+            return i;
+        }
+    }
+
+    return arr.length;
+}
+
+let numbers = [1, 2, 2, 3, 5];
+
+let result = lowestIndex(numbers, 2);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+17. Highest Insert Index
+→ value'dan KICHIK yoki TENG bo‘lganlarni qidiradi
+→ ENG OXIRGI mos joyni oladi
+
+20. Lowest Insert Index
+→ value'dan KATTA yoki TENG bo‘lgan birinchi joyni qidiradi
+→ ENG BIRINCHI mos joyni oladi
+Array:
+[1, 2, 2, 3, 5]
+
+value = 2
+LOWEST:
+[1, 2, 2, 3, 5]
+    ↑
+   1
+
+HIGHEST:
+[1, 2, 2, 3, 5]
+        ↑
+        3
