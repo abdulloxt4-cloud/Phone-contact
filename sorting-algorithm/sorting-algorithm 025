@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timsort</title>
+</head>
+<body>
+
+    <h2>Timsort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function timSort(arr) {
+
+    let size = 2;
+
+    // Kichik qismlarni sort qilish
+    for (let i = 0; i < arr.length; i += size) {
+        let part = arr.slice(i, i + size);
+        part.sort((a, b) => a - b);
+
+        for (let j = 0; j < part.length; j++) {
+            arr[i + j] = part[j];
+        }
+    }
+
+    // Qismlarni birlashtirish
+    for (let size = 2; size < arr.length; size *= 2) {
+
+        for (let left = 0; left < arr.length; left += size * 2) {
+
+            let mid = left + size;
+            let right = Math.min(left + size * 2, arr.length);
+
+            let first = arr.slice(left, mid);
+            let second = arr.slice(mid, right);
+
+            let merged = first.concat(second).sort((a, b) => a - b);
+
+            for (let i = 0; i < merged.length; i++) {
+                arr[left + i] = merged[i];
+            }
+        }
+    }
+
+    return arr;
+}
+
+let numbers = [5, 2, 8, 1, 6, 3, 7, 4];
+
+let result = timSort(numbers);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+ARRAY
+  ↓
+KICHIK QISMLARNI TOP
+  ↓
+QISMLARNI SORT QIL
+  ↓
+QISMLARNI MERGE QIL
+  ↓
+TARTIBLANGAN ARRAY
+Insertion Sort → kichik qismlarni tez tartiblaydi
+Merge Sort     → tartiblangan qismlarni birlashtiradi
+Timsort        → ikkalasidan foydalanadi
+[1, 3, 5, 2, 4, 6]
+ ↑─────↑  ↑─────↑
+   run      run
+Timsort → TAYYOR TARTIBLANGAN QISMLARNI TOPADI
+       → SORT QILADI
+       → BIRLASHTIRADI
