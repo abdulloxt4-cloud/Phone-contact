@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counting Sort</title>
+</head>
+<body>
+
+    <h2>Counting Sort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function countingSort(arr) {
+
+    let max = Math.max(...arr);
+    let count = new Array(max + 1).fill(0);
+
+    for (let i = 0; i < arr.length; i++) {
+        count[arr[i]]++;
+    }
+
+    let result = [];
+
+    for (let i = 0; i < count.length; i++) {
+
+        for (let j = 0; j < count[i]; j++) {
+            result.push(i);
+        }
+    }
+
+    return result;
+}
+
+let numbers = [4, 2, 2, 1, 3, 4];
+
+document.getElementById("result").innerHTML = countingSort(numbers);
+//SELF
+index:  0  1  2  3  4
+value:  0  0  0  0  0
+4 → count[4]++
+2 → count[2]++
+2 → count[2]++
+1 → count[1]++
+3 → count[3]++
+4 → count[4]++
+1 → 1 marta
+2 → 2 marta
+3 → 1 marta
+4 → 2 marta
+Bubble      → yonma-yon solishtir
+Selection   → eng kichigini top
+Insertion   → joyiga qo‘y
+Shell       → gap
+Comb        → gap + bubble
+Gnome       → almashtir + orqaga
+Counting    → SANAB CHIQ
