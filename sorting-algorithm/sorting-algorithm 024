@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Array Sorted</title>
+</head>
+<body>
+
+    <h2>Check Array Sorted</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+//JS
+function isSorted(arr) {
+
+    for (let i = 0; i < arr.length - 1; i++) {
+
+        if (arr[i] > arr[i + 1]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+let numbers = [1, 2, 3, 4, 5];
+
+let result = isSorted(numbers);
+
+document.getElementById("result").innerHTML = result;
+//SELF
+ARRAY
+  ↓
+Yonma-yon elementlarni tekshir
+  ↓
+oldingi > keyingi ?
+  ↓
+HA → false
+YO‘Q → davom et
+  ↓
+hammasi to‘g‘ri → true
