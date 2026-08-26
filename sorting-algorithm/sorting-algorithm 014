@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bogosort</title>
+</head>
+<body>
+
+    <h2>Bogosort</h2>
+
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function isSorted(arr) {
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < arr[i - 1]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function shuffle(arr) {
+
+    for (let i = arr.length - 1; i > 0; i--) {
+
+        let j = Math.floor(Math.random() * (i + 1));
+
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+
+function bogoSort(arr) {
+
+    while (!isSorted(arr)) {
+        shuffle(arr);
+    }
+
+    return arr;
+}
+
+let numbers = [3, 1, 2];
+
+document.getElementById("result").innerHTML = bogoSort(numbers);
+//SELF
+isSorted → true
+!true → false
+
+isSorted → false
+!false → true
+Array
+ ↓
+Tartiblanganmi?
+ ↓
+YO‘Q → aralashtir
+ ↓
+Yana tekshir
+ ↓
+YO‘Q → yana aralashtir
+ ↓
+HA → tugadi
