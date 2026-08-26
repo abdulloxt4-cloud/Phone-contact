@@ -65,3 +65,8 @@ Yana tekshir
 YO‘Q → yana aralashtir
  ↓
 HA → tugadi
+BOGOSORT = ARALASHTIR → TEKSHIR → TARTIBLANGUNCHA TAKRORLA
+
+Eng muhim gap:
+
+Bogosort amaliyotda ishlatilmaydi, chunki omadga bog‘liq va juda sekin bo‘lishi mumkin. Bu mashq asosan sorting algoritmlarini tushunish va boshqa algoritmlar qanchalik samaraliroq ekanini ko‘rish uchun o‘rgatiladi.
