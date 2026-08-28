@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Tree Shaking</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+export function add(a, b) {
+    return a + b;
+}
+
+export function subtract(a, b) {
+    return a - b;
+}
+
+export function multiply(a, b) {
+    return a * b;
+}
+
+export function divide(a, b) {
+    return a / b;
+}
+import { add, multiply } from "./math.js";
+
+let result = `
+    Qo‘shish: ${add(10, 5)} <br>
+    Ko‘paytirish: ${multiply(10, 5)}
+`;
+
+document.getElementById("result").innerHTML = result;
+
+//KEYWRODS
+Tree Shaking → kerak bo‘lmagan kodni olib tashlash
+export → tashqariga chiqarish
+import → kerakli narsani olib kelish
+named export → funksiyalarni nomi bilan export qilish
