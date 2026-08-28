@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Re-exporting</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+function add(a, b) {
+    return a + b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+export { add, multiply };
+export { add, multiply } from "./math.js";
+import { add, multiply } from "./index.js";
+
+let result = `
+    Qo‘shish: ${add(10, 5)} <br>
+    Ko‘paytirish: ${multiply(10, 5)}
+`;
+
+document.getElementById("result").innerHTML = result;
+//SELF
+math.js
+   ↓
+ add, multiply
+   ↓
+index.js
+   ↓
+ add, multiply
+   ↓
+main.js
+Qo‘shish: 15
+Ko‘paytirish: 50
