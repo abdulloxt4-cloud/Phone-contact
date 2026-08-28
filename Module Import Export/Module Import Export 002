@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Named Exports</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    return a / b;
+}
+
+export { add, subtract, multiply, divide };
+
+import { add, subtract, multiply, divide } from "./math.js";
+
+let result = `
+    Qo‘shish: ${add(10, 5)} <br>
+    Ayirish: ${subtract(10, 5)} <br>
+    Ko‘paytirish: ${multiply(10, 5)} <br>
+    Bo‘lish: ${divide(10, 5)}
+`;
+
+document.getElementById("result").innerHTML = result;
+//SELF
+add       → qo‘shadi
+subtract  → ayiradi
+multiply  → ko‘paytiradi
+divide    → bo‘ladi
+Named Export:
+
+math.js
+   ↓
+export { add, subtract, multiply, divide }
+   ↓
+main.js
+   ↓
+import { add, subtract, multiply, divide }
