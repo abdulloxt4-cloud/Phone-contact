@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exporting Constants</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+const PI = 3.14159;
+
+const SITE_NAME = "My Website";
+
+const MAX_USERS = 100;
+
+export { PI, SITE_NAME, MAX_USERS };
+import { PI, SITE_NAME, MAX_USERS } from "./constants.js";
+
+let result = `
+    PI: ${PI} <br>
+    Sayt nomi: ${SITE_NAME} <br>
+    Maksimal foydalanuvchilar: ${MAX_USERS}
+`;
+
+document.getElementById("result").innerHTML = result;
+//SELF
+PI: 3.14159
+Sayt nomi: My Website
+Maksimal foydalanuvchilar: 100
+constants.js
+     ↓
+const yaratish
+     ↓
+export
+     ↓
+main.js
+     ↓
+import
+     ↓
+ishlatish
