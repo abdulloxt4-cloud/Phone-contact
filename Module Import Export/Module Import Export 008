@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional Imports</title>
+</head>
+<body>
+
+    <button id="btn">Load Module</button>
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+export function calculate(a, b) {
+    return a + b;
+}
+export function greet(name) {
+    return `Hello, ${name}!`;
+}
+document.getElementById("btn").addEventListener("click", async () => {
+    let type = "math";
+
+    if (type === "math") {
+        const module = await import("./math.js");
+
+        document.getElementById("result").textContent =
+            module.calculate(10, 5);
+    } else if (type === "greet") {
+        const module = await import("./greet.js");
+
+        document.getElementById("result").textContent =
+            module.greet("Abdulloh");
+    }
+});
+
+//KEYWORDS
+Conditional Import
+       ↓
+runtime value
+       ↓
+if / else
+       ↓
+import()
+       ↓
+kerakli module
+conditional import → shartga qarab modul import qilish
+if → shart tekshiradi
+import() → modulni dinamik yuklaydi
+await → modul yuklanishini kutadi
+runtime value → dastur ishlayotgan paytdagi qiymat
