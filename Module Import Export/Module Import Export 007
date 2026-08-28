@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Import</title>
+</head>
+<body>
+
+    <button id="btn">Greet</button>
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+export function greet(name) {
+    return `Hello, ${name}!`;
+}
+  document.getElementById("btn").addEventListener("click", async () => {
+    const module = await import("./greet.js");
+
+    const result = module.greet("Abdulloh");
+
+    document.getElementById("result").textContent = result;
+});
+      //SELF
+      Avval button bosilishini kutamiz:
+
+document.getElementById("btn").addEventListener("click", async () => {
+
+Button bosilganda:
+
+const module = await import("./greet.js");
+
+→ greet.js shu paytda yuklanadi.
+
+Keyin:
+
+const result = module.greet("Abdulloh");
+
+→ yuklangan modul ichidagi greet() funksiyasini ishlatamiz.
+
+Nega module.greet()?
+
+Chunki dynamic import modulni object ko‘rinishida qaytaradi:
+
+module
+ └── greet
+
+Shuning uchun:
+
+module.greet()
+Natija
+
+Buttonni bossak:
+
+Hello, Abdulloh!
+
+Oddiy import:
+
+import { greet } from "./greet.js";
+
+→ dastur boshida yuklanadi.
+
+Dynamic import:
+
+const module = await import("./greet.js");
+
+→ kerak bo‘lgan paytda yuklanadi.
+
+Qisqa formula:
+import() → modulni yukla
+await → yuklanishini kut
+module.greet() → funksiyani ishlat
