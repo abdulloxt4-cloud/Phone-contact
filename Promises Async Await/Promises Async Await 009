@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Throttled API</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function request(id) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log(`Request ${id} completed`);
+            resolve();
+        }, 1000);
+    });
+}
+
+async function throttleRequests(tasks, limit) {
+    let index = 0;
+
+    async function worker() {
+        while (index < tasks.length) {
+            const currentIndex = index;
+            index++;
+
+            await tasks[currentIndex]();
+        }
+    }
+
+    const workers = [];
+
+    for (let i = 0; i < limit; i++) {
+        workers.push(worker());
+    }
+
+    await Promise.all(workers);
+}
+
+const tasks = [
+    () => request(1),
+    () => request(2),
+    () => request(3),
+    () => request(4),
+    () => request(5)
+];
+
+throttleRequests(tasks, 2).then(() => {
+    document.getElementById("result").textContent =
+        "All requests completed!";
+});
+//KEYWORD
+limit = 2
+
+Request 1 ──────→
+Request 2 ──────→
+Request 3 ⏳
+Request 4 ⏳
+Request 5 ⏳
+throttle → bir vaqtda bajariladigan ish sonini cheklash
+limit → maksimal son
+async → asynchronous funksiya
+await → Promise tugashini kutish
+Promise → asynchronous amal
+queue → navbat
+simultaneously → bir vaqtda
