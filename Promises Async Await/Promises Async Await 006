@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Queue</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function createTask(name, time) {
+    return () => {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log(name);
+                resolve();
+            }, time);
+        });
+    };
+}
+
+const tasks = [
+    createTask("Task 1 completed", 1000),
+    createTask("Task 2 completed", 1000),
+    createTask("Task 3 completed", 1000)
+];
+
+tasks.reduce((promise, task) => {
+    return promise.then(() => task());
+}, Promise.resolve());
+
+//KEYWORD
+Promise.resolve()
+      ↓
+Task 1
+      ↓
+.then()
+      ↓
+Task 2
+      ↓
+.then()
+      ↓
+Task 3
+Promise → asynchronous amal
+task queue → vazifalar navbati
+sequentially → ketma-ket
+resolve → task tugaganini bildiradi
+.then() → keyingi amalni boshlaydi
+reduce() → tasklarni ketma-ket ulashga yordam beradi
