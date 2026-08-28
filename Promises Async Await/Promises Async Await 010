@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Promise Wrapper</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function wait(ms) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Operation completed!");
+        }, ms);
+    });
+}
+
+wait(2000).then((message) => {
+    document.getElementById("result").textContent = message;
+});
+
+//KEYWORD
+setTimeout()
+    ↓
+Promise ichiga "o‘radik"
+    ↓
+wait()
+Asynchronous operation
+       ↓
+   new Promise()
+       ↓
+    resolve()
+       ↓
+    .then()
+wrapper → bir narsani boshqa narsa ichiga o‘rash
+Promise → asynchronous natijani boshqaradi
+resolve → muvaffaqiyatli natija
+reject → xato natija
+setTimeout → vaqt kutish
+.then() → Promise natijasini olish
