@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import with Alias</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+function add(a, b) {
+    return a + b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+export { add, multiply };
+
+import {
+    add as qoShish,
+    multiply as kopaytirish
+} from "./math.js";
+
+let result = `
+    Qo‘shish: ${qoShish(10, 5)} <br>
+    Ko‘paytirish: ${kopaytirish(10, 5)}
+`;
+
+document.getElementById("result").innerHTML = result;
+//SELF
+Qo‘shish: 15
+Ko‘paytirish: 50
+exportdagi nom       importdagi alias
+     add        →       qoShish
+  multiply      →     kopaytirish
+import { eskiNom as yangiNom } from "./file.js";
+
+ as = "shu narsani mana bu nom bilan ishlat".
