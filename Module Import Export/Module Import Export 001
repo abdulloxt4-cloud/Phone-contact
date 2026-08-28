@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Module Import Export</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+export default greet;
+//KEYWORDS
+export default → BER
+import → OL
+
+greet.js → funksiyani export qiladi
+main.js  → funksiyani import qiladi
+export default → asosiy funksiyani boshqa faylga chiqaradi
+import → boshqa fayldan funksiyani olib keladi
+function → funksiya yaratadi
