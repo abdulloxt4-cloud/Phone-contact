@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chained Async Await</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function task1() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Task 1 completed");
+            resolve();
+        }, 1000);
+    });
+}
+
+function task2() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Task 2 completed");
+            resolve();
+        }, 1000);
+    });
+}
+
+function task3() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Task 3 completed");
+            resolve();
+        }, 1000);
+    });
+}
+
+async function runTasks() {
+    await task1();
+    await task2();
+    await task3();
+
+    document.getElementById("result").textContent =
+        "All tasks completed!";
+}
+
+runTasks();
+//KEYWORD
+runTasks()
+    ↓
+await task1()
+    ↓ 1 sekund
+await task2()
+    ↓ 1 sekund
+await task3()
+    ↓ 1 sekund
+All tasks completed!
+async → funksiyada await ishlatishga imkon beradi
+await → Promise tugashini kutadi
+Promise → asynchronous amal
+setTimeout → vaqt kutadi
+resolve → Promise muvaffaqiyatli tugadi
+sequence → ketma-ket
