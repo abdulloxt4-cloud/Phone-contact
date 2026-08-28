@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promise.allSettled()</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+const promise1 = Promise.resolve("Task 1 successful");
+
+const promise2 = Promise.reject("Task 2 failed");
+
+const promise3 = Promise.resolve("Task 3 successful");
+
+Promise.allSettled([promise1, promise2, promise3])
+    .then((results) => {
+        results.forEach((result) => {
+            if (result.status === "fulfilled") {
+                console.log("Success:", result.value);
+            } else {
+                console.log("Error:", result.reason);
+            }
+        });
+    });
+//KEYWORD
+Success: Task 1 successful
+Error: Task 2 failed
+Success: Task 3 successful
+Promise.allSettled() → barcha Promise natijalarini kutadi
+fulfilled → Promise muvaffaqiyatli tugadi
+rejected → Promise xato bilan tugadi
+status → natijaning holati
+value → resolve() bergan qiymat
+reason → reject() bergan xato
