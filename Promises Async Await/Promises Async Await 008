@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async Await Error Handling</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function getData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject("Something went wrong!");
+        }, 1000);
+    });
+}
+
+async function runTask() {
+    try {
+        const result = await getData();
+
+        document.getElementById("result").textContent = result;
+    } catch (error) {
+        document.getElementById("result").textContent =
+            "Error: " + error;
+    }
+}
+
+runTask();
+//KEYWORD
+async → asynchronous funksiya
+await → Promise tugashini kutadi
+try → kodni sinab ko‘radi
+catch → xatoni ushlaydi
+throw → xato chiqaradi
+error → xato ma'lumoti
+try   → "ishga urinib ko‘r"
+catch → "xato bo‘lsa ushla"
