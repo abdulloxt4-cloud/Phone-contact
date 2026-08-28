@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exporting Classes</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+export class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    introduce() {
+        return `My name is ${this.name} and I am ${this.age} years old.`;
+    }
+}
+import { Person } from "./person.js";
+
+const person = new Person("Abdulloh", 16);
+
+let result = person.introduce();
+
+document.getElementById("result").textContent = result;
+//KEYWORDS
+person.js
+   ↓
+export class Person
+   ↓
+main.js
+   ↓
+import { Person }
+   ↓
+new Person(...)
+   ↓
+object
+class → class yaratadi
+export → classni boshqa faylga chiqaradi
+import → classni boshqa fayldan oladi
+new → classdan yangi object yaratadi
+constructor → object yaratilganda ishga tushadi
+this → hozirgi objectni bildiradi
