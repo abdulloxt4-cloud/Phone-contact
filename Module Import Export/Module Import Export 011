@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import JSON</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+{
+    "name": "Abdulloh",
+    "age": 20,
+    "city": "Tashkent"
+}
+import data from "./data.json" with { type: "json" };
+
+let result = `
+    Ism: ${data.name} <br>
+    Yosh: ${data.age} <br>
+    Shahar: ${data.city}
+`;
+
+document.getElementById("result").innerHTML = result;
+//KEYWRODS
+Ism: Abdulloh
+Yosh: 20
+Shahar: Tashkent
+data.json
+    ↓
+import data
+    ↓
+data.name
+data.age
+data.city
+JSON → ma'lumot saqlash formati
+import → boshqa fayldan olish
+with → importga qo‘shimcha shart berish
+type: "json" → fayl JSON ekanini bildiradi
+assert → JSON importini tasdiqlash
+property → object ichidagi qiymat
