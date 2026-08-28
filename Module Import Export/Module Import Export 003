@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import All as Alias</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function divide(a, b) {
+    return a / b;
+}
+
+export { add, subtract, multiply, divide };
+  import * as math from "./math.js";
+
+let result = `
+    Qo‘shish: ${math.add(10, 5)} <br>
+    Ayirish: ${math.subtract(10, 5)} <br>
+    Ko‘paytirish: ${math.multiply(10, 5)} <br>
+    Bo‘lish: ${math.divide(10, 5)}
+`;
+
+document.getElementById("result").innerHTML = result;
+  //SELF
+  Qo‘shish: 15
+Ayirish: 5
+Ko‘paytirish: 50
+Bo‘lish: 2
+  * = hammasini ol
+ as math = hammasini math degan bitta objectga joyla.
