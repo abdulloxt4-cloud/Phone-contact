@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Promise</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
+//JS
+function sayHello() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Hello, World!");
+        }, 1000);
+    });
+}
+
+sayHello().then((message) => {
+    document.getElementById("result").textContent = message;
+});
+//SELF
+sayHello()
+   ↓
+Promise
+   ↓
+1 sekund
+   ↓
+resolve("Hello, World!")
+   ↓
+.then()
+   ↓
+HTMLga chiqarish
+Promise → kelajakda natija beradigan amal
+resolve → Promise muvaffaqiyatli tugaganini bildiradi
+setTimeout → ma'lum vaqt kutadi
+.then() → Promise natijasini oladi
+1000 → 1000 millisekund = 1 sekund
