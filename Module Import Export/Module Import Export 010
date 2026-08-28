@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aggregating Exports</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+//JS
+function add(a, b) {
+    return a + b;
+}
+
+export { add };
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+export { greet };
+export { add } from "./math.js";
+export { greet } from "./greet.js";
+import { add, greet } from "./index.js";
+
+let result = `
+    ${greet("Abdulloh")} <br>
+    Qo‘shish: ${add(10, 5)}
+`;
+
+document.getElementById("result").innerHTML = result;
+//KEYWORD
+2 ta module
+    ↓
+index.js
+    ↓
+bitta joyga yig‘ish
+    ↓
+main.js
+aggregate → yig‘moq, bir joyga to‘plamoq
+export → tashqariga chiqarish
+import → boshqa fayldan olish
+re-export → boshqa moduldagi narsani yana export qilish
+from → qaysi fayldan ekanini ko‘rsatadi
