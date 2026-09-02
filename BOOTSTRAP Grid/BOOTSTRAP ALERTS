@@ -1,0 +1,79 @@
+1. Alert o‘zi nima?
+Alert → foydalanuvchiga muhim xabar ko‘rsatadigan blok.
+Masalan:
+Success → Ish muvaffaqiyatli bajarildi
+Info    → Ma'lumot
+Warning → Ogohlantirish
+Danger  → Xatolik/xavf
+2. Oddiy Alerts
+<div class="alert alert-success">
+    <strong>Success!</strong> Ish muvaffaqiyatli bajarildi.
+</div>
+
+<div class="alert alert-info">
+    <strong>Info!</strong> Bu ma'lumot.
+</div>
+
+<div class="alert alert-warning">
+    <strong>Warning!</strong> Ehtiyot bo'ling.
+</div>
+
+<div class="alert alert-danger">
+    <strong>Danger!</strong> Xatolik yuz berdi.
+</div>
+3. Alert Links
+
+Alert ichida link bo‘lsa, .alert-link ishlatiladi.
+<div class="alert alert-success">
+    <strong>Success!</strong>
+    <a href="#" class="alert-link">Bu xabarni o'qing</a>.
+</div>
+4. Closing Alerts — yopiladigan Alert
+
+× ni bossang alert yo‘qoladi.
+<div class="alert alert-success alert-dismissible">
+
+    <a href="#" class="close" data-dismiss="alert">
+        &times;
+    </a>
+
+    <strong>Success!</strong>
+    Ish muvaffaqiyatli bajarildi.
+
+</div>
+.alert-dismissible → alertni yopish imkonini beradi
+
+.close             → × tugmasini yopish tugmasi qiladi
+
+data-dismiss="alert" → bosilganda alertni yopadi
+
+&times;             → × belgisi
+5. Animated Alerts
+
+Alert yopilganda sekin fade bo‘lib yo‘qoladi.
+<div class="alert alert-danger alert-dismissible fade in">
+
+    <a href="#" class="close" data-dismiss="alert">
+        &times;
+    </a>
+
+    <strong>Danger!</strong>
+    Xatolik yuz berdi.
+
+</div>
+.alert              → Alert yaratadi
+
+.alert-success      → muvaffaqiyat
+.alert-info         → ma'lumot
+.alert-warning      → ogohlantirish
+.alert-danger       → xavf/xatolik
+
+.alert-link         → alert ichidagi link
+
+.alert-dismissible  → yopiladigan alert
+.close              → yopish tugmasi
+data-dismiss="alert" → alertni yopadi
+&times;             → × belgisi
+
+.fade               → fade effekt
+.in                 → effektni yoqadi
