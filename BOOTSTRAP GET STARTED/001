@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+</body>
+</html>
+//SELF
+<!DOCTYPE html>
+→ Bu HTML5 ekanini bildiradi.
+
+<html lang="en">
+→ Sahifa tili English ekanini bildiradi.
+
+<meta charset="UTF-8">
+→ Harflar va belgilar to‘g‘ri chiqishini ta’minlaydi.
