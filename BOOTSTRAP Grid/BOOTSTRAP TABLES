@@ -1,0 +1,213 @@
+<table class="table">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+    </tr>
+</table>
+.table → jadvalga Bootstrapning oddiy dizaynini beradi.
+SECOND=========================================================
+<table class="table table-striped">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+    </tr>
+</table>
+.table-striped → qatorlarni navbatma-navbat rangli qiladi.
+===================================================================
+<table class="table table-bordered">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+    </tr>
+</table>
+.table-bordered → jadval va kataklarning hammasiga border beradi.
+====================================================================
+<table class="table table-hover">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+    </tr>
+</table>
+.table-hover → sichqoncha qator ustiga kelganda rangini o‘zgartiradi.
+=====================================================================================
+<table class="table table-condensed">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+    </tr>
+    <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+    </tr>
+</table>
+.table-condensed → katak ichidagi bo‘sh joyni kamaytiradi, jadval ixcham bo‘ladi.
+============================================================================================
+<table class="table">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+
+    <tr>
+        <td>Ali</td>
+        <td>Aliyev</td>
+        <td>ali@example.com</td>
+    </tr>
+
+    <tr class="success">
+        <td>Vali</td>
+        <td>Valiyev</td>
+        <td>vali@example.com</td>
+    </tr>
+
+    <tr class="danger">
+        <td>Hasan</td>
+        <td>Hasanov</td>
+        <td>hasan@example.com</td>
+    </tr>
+
+    <tr class="info">
+        <td>Husan</td>
+        <td>Husanov</td>
+        <td>husan@example.com</td>
+    </tr>
+
+    <tr class="warning">
+        <td>Bobur</td>
+        <td>Boburov</td>
+        <td>bobur@example.com</td>
+    </tr>
+
+    <tr class="active">
+        <td>Aziz</td>
+        <td>Azizov</td>
+        <td>aziz@example.com</td>
+    </tr>
+</table>
+.active   → active/ajratilgan
+.success  → muvaffaqiyat
+.info     → ma'lumot
+.warning  → ogohlantirish
+.danger   → xavf
+=========================================================
+<div class="table-responsive">
+
+    <table class="table">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+        </tr>
+
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+        </tr>
+
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+        </tr>
+    </table>
+
+</div>
+.table-responsive → telefon kabi kichik ekranda jadval sig‘masa, gorizontal scroll chiqaradi
+===============================================================================================
+.table              → oddiy Bootstrap table
+.table-striped      → qatorlarga navbatma-navbat rang
+.table-bordered     → borderlar
+.table-hover        → hover effect
+.table-condensed    → ixcham table
+
+.success            → muvaffaqiyat
+.info               → ma'lumot
+.warning            → ogohlantirish
+.danger             → xavf
+.active             → active
+
+.table-responsive   → kichik ekranda scroll
