@@ -1,0 +1,89 @@
+1. Button Group
+<div class="btn-group">
+    <button class="btn btn-primary">Apple</button>
+    <button class="btn btn-primary">Samsung</button>
+    <button class="btn btn-primary">Sony</button>
+</div>
+.btn-group → buttonlarni bitta guruhga birlashtiradi.
+2. Group Size
+
+Hamma buttonlarni birdan kattalashtirish/kichraytirish:
+<div class="btn-group btn-group-lg">
+    <button class="btn btn-primary">Apple</button>
+    <button class="btn btn-primary">Samsung</button>
+    <button class="btn btn-primary">Sony</button>
+</div>
+3. Vertical Button Group
+
+Buttonlar tepada-pastga joylashadi:
+<div class="btn-group-vertical">
+    <button class="btn btn-primary">Apple</button>
+    <button class="btn btn-primary">Samsung</button>
+    <button class="btn btn-primary">Sony</button>
+</div>
+4. Justified Button Group
+
+Buttonlar butun kenglikni teng bo‘lib oladi:
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-primary">Apple</a>
+    <a href="#" class="btn btn-primary">Samsung</a>
+    <a href="#" class="btn btn-primary">Sony</a>
+</div>
+.btn-group-justified → guruhni to‘liq kenglikka yoyadi.
+5. Dropdown bilan Group
+
+Button ichida qo‘shimcha menyu ochish:
+<div class="btn-group">
+
+    <button class="btn btn-primary">Apple</button>
+
+    <button class="btn btn-primary">Samsung</button>
+
+    <div class="btn-group">
+
+        <button class="btn btn-primary dropdown-toggle"
+                data-toggle="dropdown">
+            Sony <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#">Tablet</a></li>
+            <li><a href="#">Smartphone</a></li>
+        </ul>
+
+    </div>
+
+</div>
+6. Split Button Dropdown
+
+Buttonning o‘zi va dropdown tugmasi alohida:
+<div class="btn-group">
+
+    <button class="btn btn-primary">
+        Sony
+    </button>
+
+    <button class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown">
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu">
+        <li><a href="#">Tablet</a></li>
+        <li><a href="#">Smartphone</a></li>
+    </ul>
+
+</div>
+<div class="">
+    <button class="btn btn-primary">Apple</button>
+    <button class="btn btn-primary">Samsung</button>
+    <button class="btn btn-primary">Sony</button>
+</div>
+.btn-group              → buttonlarni guruhlaydi
+.btn-group-lg           → katta
+.btn-group-sm           → kichik
+.btn-group-xs           → juda kichik
+.btn-group-vertical     → tepaga-pastga
+.btn-group-justified    → to‘liq kenglik
+.dropdown-toggle        → dropdown ochadi
+data-toggle="dropdown"  → dropdownni ishlatadi
