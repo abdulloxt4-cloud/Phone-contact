@@ -1,0 +1,95 @@
+1. Button Styles — tugma turlari
+<button type="button" class="btn">Basic</button>
+
+<button type="button" class="btn btn-default">Default</button>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+<button type="button" class="btn btn-success">Success</button>
+
+<button type="button" class="btn btn-info">Info</button>
+
+<button type="button" class="btn btn-warning">Warning</button>
+
+<button type="button" class="btn btn-danger">Danger</button>
+
+<button type="button" class="btn btn-link">Link</button>
+.btn          → buttonning asosiy Bootstrap ko‘rinishi
+
+.btn-default  → oddiy
+.btn-primary  → asosiy
+.btn-success  → muvaffaqiyat
+.btn-info     → ma'lumot
+.btn-warning  → ogohlantirish
+.btn-danger   → xavf/xatolik
+.btn-link     → link ko‘rinishidagi button
+2. Button <a>, <button>, <input> bilan
+
+Bootstrap button classlarini 3 xil elementga berish mumkin:
+<a href="#" class="btn btn-info">Link Button</a>
+
+<button type="button" class="btn btn-info">
+    Button
+</button>
+
+<input type="button" class="btn btn-info" value="Input Button">
+
+<input type="submit" class="btn btn-info" value="Submit Button">
+href="#" nima?
+# → hozircha haqiqiy sahifa yo‘q degani
+
+href="https://example.com"
+→ haqiqiy sahifaga olib boradi
+3. Button Sizes — o‘lchamlari
+<button class="btn btn-primary btn-lg">
+    Large
+</button>
+
+<button class="btn btn-primary">
+    Normal
+</button>
+
+<button class="btn btn-primary btn-sm">
+    Small
+</button>
+
+<button class="btn btn-primary btn-xs">
+    XSmall
+</button>
+.btn-lg → katta
+.btn    → normal
+.btn-sm → kichik
+.btn-xs → juda kichik
+
+4. Block Level Button
+
+btn-block → button parentning butun kengligini egallaydi.
+<button type="button" class="btn btn-primary btn-block">
+    Button 1
+</button>
+5. Active / Disabled
+Active
+<button class="btn btn-primary active">
+    Active Primary
+</button>
+
+.active → button bosilgandek ko‘rinadi.
+//SELF
+.btn          → asosiy button
+
+.btn-default  → default
+.btn-primary  → primary
+.btn-success  → success
+.btn-info     → info
+.btn-warning  → warning
+.btn-danger   → danger
+.btn-link     → link ko‘rinishi
+
+.btn-lg       → katta
+.btn-sm       → kichik
+.btn-xs       → juda kichik
+
+.btn-block    → to‘liq kenglik
+
+.active       → bosilgandek ko‘rinadi
+.disabled     → faol emas
