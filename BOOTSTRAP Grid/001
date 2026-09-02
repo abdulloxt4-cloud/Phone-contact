@@ -1,0 +1,32 @@
+<div class="row">
+
+    <div class="col-sm-4">
+        Column 1
+    </div>
+
+    <div class="col-sm-4">
+        Column 2
+    </div>
+
+    <div class="col-sm-4">
+        Column 3
+    </div>
+
+</div>
+=========================================================
+row
+ ↓
+12 ta ustun
+ ↓
+4 + 4 + 4 = 12
+ ↓
+3 ta teng column
+col-sm-4
+    ↑   ↑
+    │   └── 4 ta grid
+    └────── tablet va undan katta ekran
+row → qator yaratadi
+col → ustun yaratadi
+12 → Bootstrap gridning to‘liq kengligi
+
+col-sm-4 + col-sm-4 + col-sm-4 = 12
