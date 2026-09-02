@@ -1,0 +1,36 @@
+Well → contentni alohida blok qilib ko‘rsatadi
+1. Basic Well
+
+.well → element atrofida kulrang fon, padding va yumaloq border hosil qiladi.
+<div class="well">
+    Basic Well
+</div>
+
+2. Small Well
+
+.well-sm → kichik Well.
+<div class="well well-sm">
+    Small Well
+</div>
+
+3. Normal Well
+Oddiy .well → normal o‘lcham.
+<div class="well">
+    Normal Well
+</div>
+
+4. Large Well
+.well-lg → katta Well.
+<div class="well well-lg">
+    Large Well
+</div>
+//KEYWORDS
+.well       → oddiy Well
+.well-sm    → kichik Well
+.well-lg    → katta Well
+well
+ ↓
+kulrang + padding + yumaloq border
+
+well-sm → kichraytiradi
+well-lg → kattalashtiradi
