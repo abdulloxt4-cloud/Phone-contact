@@ -1,0 +1,63 @@
+1. Jumbotron — katta ajratilgan blok
+<div class="jumbotron">
+    <h1>Bootstrap Tutorial</h1>
+    <p>
+        Bootstrap is the most popular HTML, CSS, and JS framework
+        for developing responsive, mobile-first projects on the web.
+    </p>
+</div>
+2. Jumbotron Inside Container
+
+Agar jumbotron ekranning chetlarigacha bormasin desak:
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>Bootstrap Tutorial</h1>
+        <p>
+            Bootstrap is the most popular HTML, CSS, and JS framework
+            for developing responsive, mobile-first projects on the web.
+        </p>
+    </div>
+
+    <p>This is some text.</p>
+    <p>This is another text.</p>
+
+</div>
+3. Jumbotron Outside Container
+
+Agar jumbotron ekranning chetlarigacha yoyilsin desak:
+<div class="jumbotron">
+
+    <h1>Bootstrap Tutorial</h1>
+
+    <p>
+        Bootstrap is the most popular HTML, CSS, and JS framework
+        for developing responsive, mobile-first projects on the web.
+    </p>
+
+</div>
+
+<div class="container">
+
+    <p>This is some text.</p>
+    <p>This is another text.</p>
+
+</div>
+.container ichida
+→ jumbotron chetlargacha bormaydi
+
+.container tashqarisida
+→ jumbotron ekran kengligida chiqadi
+4. Page Header
+
+.page-header → heading ostiga gorizontal chiziq qo‘shadi va biroz bo‘sh joy beradi.
+<div class="page-header">
+    <h1>My First Page</h1>
+</div>
+.jumbotron   → katta ajratilgan blok
+
+.container   → contentni cheklangan kenglikda ushlab turadi
+
+.page-header → heading ostiga chiziq + bo‘sh joy
+Jumbotron    → katta va e'tibor tortuvchi blok
+Page Header  → sarlavhani boshqa sectionlardan ajratish
