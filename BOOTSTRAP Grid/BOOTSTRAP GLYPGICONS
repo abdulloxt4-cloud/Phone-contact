@@ -1,0 +1,49 @@
+1. Glyphicon o‘zi nima?
+Glyphicon → Bootstrap ichidagi tayyor ikonka
+✉ → email
+🔍 → search
+🖨 → print
+⬇ → download
+2. Glyphicon Syntax
+
+Asosiy yozilishi:
+<span class="glyphicon glyphicon-name"></span>
+name o‘rniga kerakli icon nomi yoziladi.
+3. Envelope — Email icon
+<p>
+    Envelope:
+    <span class="glyphicon glyphicon-envelope"></span>
+</p>
+glyphicon-envelope → envelope/email icon.
+4. Search icon
+<p>
+    Search:
+    <span class="glyphicon glyphicon-search"></span>
+</p>
+5. Icon + Button
+<button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-search"></span>
+    Search
+</button>
+glyphicon-search → 🔍 icon
+btn              → button style
+btn-default      → default button
+6. Styled Button + Icon
+<button type="button" class="btn btn-info">
+    <span class="glyphicon glyphicon-search"></span>
+    Search
+</button>
+7. Print icon
+<p>
+    Print:
+    <span class="glyphicon glyphicon-print"></span>
+</p>
+8. Icon + Link Button
+<a href="#" class="btn btn-success btn-lg">
+    <span class="glyphicon glyphicon-print"></span>
+    Print
+</a>
+glyphicon                    → icon tizimi
+glyphicon-envelope           → email icon
+glyphicon-search             → search icon
+glyphicon-print              → print icon
