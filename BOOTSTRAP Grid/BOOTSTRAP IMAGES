@@ -1,0 +1,50 @@
+1. Rounded Corners — yumaloq burchak
+<img src="https://www.w3schools.com/bootstrap/paris.jpg"
+     class="img-rounded"
+     alt="Paris">
+2. Circle — aylana rasm
+<img src="https://www.w3schools.com/bootstrap/newyork.jpg"
+     class="img-circle"
+     alt="New York">
+3. Thumbnail — ramkali kichik rasm
+<img src="https://www.w3schools.com/bootstrap/sanfran.jpg"
+     class="img-thumbnail"
+     alt="San Francisco">
+4. Responsive Image — ekranga mos rasm
+<img src="https://www.w3schools.com/bootstrap/chicago.jpg"
+     class="img-responsive"
+     alt="Chicago">
+5. Image Gallery — rasmlar galereyasi
+6. Responsive Embed — responsive video
+<div class="embed-responsive embed-responsive-16by9">
+
+    <iframe
+        class="embed-responsive-item"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+
+</div>
+7. 16:9 va 4:3
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+4:3
+<div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+//KEYWORDS
+.img-rounded       → yumaloq burchak
+.img-circle        → aylana rasm
+.img-thumbnail     → thumbnail/ramkali rasm
+.img-responsive    → ekranga moslashuvchi rasm
+
+.thumbnail         → gallery rasm konteyneri
+.caption           → rasm ostidagi yozuv
+
+.row               → qator
+.col-md-4          → 4/12 ustun
+
+.embed-responsive       → responsive video konteyneri
+.embed-responsive-item  → iframe/video responsive
+.embed-responsive-16by9 → 16:9
+.embed-responsive-4by3  → 4:3
