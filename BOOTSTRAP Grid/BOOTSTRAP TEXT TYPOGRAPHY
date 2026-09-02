@@ -1,0 +1,129 @@
+<!-- 1. Highlight -->
+<p>Bu <mark>muhim matn</mark>.</p>
+
+<!-- 2. Abbreviation -->
+<p><abbr title="World Wide Web">WWW</abbr></p>
+
+<!-- 3. Quote -->
+<blockquote>
+    Bu bir iqtibos.
+</blockquote>
+
+<!-- 4. Reverse Quote -->
+<blockquote class="blockquote-reverse">
+    Bu o‘ng tomonga joylashgan iqtibos.
+</blockquote>
+
+<!-- 5. Description List -->
+<dl>
+    <dt>HTML</dt>
+    <dd>Web sahifa strukturasi.</dd>
+
+    <dt>CSS</dt>
+    <dd>Web sahifa dizayni.</dd>
+</dl>
+
+<!-- 6. Code -->
+<p>HTML da <code>div</code> elementi ishlatiladi.</p>
+
+<!-- 7. Keyboard -->
+<p>Saqlash uchun <kbd>Ctrl + S</kbd> bosing.</p>
+
+<!-- 8. Preformatted Text -->
+<pre>
+Bu matnda
+bo'shliqlar va
+qatorlar saqlanadi.
+</pre>
+
+
+<!-- 9. Text Colors -->
+
+<p class="text-muted">Muted</p>
+<p class="text-primary">Primary</p>
+<p class="text-success">Success</p>
+<p class="text-info">Info</p>
+<p class="text-warning">Warning</p>
+<p class="text-danger">Danger</p>
+
+
+<!-- 10. Background Colors -->
+
+<p class="bg-primary">Primary</p>
+<p class="bg-success">Success</p>
+<p class="bg-info">Info</p>
+<p class="bg-warning">Warning</p>
+<p class="bg-danger">Danger</p>
+
+
+<!-- 11. Lead -->
+
+<p class="lead">Bu katta va ajralib turadigan matn.</p>
+
+
+<!-- 12. Small -->
+
+<p class="small">Bu kichikroq matn.</p>
+
+
+<!-- 13. Text Alignment -->
+
+<p class="text-left">Chapga</p>
+<p class="text-center">Markazga</p>
+<p class="text-right">O‘ngga</p>
+<p class="text-justify">Tekislangan matn.</p>
+<p class="text-nowrap">Qatorga sig‘maydigan matn.</p>
+
+
+<!-- 14. Text Transformation -->
+
+<p class="text-lowercase">SALOM DUNYO</p>
+<p class="text-uppercase">salom dunyo</p>
+<p class="text-capitalize">salom dunyo</p>
+
+
+<!-- 15. Initialism -->
+
+<p>
+    <abbr class="initialism" title="HyperText Markup Language">
+        HTML
+    </abbr>
+</p>
+
+
+<!-- 16. Unstyled List -->
+
+<ul class="list-unstyled">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+
+<!-- 17. Inline List -->
+
+<ul class="list-inline">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+
+<!-- 18. Horizontal Description List -->
+
+<dl class="dl-horizontal">
+    <dt>HTML</dt>
+    <dd>Web sahifa strukturasi.</dd>
+
+    <dt>CSS</dt>
+    <dd>Web sahifa dizayni.</dd>
+</dl>
+
+
+<!-- 19. Scrollable Pre -->
+
+<pre class="pre-scrollable">
+Bu juda uzun matn.
+Bu yerda ko‘p qatorlar bo‘lishi mumkin.
+Kerak bo‘lsa scroll chiqadi.
+</pre>
