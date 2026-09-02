@@ -1,0 +1,13 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+//SELF
+viewport
+→ Sahifaning ekran o‘lchamiga moslashishini boshqaradi.
+
+width=device-width
+→ Sahifa kengligi qurilma ekranining kengligiga teng bo‘ladi.
+
+initial-scale=1
+→ Sahifa 100% boshlang‘ich zoomda ochiladi.
+Desktop → katta ekran
+Tablet  → o‘rta ekran
+Mobile  → kichik ekran
