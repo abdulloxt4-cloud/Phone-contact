@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Hello</h1>
+    <p>Bu content.</p>
+</div>
+//SELF
+.container
+→ Responsive fixed-width container.
+→ Ekranga qarab kengligi o‘zgaradi, lekin cheksiz kengaymaydi.
+--------------------------------------------------------------
+<div class="container-fluid">
+    <h1>Hello</h1>
+    <p>Bu content.</p>
+</div>
+//SELF
+.container-fluid
+→ Butun ekran kengligini egallaydi.
+→ 100% width.
