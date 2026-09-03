@@ -1,0 +1,108 @@
+28. Bootstrap Input Sizing
+1. Height → input balandligi
+2. Width  → input kengligi
+1. Input Height
+<form>
+
+    <div class="form-group">
+        <label>Small input</label>
+        <input class="form-control input-sm" type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Default input</label>
+        <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group">
+        <label>Large input</label>
+        <input class="form-control input-lg" type="text">
+    </div>
+
+</form>
+2. Horizontal Formda Size
+<div class="form-group form-group-lg">
+
+    <label class="control-label col-sm-2">
+        Name:
+    </label>
+
+    <div class="col-sm-10">
+        <input class="form-control" type="text">
+    </div>
+
+</div>
+3. Input Group Size
+<div class="input-group input-group-lg">
+
+    <span class="input-group-addon">
+        $
+    </span>
+
+    <input type="text" class="form-control">
+
+</div>
+4. Input Width
+
+Inputning kengligini Bootstrap Grid orqali boshqaramiz.
+<div class="row">
+
+    <div class="col-xs-2">
+        <label>2 columns</label>
+        <input class="form-control" type="text">
+    </div>
+
+    <div class="col-xs-3">
+        <label>3 columns</label>
+        <input class="form-control" type="text">
+    </div>
+
+    <div class="col-xs-4">
+        <label>4 columns</label>
+        <input class="form-control" type="text">
+    </div>
+
+</div>
+5. Help Text
+
+Input ostiga qo‘shimcha yordamchi text chiqarish:
+<div class="form-group">
+
+    <label for="password">
+        Password:
+    </label>
+
+    <input type="password"
+           class="form-control"
+           id="password"
+           placeholder="Enter password">
+
+    <span class="help-block">
+        Password kamida 8 ta belgidan iborat bo‘lishi kerak.
+    </span>
+
+</div>
+//SELF
+28. Bootstrap Input Sizing
+
+→ Inputning balandligi va kengligini boshqaradi.
+
+HEIGHT:
+
+.input-sm → kichik input
+.form-control → default
+.input-lg → katta input
+
+.form-group-sm → kichik form group
+.form-group-lg → katta form group
+
+.input-group-sm → kichik input group
+.input-group-lg → katta input group
+
+WIDTH:
+
+.col-xs-2 → 2/12
+.col-xs-3 → 3/12
+.col-xs-4 → 4/12
+
+.help-block → input ostidagi yordamchi text
