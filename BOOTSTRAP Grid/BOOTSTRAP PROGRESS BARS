@@ -1,0 +1,55 @@
+Progress Bars — jarayonning necha foiz bajarilganini ko‘rsatish uchun ishlatiladi.
+16. Progress Bars
+<div class="progress">
+    <div class="progress-bar" style="width:70%">70%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" style="width:40%">40%</div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-info" style="width:50%">50%</div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-warning" style="width:60%">60%</div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-danger" style="width:70%">70%</div>
+</div>
+<div class="progress">
+Striped:
+    <div class="progress-bar progress-bar-success progress-bar-striped"
+         style="width:40%">40%</div>
+</div>
+Animated:
+<div class="progress">
+    <div class="progress-bar progress-bar-striped active"
+         style="width:40%">40%</div>
+</div>
+Stacked — bir nechta progress birga:
+<div class="progress">
+    <div class="progress-bar progress-bar-success" style="width:40%">
+        Free Space
+    </div>
+
+    <div class="progress-bar progress-bar-warning" style="width:10%">
+        Warning
+    </div>
+
+    <div class="progress-bar progress-bar-danger" style="width:20%">
+        Danger
+    </div>
+</div>
+//KEYWORDS
+.progress              → progress bar tashqi qismi
+.progress-bar          → progressning to‘ldiriladigan qismi
+style="width:70%"      → 70% bajarilgan
+.progress-bar-success  → yashil/success
+.progress-bar-info     → info
+.progress-bar-warning  → warning
+.progress-bar-danger   → danger
+.progress-bar-striped  → chiziqli
+.active                 → animatsiya
+width foizni belgilaydi. 40% → 40%, 70% → 70%.
