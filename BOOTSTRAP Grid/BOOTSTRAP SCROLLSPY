@@ -1,0 +1,115 @@
+Bootstrap Scrollspy
+Scrollspy — sahifani pastga/yuqoriga scroll qilganingda, navbar ichidagi qaysi section hozir ko‘rinayotgan bo‘lsa, o‘sha linkni avtomatik active qiladi.
+Navbar:
+[Section 1] [Section 2] [Section 3]
+
+↓ scroll
+
+Section 1 ko‘rinmoqda
+→ Section 1 active
+
+↓ scroll
+
+Section 2 ko‘rinmoqda
+→ Section 2 activ
+1. Basic Scrollspy
+<body data-spy="scroll"
+      data-target=".navbar"
+      data-offset="50"
+      style="position: relative;">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container-fluid">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#section1">Section 1</a>
+                </li>
+
+                <li>
+                    <a href="#section2">Section 2</a>
+                </li>
+
+                <li>
+                    <a href="#section3">Section 3</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div id="section1" style="padding:100px 20px;">
+        <h1>Section 1</h1>
+        <p>Bu Section 1.</p>
+    </div>
+
+    <div id="section2" style="padding:100px 20px;">
+        <h1>Section 2</h1>
+        <p>Bu Section 2.</p>
+    </div>
+
+    <div id="section3" style="padding:100px 20px;">
+        <h1>Section 3</h1>
+        <p>Bu Section 3.</p>
+    </div>
+
+</body>
+2. Eng muhim qismi
+<body data-spy="scroll"
+      data-target=".navbar"
+      data-offset="50">
+4. active avtomatik o‘zgaradi
+
+Boshlanishida masalan:
+
+Section 1 → active
+Section 2
+Section 3
+
+Pastga scroll qilamiz:
+
+Section 1
+Section 2 → active
+Section 3
+
+Yana pastga:
+
+Section 1
+Section 2
+Section 3 → active
+
+Buni Bootstrap avtomatik qiladi.
+//SELF
+34. Bootstrap Scrollspy
+
+→ Scroll qilganda navigation linkni
+  avtomatik active qiladi.
+
+data-spy="scroll"
+→ Scrollspy'ni yoqadi
+
+data-target=".navbar"
+→ Navbar bilan bog‘laydi
+
+data-target="#myScrollspy"
+→ Berilgan menu bilan bog‘laydi
+
+data-offset="50"
+→ Tepadan 50px offset
+
+href="#section1"
+→ section1 ga bog‘laydi
+
+id="section1"
+→ Sectionning ID'si
+
+.nav-pills
+→ Pills menu
+
+.nav-stacked
+→ Vertical menu
+
+.active
+→ Hozirgi sectionning active linki
