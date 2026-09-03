@@ -1,0 +1,93 @@
+24. Navigation Bars
+<nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+
+    </div>
+</nav>
+Asosiy qismlari:
+
+.navbar → navbar
+.navbar-default → oq/oddiy navbar
+.container-fluid → to‘liq kenglik
+.navbar-header → logo/brand qismi
+.navbar-brand → sayt nomi
+.navbar-nav → menu
+.active → hozir tanlangan menu
+2. Inverted Navbar
+<nav class="navbar navbar-inverse">
+3. Navbar ichida Dropdown
+Navbar ichida dropdown ham ishlatish mumkin:
+<nav class="navbar navbar-inverse">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+
+            <li class="dropdown">
+                <a class="dropdown-toggle"
+                   data-toggle="dropdown"
+                   href="#">
+                    Courses <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+//KEYWORD
+.navbar → navbar
+.navbar-default → oddiy/oq navbar
+.navbar-inverse → qora navbar
+.navbar-header → brand/logo qismi
+.navbar-brand → sayt nomi
+.navbar-nav → menu
+.active → tanlangan menu
+.navbar-right → o‘ng tomonga
+.navbar-left → chap tomonga
+.navbar-btn → navbar ichidagi button
+.navbar-form → navbar ichidagi form
+.navbar-text → navbar ichidagi text
+
+.navbar-fixed-top → tepaga qotiriladi
+.navbar-fixed-bottom → pastga qotiriladi
+
+.dropdown → dropdown
+.dropdown-toggle → dropdownni ochuvchi
+.dropdown-menu → dropdown menyu
+.caret → pastga qaragan strelka
+
+.navbar-toggle → mobile menu button
+.collapse → yashirish/ochish
+.navbar-collapse → navbarning collapse qismi
+.icon-bar → mobile buttondagi 3 ta chiziq
+data-toggle="collapse" → collapse ishlatadi
+data-target="#myNavbar" → qaysi navbar ochilishini bildiradi
