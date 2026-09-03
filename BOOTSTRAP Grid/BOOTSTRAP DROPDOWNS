@@ -1,0 +1,47 @@
+21. Dropdown
+Dropdown — tugmani bosganda oldindan berilgan variantlar ro‘yxati ochiladi.
+<div class="dropdown">
+
+    <button class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown">
+        Dropdown Example
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+
+</div>
+Asosiy qismlari:
+.dropdown              → dropdown container
+.dropdown-toggle       → dropdownni ochuvchi tugma
+data-toggle="dropdown" → dropdownni ishga tushiradi
+.caret                 → pastga qaragan strelka
+.dropdown-menu         → ochiladigan menu
+Divider — ajratuvchi chiziq
+<li class="divider"></li>
+Header — menu ichidagi sarlavha
+<li class="dropdown-header">Languages</li>
+Active va Disabled
+<li class="active"><a href="#">HTML</a></li>
+<li class="disabled"><a href="#">CSS</a></li>
+
+//KEYWORDS
+21. Dropdown
+→ Tugma bosilganda variantlar ro‘yxatini ochadi.
+→ .dropdown → dropdown container.
+→ .dropdown-toggle → ochuvchi tugma.
+→ data-toggle="dropdown" → dropdownni ishga tushiradi.
+→ .caret → strelka.
+→ .dropdown-menu → ochiladigan menu.
+→ .divider → ajratuvchi chiziq.
+→ .dropdown-header → menu sarlavhasi.
+→ .active → tanlangan item.
+→ .disabled → o‘chirilgan item.
+→ .dropdown-menu-right → o‘ng tomonga.
+→ .dropup → yuqoriga ochiladi.
+→ role / aria-* → accessibility.
