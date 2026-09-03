@@ -1,0 +1,91 @@
+Bootstrap Tooltip
+1. Basic Tooltip
+<a href="#"
+   data-toggle="tooltip"
+   title="Bu tooltip!">
+    Hover over me
+</a>
+2. Tooltipni ishga tushirish
+Bootstrap 3 Tooltip jQuery orqali initialize qilinishi kerak.
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+3. Tooltip joylashuvi
+
+Default holatda Tooltip tepada chiqadi.
+
+data-placement bilan joyini o‘zgartiramiz.
+
+Top
+<a href="#"
+   data-toggle="tooltip"
+   data-placement="top"
+   title="Yuqorida chiqadi">
+    Hover
+</a>
+4. To‘liq kichik misol
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Tooltip</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Tooltip</h2>
+
+        <button class="btn btn-primary"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Bu Search button">
+            Search
+        </button>
+
+    </div>
+
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+
+</body>
+</html>
+//SELF
+32. Bootstrap Tooltip
+→ Element ustiga mouse olib kelganda chiqadigan kichik popup text.
+
+data-toggle="tooltip"
+→ Tooltip ekanligini bildiradi
+
+title
+→ Tooltip ichidagi text
+
+.tooltip()
+→ Tooltipni ishga tushiradi
+
+$(document).ready()
+→ Sahifa tayyor bo‘lgandan keyin kodni ishlatadi
+
+data-placement="top"
+→ tepada
+
+data-placement="bottom"
+→ pastda
+
+data-placement="left"
+→ chapda
+
+data-placement="right"
+→ o‘ngda
