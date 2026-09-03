@@ -1,0 +1,53 @@
+22. Collapsible
+Collapsible — katta contentni yashirish va bosganda ochish uchun ishlatiladi.
+<button data-toggle="collapse" data-target="#demo">
+    Collapsible
+</button>
+
+<div id="demo" class="collapse">
+    Bu yashirin content.
+</div>
+Link bilan
+<a href="#demo" data-toggle="collapse">Open</a>
+
+<div id="demo" class="collapse">
+    Bu content.
+</div>
+.in — boshidan ochiq
+<div id="demo" class="collapse in">
+    Bu content boshidan ochiq.
+</div>
+Collapsible Panel
+<div class="panel-group">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" href="#panel1">
+                    Collapsible Panel
+                </a>
+            </h4>
+        </div>
+
+        <div id="panel1" class="panel-collapse collapse">
+            <div class="panel-body">
+                Panel Content
+            </div>
+            <div class="panel-footer">
+                Footer
+            </div>
+        </div>
+
+    </div>
+
+</div>
+//KEYWORD
+22. Collapsible
+→ Katta contentni yashirish/ochish uchun ishlatiladi.
+→ .collapse → yashirin content.
+→ .in → boshidan ochiq.
+→ data-toggle="collapse" → collapse ishga tushadi.
+→ data-target / href → button/linkni content bilan bog‘laydi.
+→ data-parent → accordionda faqat bittasini ochiq qoldiradi.
+→ Accordion → bir nechta collapsible panel.
