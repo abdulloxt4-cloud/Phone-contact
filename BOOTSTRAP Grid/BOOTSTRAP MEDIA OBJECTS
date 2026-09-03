@@ -1,0 +1,113 @@
+29. Media Objects
+Media Object — rasm/video va uning yonidagi matnni tartibli joylashtirish uchun ishlatiladi.
+<div class="media">
+
+    <div class="media-left">
+        <img src="img_avatar1.png"
+             class="media-object"
+             style="width:60px">
+    </div>
+
+    <div class="media-body">
+        <h4 class="media-heading">John Doe</h4>
+        <p>Bu yerda comment yoziladi.</p>
+    </div>
+
+</div>
+Bu qanday ishlaydi?
+.media
+ ├── .media-left
+ │    └── rasm
+ │
+ └── .media-body
+      ├── .media-heading
+      └── matn
+2. Rasmni o‘ngga qo‘yish
+<div class="media">
+
+    <div class="media-body">
+        <h4 class="media-heading">John Doe</h4>
+        <p>Bu yerda comment yoziladi.</p>
+    </div>
+
+    <div class="media-right">
+        <img src="img_avatar1.png"
+             class="media-object"
+             style="width:60px">
+    </div>
+
+</div>
+3. Top / Middle / Bottom
+
+Rasmni matnga nisbatan yuqori, o‘rta yoki pastga joylashtirish mumkin.
+<div class="media">
+    <div class="media-left media-top">
+        <img src="img_avatar1.png"
+             class="media-object"
+             style="width:60px">
+    </div>
+
+    <div class="media-body">
+        <h4 class="media-heading">Media Top</h4>
+        <p>Bu yerda matn.</p>
+    </div>
+</div>
+Middle
+<div class="media">
+    <div class="media-left media-middle">
+        <img src="img_avatar1.png"
+             class="media-object"
+             style="width:60px">
+    </div>
+
+    <div class="media-body">
+        <h4 class="media-heading">Media Middle</h4>
+        <p>Bu yerda matn.</p>
+    </div>
+</div>
+Bottom
+<div class="media">
+    <div class="media-left media-bottom">
+        <img src="img_avatar1.png"
+             class="media-object"
+             style="width:60px">
+    </div>
+
+    <div class="media-body">
+        <h4 class="media-heading">Media Bottom</h4>
+        <p>Bu yerda matn.</p>
+    </div>
+</div>
+//SELF
+Media Objects
+→ Rasm/video + matnni yonma-yon tartiblash uchun.
+
+.media
+→ asosiy Media Object container
+
+.media-left
+→ media chapda
+
+.media-right
+→ media o‘ngda
+
+.media-body
+→ matn/content qismi
+
+.media-heading
+→ heading/title
+
+.media-object
+→ rasm yoki media
+
+.media-top
+→ yuqoriga
+
+.media-middle
+→ o‘rtaga
+
+.media-bottom
+→ pastga
+
+Nesting
+→ Media Object ichida yana Media Object
