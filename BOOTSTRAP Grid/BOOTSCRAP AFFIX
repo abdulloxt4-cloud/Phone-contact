@@ -1,0 +1,41 @@
+Bootstrap Affix
+Affix — scroll qilganda elementni ma'lum joyga qotirib qo‘yadi.
+Oddiy holat:
+
+Navbar
+────────────
+Content
+Content
+Content
+
+↓ scroll
+
+Content
+Content
+Navbar ← tepada qotib qoladi
+35. Bootstrap Affix
+
+→ Scroll qilganda elementni
+  ma'lum joyga qotirib qo‘yadi.
+
+data-spy="affix"
+→ Affixni yoqadi
+
+data-offset-top="197"
+→ 197px scroll qilgandan keyin qotadi
+
+data-offset-bottom
+→ pastki offsetni belgilaydi
+
+.affix-top
+→ boshlang‘ich holat
+
+.affix
+→ qotirilgan holat
+→ position: fixed
+
+.affix-bottom
+→ pastki holat
+
+top: 0
+→ qotirilgan elementni tepaga qo‘yadi
