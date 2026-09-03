@@ -1,0 +1,57 @@
+20. Panels
+Panel — contentni borderli, ichida padding bor alohida box ko‘rinishida chiqaradi.
+<div class="panel panel-default">
+    <div class="panel-body">
+        A Basic Panel
+    </div>
+</div>
+Panel Heading
+<div class="panel panel-default">
+    <div class="panel-heading">Panel Heading</div>
+    <div class="panel-body">Panel Content</div>
+</div>
+Panel Footer
+<div class="panel panel-default">
+    <div class="panel-body">Panel Content</div>
+    <div class="panel-footer">Panel Footer</div>
+</div>
+Panel Group
+<div class="panel-group">
+
+    <div class="panel panel-default">
+        <div class="panel-body">Panel 1</div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">Panel 2</div>
+    </div>
+
+</div>
+Ranglari
+<div class="panel panel-default">Default</div>
+<div class="panel panel-primary">Primary</div>
+<div class="panel panel-success">Success</div>
+<div class="panel panel-info">Info</div>
+<div class="panel panel-warning">Warning</div>
+<div class="panel panel-danger">Danger</div>
+//KEYWORD
+.panel            → panel yaratadi
+.panel-default   → oddiy rang
+.panel-body      → asosiy content
+.panel-heading   → yuqori sarlavha
+.panel-footer    → pastki qism
+.panel-group     → panellarni guruhlaydi
+
+.panel-primary
+.panel-success
+.panel-info
+.panel-warning
+.panel-danger
+→ panel ranglari
+.panel
+  ↓
+.panel-heading → sarlavha
+  ↓
+.panel-body    → asosiy content
+  ↓
+.panel-footer  → pastki qism
