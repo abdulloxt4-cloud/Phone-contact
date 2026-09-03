@@ -1,0 +1,104 @@
+31. Bootstrap Modal
+<!-- Modalni ochadigan button -->
+<button type="button"
+        class="btn btn-info btn-lg"
+        data-toggle="modal"
+        data-target="#myModal">
+    Open Modal
+</button>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header">
+                <button type="button"
+                        class="close"
+                        data-dismiss="modal">
+                    &times;
+                </button>
+
+                <h4 class="modal-title">
+                    Modal Header
+                </h4>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body">
+                <p>Bu modal ichidagi matn.</p>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+. Eng muhim qismi — Modal qanday ochiladi?
+
+Button:
+<button data-toggle="modal"
+        data-target="#myModal">
+    Open Modal
+</button>
+//SELF
+31. Bootstrap Modal
+→ Sahifa ustida chiqadigan popup oynacha.
+
+.modal
+→ Modalning o‘zi
+
+.modal-dialog
+→ Modal o‘lchami va joylashuvi
+
+.modal-content
+→ Modalning asosiy qutisi
+
+.modal-header
+→ yuqori qism
+
+.modal-title
+→ Modal sarlavhasi
+
+.modal-body
+→ asosiy content
+
+.modal-footer
+→ pastki qism
+
+data-toggle="modal"
+→ Modalni ochadi
+
+data-target="#myModal"
+→ Qaysi Modal ochilishini bildiradi
+
+data-dismiss="modal"
+→ Modalni yopadi
+
+.close
+→ Close button style
+
+.fade
+→ ochilish/yopilish animatsiyasi
+
+.modal-sm
+→ kichik Modal
+
+.modal-lg
+→ katta Modal
+
+role="dialog"
+→ accessibility
