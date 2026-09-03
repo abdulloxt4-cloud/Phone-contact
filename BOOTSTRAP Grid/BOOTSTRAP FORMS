@@ -1,0 +1,113 @@
+25. Bootstrap Forms
+Form — foydalanuvchidan ma'lumot olish uchun ishlatiladi.
+Email → Password → Remember me → Submit
+1. Bootstrap Default Settings
+Text input, textarea va select uchun:
+
+<input type="text" class="form-control">
+<textarea class="form-control"></textarea>
+<select class="form-control">
+    <option>Uzbekistan</option>
+    <option>USA</option>
+</select>
+.form-control → inputni Bootstrap style bilan chiqaradi va odatda 100% kenglik beradi.
+2. Vertical Form
+<form>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email"
+               class="form-control"
+               id="email"
+               placeholder="Enter email">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password"
+               class="form-control"
+               id="password"
+               placeholder="Enter password">
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">
+            Remember me
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-default">
+        Submit
+    </button>
+
+</form>
+//KEYWORD 
+.form-group → label + input guruhini tartiblaydi
+.form-control → input style
+.checkbox → checkbox
+.btn → button
+3. Inline Form
+
+Bunda form elementlari bir qatorda joylashadi.
+<form class="form-inline">
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email"
+               class="form-control"
+               id="email">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password"
+               class="form-control"
+               id="password">
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">
+            Remember me
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-default">
+        Submit
+    </button>
+
+</form>
+.form-inline → formni bir qatorga joylashtiradi.
+⚠️ Bootstrap 3 da inline ko‘rinish 768px va undan katta ekranlarda qo‘llanadi.
+
+5. Horizontal Form
+Bunda label va input yonma-yon turadi.
+
+//KEYWORD
+.form-horizontal → horizontal form
+.control-label → labelni moslashtiradi
+.col-sm-2 → labelga 2/12 joy
+.col-sm-10 → inputga 10/12 joy
+.col-sm-offset-2 → 2/12 joyni tashlab ketadi
+//KEYWORD
+→ Foydalanuvchidan ma'lumot olish uchun form yaratadi.
+
+.form-control → input/textarea/select style
+.form-group → label + input guruhini tartiblaydi
+
+Vertical → default form
+.form-inline → elementlar bir qatorda
+.form-horizontal → label va input yonma-yon
+.control-label → horizontal label
+.checkbox → checkbox
+.sr-only → labelni ekranda yashiradi
+
+.col-sm-2 → 2/12
+.col-sm-10 → 10/12
+.col-sm-offset-2 → 2/12 joy tashlab ketadi
+
+3 xil form:
+1. Vertical
+2. Inline
+3. Horizontal
