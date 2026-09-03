@@ -1,0 +1,52 @@
+Bootstrap Popover
+Popover — elementga click qilganda chiqadigan kattaroq oyna.
+Tooltip  → qisqa text, odatda hover bilan
+Popover  → ko‘proq content, odatda click bilan
+1. Basic Popover
+<a href="#"
+   data-toggle="popover"
+   title="Popover Header"
+   data-content="Bu popover ichidagi content.">
+    Click me
+</a>
+2. Popoverni ishga tushirish
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+33. Bootstrap Popover
+→ Click qilganda chiqadigan popup box.
+
+data-toggle="popover"
+→ Popoverni bildiradi
+
+title
+→ Popover header
+
+data-content
+→ Popover body/content
+
+.popover()
+→ Popoverni initialize qiladi
+
+data-placement="top"
+→ yuqorida
+
+data-placement="bottom"
+→ pastda
+
+data-placement="left"
+→ chapda
+
+data-placement="right"
+→ o‘ngda
+
+data-placement="auto"
+→ joyni avtomatik tanlaydi
+
+data-trigger="focus"
+→ tashqariga click qilganda yopiladi
+
+data-trigger="hover"
+→ hover qilganda ochiladi
