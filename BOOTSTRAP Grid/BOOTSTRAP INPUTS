@@ -1,0 +1,122 @@
+Bootstrap Form Inputs
+<div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name">
+</div>
+
+<div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" class="form-control" id="password">
+</div>
+Muhim:
+type="text"     → oddiy matn
+type="password" → parol
+class="form-control" → Bootstrap input dizayni
+Bootstrap HTML5 input turlarini ham qo‘llaydi:
+text
+password
+date
+month
+time
+week
+number
+email
+url
+search
+tel
+color
+2. Textarea
+Ko‘p qatorli matn yozish uchun ishlatiladi.
+<div class="form-group">
+    <label for="comment">Comment:</label>
+
+    <textarea class="form-control"
+              rows="5"
+              id="comment"></textarea>
+</div>
+Bu yerda:
+textarea → ko‘p qatorli input
+rows="5" → 5 qator balandlik
+.form-control → Bootstrap style
+3. Checkbox
+<div class="checkbox">
+    <label>
+        <input type="checkbox">
+        HTML
+    </label>
+</div>
+
+<div class="checkbox">
+    <label>
+        <input type="checkbox">
+        CSS
+    </label>
+</div>
+
+<div class="checkbox">
+    <label>
+        <input type="checkbox">
+        JavaScript
+    </label>
+</div>
+4. Checkbox Inline
+<label class="checkbox-inline">
+    <input type="checkbox"> HTML
+</label>
+
+<label class="checkbox-inline">
+    <input type="checkbox"> CSS
+</label>
+
+<label class="checkbox-inline">
+    <input type="checkbox"> JavaScript
+</label>
+5. Radio Buttons
+<div class="radio">
+    <label>
+        <input type="radio" name="language">
+        HTML
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="language">
+        CSS
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="language">
+        JavaScript
+    </label>
+</div>
+//KEYWORD
+→ Form ichidagi input elementlarini Bootstrap bilan style qiladi.
+
+.form-control → input, textarea, select uchun Bootstrap style
+
+input:
+type="text" → matn
+type="password" → parol
+type="email" → email
+type="number" → raqam
+type="date" → sana
+type="search" → qidiruv
+
+textarea → ko‘p qatorli matn
+rows → textarea balandligi
+
+.checkbox → checkbox
+.checkbox-inline → checkbox bir qatorda
+disabled → tanlab bo‘lmaydi
+
+.radio → radio button
+.radio-inline → radio bir qatorda
+name → bir guruh radio
+checked → oldindan tanlangan
+
+select → tanlash ro‘yxati
+option → ro‘yxatdagi variant
+
