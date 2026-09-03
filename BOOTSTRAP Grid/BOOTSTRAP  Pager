@@ -1,0 +1,29 @@
+Pager
+Pager ham paginationga o‘xshaydi, lekin faqat Previous va Next tugmalarini beradi.
+<ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+</ul>
+Chap va o‘ng tomonga joylash
+<ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+</ul>
+//KEYWORD
+.pager      → Previous/Next pagination
+.previous   → chap tomonga
+.next       → o‘ng tomonga
+Pagination vs Pager
+Pagination → 1  2  3  4  5
+             ↓
+          sahifani tanlash
+
+Pager → Previous       Next
+        ↓               ↓
+      oldingi         keyingi
+Konspektga:
+18. Pager
+→ Oldingi va keyingi sahifaga o‘tish uchun ishlatiladi.
+→ .pager → pager yaratadi.
+→ .previous → Previous ni chapga joylaydi.
+→ .next → Next ni o‘ngga joylaydi.
