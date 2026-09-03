@@ -1,0 +1,93 @@
+Tabs — menyuni yuqorida tab ko‘rinishida chiqaradi.
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+</ul>
+2. Pills
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+</ul>
+Tabs vs Pills
+Tabs  → tab ko‘rinishidagi menu
+Pills → tugmaga o‘xshash menu
+3. Vertical Pills
+nav-stacked → menu vertikal bo‘ladi.
+<ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+</ul>
+4. Dropdown bilan
+
+Tabs yoki Pills ichida dropdown ham bo‘lishi mumkin:
+<ul class="nav nav-tabs">
+
+    <li class="active"><a href="#">Home</a></li>
+
+    <li class="dropdown">
+        <a class="dropdown-toggle"
+           data-toggle="dropdown"
+           href="#">
+            Menu 1 <span class="caret"></span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li><a href="#">Submenu 1</a></li>
+            <li><a href="#">Submenu 2</a></li>
+        </ul>
+    </li>
+
+</ul>
+<ul class="nav nav-tabs">
+
+    <li class="active"><a href="#">Home</a></li>
+
+    <li class="dropdown">
+        <a class="dropdown-toggle"
+           data-toggle="dropdown"
+           href="#">
+            Menu 1 <span class="caret"></span>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li><a href="#">Submenu 1</a></li>
+            <li><a href="#">Submenu 2</a></li>
+        </ul>
+    </li>
+
+</ul>
+5. Justified
+
+nav-justified → menu elementlarini teng kenglikda joylashtiradi.
+<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+</ul>
+//KEYWORD
+→ Menu/navigation yaratish uchun ishlatiladi.
+
+.nav → navigation
+.nav-tabs → Tabs
+.nav-pills → Pills
+.active → tanlangan menu
+.nav-stacked → vertikal Pills
+.nav-justified → teng kenglikdagi menu
+.dropdown → dropdown menu
+
+data-toggle="tab" → dynamic Tabs
+data-toggle="pill" → dynamic Pills
+.tab-content → tab contentlari
+.tab-pane → har bir content
+.fade → animatsiya
+.in → boshidan ochiq
+
+Tabs → tab ko‘rinishi
+Pills → button/pill ko‘rinishi
