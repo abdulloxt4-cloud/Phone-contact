@@ -1,0 +1,62 @@
+Pagination — ko‘p sahifali ma’lumotlarni 1, 2, 3, 4... sahifalarga bo‘lib ko‘rsatish.
+17. Pagination
+<ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+</ul>
+Active — hozirgi sahifa
+<ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+</ul>
+Disabled — bosib bo‘lmaydi
+<ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li class="disabled"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+</ul>
+Katta / kichik
+<ul class="pagination pagination-lg">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+</ul>
+
+<ul class="pagination pagination-sm">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+</ul>
+Breadcrumbs
+
+Breadcrumb — foydalanuvchi qaysi joyda turganini ko‘rsatadi.
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Pictures</a></li>
+    <li class="active">Vacation</li>
+</ul>
+//KEYWORD
+.pagination     → pagination yaratadi
+.active         → hozirgi sahifa
+.disabled       → o‘chirilgan/bosib bo‘lmaydi
+.pagination-lg  → katta
+.pagination-sm  → kichik
+
+.breadcrumb     → sahifa joylashuv yo‘li
+Pagination  → 1  2  3  4  5
+              ↓
+         sahifalar orasida yurish
+
+Breadcrumb  → Home > Pictures > Vacation
+              ↓
+         qayerda turganingni ko‘rsatish
+17. Pagination
+→ Ko‘p sahifali ma’lumotlarni sahifalarga bo‘ladi.
+→ .pagination → pagination
+→ .active → hozirgi sahifa
+→ .disabled → o‘chirilgan sahifa
+→ .pagination-lg → katta
+→ .pagination-sm → kichik
+→ .breadcrumb → sahifa joylashuvini ko‘rsatadi
