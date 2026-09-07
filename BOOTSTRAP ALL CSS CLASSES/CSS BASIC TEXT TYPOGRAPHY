@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Typography</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Bootstrap <small>Typography</small></h1>
+
+    <p class="lead">Bu muhim matn.</p>
+
+    <p class="text-center">
+        Bu markazdagi matn.
+    </p>
+
+    <p class="text-uppercase">
+        salom dunyo
+    </p>
+
+    <p>
+        Bu <strong>bold</strong> va
+        <em>italic</em> matn.
+    </p>
+
+    <p><mark>Muhim ma'lumot</mark></p>
+
+    <h3>Languages</h3>
+
+    <ul class="list-inline">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <p>
+        HTML ichida <code>div</code> ishlatiladi.
+    </p>
+
+    <button id="btn" class="btn btn-primary">
+        Show Message
+    </button>
+
+    <p id="result"></p>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+const btn = document.getElementById("btn");
+const result = document.getElementById("result");
+
+btn.addEventListener("click", function () {
+    result.textContent = "Bootstrap Typography ishladi!";
+});
+//SELF
+Typography → matnni boshqarish
+
+h1-h6 → heading
+small → kichik secondary text
+.small → kichik text
+.lead → muhim/kattaroq text
+mark → highlight
+del → o‘chirilgan text
+ins → qo‘shilgan text
+strong → bold
+em → italic
+
+text-left → chap
+text-center → markaz
+text-right → o‘ng
+text-justify → tekislash
+text-nowrap → yangi qatorga tushmasin
+
+text-lowercase → kichik harflar
+text-uppercase → katta harflar
+text-capitalize → har bir so‘z bosh harfi katta
+
+list-unstyled → bulletlarni olib tashlash
+list-inline → listni bir qatorga chiqarish
+
+blockquote → quote
+abbr → qisqartma
+address → kontakt
+
+code → inline code
+kbd → keyboard
+pre → ko‘p qatorli code
+samp → program output
+var → variable
