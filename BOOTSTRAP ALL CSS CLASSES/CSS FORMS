@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Form</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form id="myForm">
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email kiriting"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password kiriting"
+            >
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="remember">
+                Remember me
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+
+    </form>
+
+    <p id="result"></p>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+//JS
+const form = document.getElementById("myForm");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    result.textContent = `Email: ${email}, Password: ${password}`;
+});
+//SELF
+.form-group
+→ label + input guruh
+
+.form-control
+→ input / textarea / select style
+
+.form-inline
+→ formni bir qatorga chiqarish
+
+.form-horizontal
+→ label + input gorizontal
+
+.input-group
+→ inputni qo‘shimcha element bilan birlashtirish
+
+.input-group-addon
+→ input yoniga text/icon
+
+.input-group-btn
+→ input yoniga button
+
+.input-lg
+→ katta input
+
+.input-sm
+→ kichik input
+
+.input-group-lg
+→ katta input group
+
+.input-group-sm
+→ kichik input group
