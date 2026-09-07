@@ -1,0 +1,710 @@
+# Bootstrap CSS Helper Classes
+
+Bootstrap CSS Helper Classes — tayyor Bootstrap classlar bo‘lib,
+CSS yozmasdan elementning rangini, backgroundini, joylashishini,
+ko‘rinishini va responsive holatini boshqarishga yordam beradi.
+
+
+==================================================
+1. TEXT HELPER CLASSES
+==================================================
+
+Matn rangini o‘zgartirish uchun ishlatiladi.
+
+.text-muted
+→ Xira/kulrang matn
+
+.text-primary
+→ Primary rangdagi matn
+
+.text-success
+→ Muvaffaqiyat/success matn
+
+.text-info
+→ Information matn
+
+.text-warning
+→ Ogohlantirish matni
+
+.text-danger
+→ Xato yoki danger matn
+
+
+Misol:
+
+<p class="text-muted">Xira matn</p>
+<p class="text-primary">Primary matn</p>
+<p class="text-success">Success matn</p>
+<p class="text-info">Info matn</p>
+<p class="text-warning">Warning matn</p>
+<p class="text-danger">Danger matn</p>
+
+
+==================================================
+2. BACKGROUND HELPER CLASSES
+==================================================
+
+Elementning orqa fon rangini o‘zgartirish uchun ishlatiladi.
+
+.bg-primary
+→ Primary background
+
+.bg-success
+→ Success background
+
+.bg-info
+→ Info background
+
+.bg-warning
+→ Warning background
+
+.bg-danger
+→ Danger background
+
+
+Misol:
+
+<p class="bg-primary">Primary background</p>
+<p class="bg-success">Success background</p>
+<p class="bg-info">Info background</p>
+<p class="bg-warning">Warning background</p>
+<p class="bg-danger">Danger background</p>
+
+
+TEXT va BACKGROUND farqi:
+
+.text-danger
+→ MATN rangi o‘zgaradi
+
+.bg-danger
+→ ORQA FON rangi o‘zgaradi
+
+
+==================================================
+3. .pull-left
+==================================================
+
+Elementni chap tomonga suradi.
+
+<div class="pull-left">
+    Chap
+</div>
+
+.pull-left → chapga
+
+
+==================================================
+4. .pull-right
+==================================================
+
+Elementni o‘ng tomonga suradi.
+
+<div class="pull-right">
+    O‘ng
+</div>
+
+.pull-right → o‘ngga
+
+
+==================================================
+5. .center-block
+==================================================
+
+Elementni markazlashtirishga yordam beradi.
+
+<div class="center-block">
+    Markaz
+</div>
+
+.center-block
+→ display: block
+→ margin-left: auto
+→ margin-right: auto
+
+
+==================================================
+6. .clearfix
+==================================================
+
+Float ishlatilganda float holatini tozalash uchun ishlatiladi.
+
+<div class="clearfix"></div>
+
+.pull-left yoki .pull-right ishlatilgandan keyin
+clearfix float muammosini tozalashga yordam beradi.
+
+.pull-left / .pull-right
+        ↓
+      float
+        ↓
+.clearfix
+        ↓
+    float clear
+
+
+==================================================
+7. .show
+==================================================
+
+Elementni ko‘rsatadi.
+
+<div class="show">
+    Bu ko‘rinadi
+</div>
+
+.show
+→ display: block
+
+
+==================================================
+8. .hidden
+==================================================
+
+Elementni butunlay yashiradi.
+
+<p class="hidden">
+    Bu ko‘rinmaydi
+</p>
+
+.hidden
+→ display: none
+
+Element:
+→ ko‘rinmaydi
+→ joy ham egallamaydi
+
+
+==================================================
+9. .invisible
+==================================================
+
+Elementni ko‘rinmas qiladi,
+lekin uning sahifadagi joyi saqlanadi.
+
+<p class="invisible">
+    Bu ko‘rinmaydi
+</p>
+
+.invisible
+→ visibility: hidden
+
+Farqi:
+
+.hidden
+→ ko‘rinmaydi
+→ joy egallamaydi
+
+.invisible
+→ ko‘rinmaydi
+→ joyi saqlanadi
+
+
+==================================================
+10. .sr-only
+==================================================
+
+Elementni oddiy foydalanuvchiga ko‘rsatmaydi,
+lekin screen reader uchun mavjud qiladi.
+
+<span class="sr-only">
+    Bu screen reader uchun
+</span>
+
+.sr-only
+→ accessibility uchun ishlatiladi
+
+
+==================================================
+11. .sr-only-focusable
+==================================================
+
+.sr-only bilan yashirilgan element
+focus olganda yana ko‘rinadi.
+
+Masalan, keyboard orqali TAB bosilganda.
+
+<a class="sr-only sr-only-focusable" href="#">
+    Skip to content
+</a>
+
+.sr-only
+→ yashiradi
+
+.sr-only-focusable
+→ focus bo‘lganda ko‘rsatadi
+
+
+==================================================
+12. .text-hide
+==================================================
+
+Elementdagi matnni yashirib,
+background image ishlatishga yordam beradi.
+
+<div class="text-hide">
+    Logo
+</div>
+
+.text-hide
+→ textni yashirish uchun ishlatiladi.
+
+
+==================================================
+13. .close
+==================================================
+
+Yopish belgisi uchun ishlatiladi.
+
+<button class="close">
+    &times;
+</button>
+
+Natija:
+
+×
+
+
+==================================================
+14. .caret
+==================================================
+
+Dropdown uchun kichik uchburchak belgisini chiqaradi.
+
+<button>
+    Menu <span class="caret"></span>
+</button>
+
+Natija taxminan:
+
+Menu ▼
+
+
+==================================================
+15. RESPONSIVE UTILITIES
+==================================================
+
+Responsive — ekran o‘lchamiga qarab
+elementni ko‘rsatish yoki yashirish.
+
+Bootstrap 3 ekran o‘lchamlari:
+
+xs → Extra Small → Telefon → < 768px
+
+sm → Small → Tablet → ≥ 768px
+
+md → Medium → Desktop → ≥ 992px
+
+lg → Large → Katta Desktop → ≥ 1200px
+
+
+==================================================
+16. .hidden-xs
+==================================================
+
+Telefon ekranida elementni yashiradi.
+
+<h1 class="hidden-xs">
+    Salom
+</h1>
+
+Telefon:
+→ yashirin
+
+Tablet:
+→ ko‘rinadi
+
+Desktop:
+→ ko‘rinadi
+
+
+==================================================
+17. .hidden-sm
+==================================================
+
+Tablet ekranida elementni yashiradi.
+
+<h1 class="hidden-sm">
+    Salom
+</h1>
+
+Telefon:
+→ ko‘rinadi
+
+Tablet:
+→ yashirin
+
+Desktop:
+→ ko‘rinadi
+
+
+==================================================
+18. .hidden-md
+==================================================
+
+Medium/Desktop ekranida yashiradi.
+
+<h1 class="hidden-md">
+    Salom
+</h1>
+
+Telefon:
+→ ko‘rinadi
+
+Tablet:
+→ ko‘rinadi
+
+Desktop:
+→ yashirin
+
+
+==================================================
+19. .hidden-lg
+==================================================
+
+Large desktop ekranida yashiradi.
+
+<h1 class="hidden-lg">
+    Salom
+</h1>
+
+Telefon:
+→ ko‘rinadi
+
+Tablet:
+→ ko‘rinadi
+
+Desktop:
+→ ko‘rinadi
+
+Large desktop:
+→ yashirin
+
+
+==================================================
+20. VISIBLE CLASSES
+==================================================
+
+visible classlar elementni
+ma'lum ekran o‘lchamida ko‘rsatish uchun ishlatiladi.
+
+.visible-xs-block
+→ faqat XS ekranda block sifatida ko‘rsatadi
+
+.visible-sm-block
+→ faqat SM ekranda block sifatida ko‘rsatadi
+
+.visible-md-block
+→ faqat MD ekranda block sifatida ko‘rsatadi
+
+.visible-lg-block
+→ faqat LG ekranda block sifatida ko‘rsatadi
+
+
+Misol:
+
+<h1 class="visible-xs-block">
+    Faqat telefon uchun
+</h1>
+
+
+==================================================
+21. VISIBLE DISPLAY TYPES
+==================================================
+
+Bootstrap 3.2+ da visible classlarning
+3 xil display turi bor:
+
+.visible-*-block
+→ display: block
+
+.visible-*-inline
+→ display: inline
+
+.visible-*-inline-block
+→ display: inline-block
+
+
+Masalan, SM uchun:
+
+.visible-sm-block
+.visible-sm-inline
+.visible-sm-inline-block
+
+
+Misol:
+
+<p class="visible-sm-block">
+    Tablet uchun
+</p>
+
+
+==================================================
+22. OLD VISIBLE CLASSES
+==================================================
+
+Quyidagi classlar Bootstrap 3.2 dan boshlab
+deprecated hisoblanadi:
+
+.visible-xs
+.visible-sm
+.visible-md
+.visible-lg
+
+Yangi usuldan foydalanish yaxshi:
+
+.visible-xs-block
+.visible-sm-block
+.visible-md-block
+.visible-lg-block
+
+
+==================================================
+23. TO‘LIQ HTML MISOL
+==================================================
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Helpers</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2 class="text-primary">
+        Bootstrap Helpers
+    </h2>
+
+    <p class="text-success">
+        Success message
+    </p>
+
+    <p class="text-danger">
+        Error message
+    </p>
+
+    <p class="bg-warning">
+        Warning background
+    </p>
+
+    <p class="bg-info">
+        Information background
+    </p>
+
+    <h3 class="hidden-xs bg-danger">
+        Bu telefon ekranida yashirinadi
+    </h3>
+
+    <h3 class="visible-xs-block bg-success">
+        Bu faqat telefon ekranida ko‘rinadi
+    </h3>
+
+    <div class="clearfix"></div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+==================================================
+24. main.js
+==================================================
+
+console.log("Bootstrap Helper Classes ishladi");
+
+
+==================================================
+25. ENG MUHIM KEYWORDS
+==================================================
+
+TEXT:
+
+.text-muted
+→ xira matn
+
+.text-primary
+→ primary matn
+
+.text-success
+→ success
+
+.text-info
+→ information
+
+.text-warning
+→ warning
+
+.text-danger
+→ error/danger
+
+
+BACKGROUND:
+
+.bg-primary
+.bg-success
+.bg-info
+.bg-warning
+.bg-danger
+
+
+POSITION / DISPLAY:
+
+.pull-left
+→ chap
+
+.pull-right
+→ o‘ng
+
+.center-block
+→ markaz
+
+.clearfix
+→ floatni tozalash
+
+.show
+→ ko‘rsatish
+
+.hidden
+→ yashirish
+
+.invisible
+→ ko‘rinmas, joyi saqlanadi
+
+
+ACCESSIBILITY:
+
+.sr-only
+→ faqat screen reader
+
+.sr-only-focusable
+→ focus bo‘lganda ko‘rinadi
+
+
+OTHER:
+
+.text-hide
+→ textni yashirish
+
+.close
+→ yopish ×
+
+.caret
+→ dropdown ▼
+
+
+RESPONSIVE:
+
+xs
+→ < 768px
+→ phone
+
+sm
+→ ≥ 768px
+→ tablet
+
+md
+→ ≥ 992px
+→ desktop
+
+lg
+→ ≥ 1200px
+→ large desktop
+
+
+HIDDEN:
+
+.hidden-xs
+→ phone'da yashir
+
+.hidden-sm
+→ tablet'da yashir
+
+.hidden-md
+→ desktop'da yashir
+
+.hidden-lg
+→ katta desktop'da yashir
+
+
+VISIBLE:
+
+.visible-xs-block
+→ XS ekranda ko‘rsat
+
+.visible-sm-block
+→ SM ekranda ko‘rsat
+
+.visible-md-block
+→ MD ekranda ko‘rsat
+
+.visible-lg-block
+→ LG ekranda ko‘rsat
+
+
+==================================================
+26. ENG QISQA FORMULA
+==================================================
+
+.text-* 
+→ MATN
+
+.bg-*
+→ BACKGROUND
+
+.hidden-*
+→ YASHIRISH
+
+.visible-*
+→ KO‘RSATISH
+
+xs / sm / md / lg
+→ EKRAN O‘LCHAMI
+
+.pull-left
+→ CHAP
+
+.pull-right
+→ O‘NG
+
+.center-block
+→ MARKAZ
+
+.hidden
+→ BUTUNLAY YASHIRADI
+
+.invisible
+→ KO‘RINMAYDI, LEKIN JOYI QOLADI
+
+
+==================================================
+ASOSIY XULOSA
+==================================================
+
+Bootstrap CSS Helper Classes —
+tayyor CSS classlar.
+
+Ular yordamida:
+
+1. Matn rangini o‘zgartiramiz
+2. Background rangini o‘zgartiramiz
+3. Elementni chap/o‘ngga joylaymiz
+4. Elementni markazlashtiramiz
+5. Elementni yashiramiz
+6. Elementni ko‘rsatamiz
+7. Ekran o‘lchamiga qarab elementni boshqaramiz
+8. Accessibility uchun screen reader classlardan foydalanamiz
+
+Asosiy mantiq:
+
+.text-*   → text
+.bg-*     → background
+.hidden-* → yashirish
+.visible-* → ko‘rsatish
+xs/sm/md/lg → screen size
