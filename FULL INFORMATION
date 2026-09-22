@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abdulloh Turgunov | CV</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                AT.
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#languages">Languages</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <button
+                    id="themeBtn"
+                    class="btn btn-outline-light ms-lg-3"
+                >
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-5 text-center mb-5 mb-lg-0">
+
+                    <img
+                
+                   src="jpg.jpg"
+                  alt="Abdulloh Turgunov"
+                  class="profile-img"
+>
+>
+                    >
+
+                </div>
+
+                <div class="col-lg-7 text-center text-lg-start">
+
+                    <p class="small-title">
+                        HELLO, I'M
+                    </p>
+
+                    <h1 class="display-2 fw-bold">
+                        Abdulloh<br>Turgunov
+                    </h1>
+
+                    <h3 class="text-secondary mb-4">
+                        IT Student & Front-End Developer
+                    </h3>
+
+                    <p class="lead hero-text">
+                        IT student focused on front-end web development.
+                        I create responsive and user-friendly websites
+                        using HTML, CSS, Bootstrap and JavaScript.
+                    </p>
+
+                    <div class="mt-4">
+
+                        <a
+                            href="#about"
+                            class="btn btn-dark btn-lg me-2"
+                        >
+                            About Me
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="btn btn-outline-dark btn-lg"
+                        >
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <p class="section-number">01</p>
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <p class="about-text">
+                        I am an Information Technology student with a strong
+                        interest in front-end development. I am developing
+                        my knowledge of HTML, CSS, Bootstrap and JavaScript
+                        and applying these technologies by building practical
+                        web projects. My goal is to continue improving my
+                        programming skills and grow as a professional developer.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="education" class="section bg-light">
+
+        <div class="container">
+
+            <p class="section-number">02</p>
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+            <div class="education-card">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-2">
+
+                        <span class="education-year">
+                            2027
+                        </span>
+
+                    </div>
+
+                    <div class="col-md-10">
+
+                        <h4>
+                            Information Technology
+                        </h4>
+
+                        <h6 class="text-secondary">
+                            Singapore Institute
+                        </h6>
+
+                        <p class="mb-0">
+                            Studying Information Technology with a focus
+                            on programming and web development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <p class="section-number">03</p>
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-6 col-md-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-filetype-html"></i>
+
+                        <h4>HTML</h4>
+
+                        <p>
+                            Page structure and semantic HTML
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-filetype-css"></i>
+
+                        <h4>CSS</h4>
+
+                        <p>
+                            Styling and responsive design
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-bootstrap-fill"></i>
+
+                        <h4>Bootstrap</h4>
+
+                        <p>
+                            Grid and responsive layouts
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-filetype-js"></i>
+
+                        <h4>JavaScript</h4>
+
+                        <p>
+                            DOM and web interactivity
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section bg-light">
+
+        <div class="container">
+
+            <p class="section-number">04</p>
+
+            <h2 class="section-title">
+                Technical Knowledge
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <div class="knowledge-card">
+
+                        <h5>
+                            <i class="bi bi-code-slash"></i>
+                            JavaScript
+                        </h5>
+
+                        <p>
+                            Arrays, Objects, Functions, DOM,
+                            Promises, Async/Await and ES Modules.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="knowledge-card">
+
+                        <h5>
+                            <i class="bi bi-diagram-3"></i>
+                            Data Structures
+                        </h5>
+
+                        <p>
+                            Stack, Linked List, Doubly Linked List
+                            and Arrays.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="knowledge-card">
+
+                        <h5>
+                            <i class="bi bi-search"></i>
+                            Algorithms
+                        </h5>
+
+                        <p>
+                            Sorting algorithms and searching algorithms.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="knowledge-card">
+
+                        <h5>
+                            <i class="bi bi-phone"></i>
+                            Responsive Design
+                        </h5>
+
+                        <p>
+                            Bootstrap Grid, breakpoints,
+                            responsive layouts and media queries.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="languages" class="section">
+
+        <div class="container">
+
+            <p class="section-number">05</p>
+
+            <h2 class="section-title">
+                Languages
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="language-card">
+
+                        <h4>Uzbek</h4>
+
+                        <p>Native</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar bg-dark"
+                                style="width: 100%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="language-card">
+
+                        <h4>Russian</h4>
+
+                        <p>B2</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar bg-dark"
+                                style="width: 75%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="language-card">
+
+                        <h4>English</h4>
+
+                        <p>B2</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar bg-dark"
+                                style="width: 75%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section bg-light">
+
+        <div class="container">
+
+            <p class="section-number">06</p>
+
+            <h2 class="section-title">
+                Current Focus
+            </h2>
+
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <p class="about-text">
+                        Currently focused on improving my front-end
+                        development skills, creating responsive websites
+                        and strengthening my JavaScript knowledge through
+                        practical exercises and projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <p class="section-number text-white-50">
+                07
+            </p>
+
+            <h2 class="section-title text-white">
+                Contact
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-telephone"></i>
+
+                        <p>Phone</p>
+
+                        <a href="tel:+998977240002">
+                            +998 97 724 00 02
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-envelope"></i>
+
+                        <p>Email</p>
+
+                        <a href="mailto:abdulloxt4@gmail.com">
+                            abdulloxt4@gmail.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-geo-alt"></i>
+
+                        <p>Location</p>
+
+                        <span>
+                            Tashkent, Uzbekistan
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p class="mb-0">
+                © 2026 Abdulloh Turgunov
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
+//CSS
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.hero {
+    background-color: #f5f5f5;
+}
+
+.small-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.profile-img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.education-card {
+    background-color: white;
+    padding: 35px;
+    border-left: 5px solid #111;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.education-year {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.skill-card {
+    height: 100%;
+    padding: 35px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card i {
+    font-size: 45px;
+}
+
+.skill-card h4 {
+    margin-top: 20px;
+}
+
+.skill-card p {
+    color: #777;
+    margin-bottom: 0;
+}
+
+.knowledge-card {
+    height: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.knowledge-card i {
+    margin-right: 8px;
+}
+
+.language-card {
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.language-card p {
+    color: #777;
+}
+
+.progress {
+    height: 7px;
+}
+
+.contact-section {
+    background-color: #111;
+}
+
+.contact-item {
+    color: white;
+}
+
+.contact-item i {
+    font-size: 30px;
+}
+
+.contact-item p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-item span {
+    color: white;
+}
+
+footer {
+    background-color: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .hero,
+.dark-mode .bg-light {
+    background-color: #1b1b1b !important;
+}
+
+.dark-mode .education-card,
+.dark-mode .knowledge-card,
+.dark-mode .skill-card,
+.dark-mode .language-card {
+    background-color: #242424;
+    color: white;
+    border-color: #444;
+}
+
+.dark-mode .education-card {
+    border-left-color: white;
+}
+
+.dark-mode .text-secondary {
+    color: #aaa !important;
+}
+
+.dark-mode .btn-outline-dark {
+    color: white;
+    border-color: white;
+}
+
+.dark-mode .btn-outline-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .profile-img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero h3 {
+        font-size: 21px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .about-text {
+        font-size: 17px;
+    }
+
+    .education-year {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .contact-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
+//JS
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+    const icon = themeBtn.querySelector("i");
+
+    icon.classList.toggle("bi-moon-fill");
+    icon.classList.toggle("bi-sun-fill");
+
+});
