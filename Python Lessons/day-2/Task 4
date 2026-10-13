@@ -1,0 +1,29 @@
+
+a = float(input("Birinchi son: "))
+b = float(input("Ikkinchi son: "))
+
+operator = input("Amalni kiriting (+, -, *, /): ")
+
+match operator:
+    case "+":
+        print(f"Natija: {a + b}")
+
+    case "-":
+        print(f"Natija: {a - b}")
+
+    case "*":
+        print(f"Natija: {a * b}")
+
+    case "/":
+        if b == 0:
+            print("Xato! Nolga bo'lish mumkin emas.")
+        else:
+            print(f"Natija: {a / b}")
+
+    case _:
+        print("Noto'g'ri amal kiritildi!")
+//OZIM UCHUN
+Birinchi son: 20
+Ikkinchi son: 5
+Amalni kiriting (+, -, *, /): /
+Natija: 4.0
