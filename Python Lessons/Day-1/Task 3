@@ -1,0 +1,31 @@
+from datetime import date
+birth_year = int(input("Tug'ilgan yilingizni kiriting: "))
+
+current_year = date.today().year
+
+age = current_year - birth_year
+
+print(f"Siz {birth_year}-yilda tug'ilgansiz.")
+print(f"Siz bu yil {age} yoshga to'lasiz.")
+//javob
+Tug'ilgan yilingizni kiriting: 2006
+Siz 2006-yilda tug'ilgansiz.
+Siz bu yil 20 yoshga to'lasiz.
+
+//OZIM UCHUN
+Kod	Vazifasi
+from datetime import date	-- Python'dan sana bilan ishlash vositasini oladi
+input()	-- Foydalanuvchidan ma'lumot so'raydi
+int()	-- Kiritilgan matnni butun songa aylantiradi
+date.today().year -- 	Hozirgi yilni oladi
+age = current_year - birth_year	-- Yoshni yil bo'yicha hisoblaydi
+f"..."	Matn ichiga o'zgaruvchi qiymatini qo'shadi
+
+input("...") — foydalanuvchi 2006 kiritadi, lekin Python uni "2006" matn sifatida qabul qiladi.
+int(...) — "2006" ni 2006 butun soniga aylantiradi.
+birth_year — hosil bo'lgan sonni saqlaydi.
+
+f — formatted string, ya'ni o'zgaruvchilarni matn ichiga joylashtirish imkonini beradi.
+{name} — name o'zgaruvchisining qiymatini oladi.
+{age} — age o'zgaruvchisining qiymatini oladi.
+print() — tayyor matnni terminalga chiqaradi.
