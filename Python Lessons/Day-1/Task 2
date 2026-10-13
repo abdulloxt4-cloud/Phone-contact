@@ -1,0 +1,37 @@
+name = "Abdulloh"
+age = 20
+height = 1.89
+is_student = True
+is_married = False
+salary = None
+birth_year = 2006
+city = "Tashkent"
+
+print(type(name))
+print(type(age))
+print(type(height))
+print(type(is_student))
+print(type(is_married))
+print(type(salary))
+print(type(birth_year))
+print(type(city))
+//javob
+<class 'str'>
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+<class 'bool'>
+<class 'NoneType'>
+<class 'int'>
+<class 'str'>
+
+//OZIM UCHUN
+str — matn (string)
+int — butun son (integer)
+float — kasrli son
+bool — True yoki False
+NoneType — qiymati None bo'lgan obyekt turi
+Python        	       JavaScript
+print(name) 	          console.log(name)
+type(name)	            typeof name
+print(type(name))	      console.log(typeof name)
