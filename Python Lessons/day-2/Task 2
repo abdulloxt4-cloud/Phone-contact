@@ -1,0 +1,23 @@
+ball = float(input("Ballingizni kiriting: "))
+
+if ball < 0 or ball > 100:
+    print("Xato! Ball 0 dan 100 gacha bo'lishi kerak.")
+
+elif ball >= 90:
+    print("Sizning bahoyingiz: 5")
+
+elif ball >= 70:
+    print("Sizning bahoyingiz: 4")
+
+elif ball >= 60:
+    print("Sizning bahoyingiz: 3")
+
+else:
+    print("Sizning bahoyingiz: 2")
+//OZIM UCHUN
+if — birinchi shartni tekshiradi.
+elif — oldingi shart bajarilmagan bo'lsa, keyingisini tekshiradi.
+
+else — hech bir oldingi shart bajarilmasa ishlaydi.
+
+or — ikkita shartdan kamida bittasi to'g'ri bo'lsa True bo'ladi.
