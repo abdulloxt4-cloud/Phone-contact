@@ -1,0 +1,24 @@
+number = int(input("Son kiriting: "))
+if number % 2 == 0:
+    print("Bu juft son")
+else:
+    print("Bu toq son")
+
+last_digit = abs(number) % 10
+
+square = number ** 2
+cube = number ** 3
+
+print(f"Oxirgi raqami: {last_digit}")
+print(f"Kvadrati: {square}")
+print(f"Kubi: {cube}")
+//KEYWORD
+Kod	Vazifasi
+%	Bo'lishdan qolgan qoldiqni topadi
+number % 2 == 0	Son juftligini tekshiradi
+if	Shart to'g'ri bo'lsa ishlaydi
+else	Shart noto'g'ri bo'lsa ishlaydi
+abs(number)	Sonni manfiy belgisiz oladi
+% 10	Oxirgi raqamni ajratadi
+** 2	Kvadratga oshiradi
+** 3	Kubga oshiradi
