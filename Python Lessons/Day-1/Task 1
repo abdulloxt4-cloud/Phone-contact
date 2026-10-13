@@ -1,0 +1,12 @@
+name = "Abdulloh"
+age = 20
+city = "Tashkent"
+
+print(name)
+print(age)
+print(city)
+//run
+Abdulloh
+20
+Tashkent
+PS C:\Users\a.turgunov\Desktop\Python> 
