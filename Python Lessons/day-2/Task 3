@@ -1,0 +1,19 @@
+year = int(input("Yilni kiriting: "))
+
+if year <= 0:
+    print("Noto'g'ri yil!")
+elif year % 400 == 0:
+    print(f"{year} - kabisa yili")
+elif year % 100 == 0:
+    print(f"{year} - kabisa yili emas")
+elif year % 4 == 0:
+    print(f"{year} - kabisa yili")
+else:
+    print(f"{year} - kabisa yili emas")
+//KEYWORD
+Task 3 — Kabisa yilini aniqlash
+Kabisa yili — 366 kundan iborat yil. Fevral oyida 29 kun bo'ladi.
+Qoidasi:
+- Yil 400 ga bo'linsa — kabisa.
+- Yil 100 ga bo'linsa, lekin 400 ga bo'linmasa — kabisa emas.
+- Yil 4 ga bo'linsa va 100 ga bo'linmasa — kabisa.
