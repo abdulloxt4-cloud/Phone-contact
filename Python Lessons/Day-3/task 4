@@ -1,0 +1,43 @@
+import random
+secret = random.randint(1, 100)
+attempts = 0
+print("Sonni top o'yiniga xush kelibsiz!")
+while True:
+    guess = int(input("Son kiriting (1-100): "))
+
+    if guess < 1 or guess > 100:
+        print("1 dan 100 gacha son kiriting!")
+        continue
+
+    attempts += 1
+
+    if guess < secret:
+        print("Kattaroq son kiriting!")
+    elif guess > secret:
+        print("Kichikroq son kiriting!")
+    else:
+        print("Tabriklayman! Sonni topdingiz!")
+        print(f"Urinishlar soni: {attempts}")
+        break
+//SELF
+Sonni top o'yiniga xush kelibsiz!
+Son kiriting (1-100): 50
+Kattaroq son kiriting!
+Son kiriting (1-100): 75
+Kichikroq son kiriting!
+Son kiriting (1-100): 60
+Tabriklayman! Sonni topdingiz!
+Urinishlar soni: 3
+Mantiqi:
+- import random — tasodifiy sonlar modulini ulaydi.
+- randint(1, 100) — 1–100 orasidan son tanlaydi.
+- while True — to'xtatilmaguncha takrorlaydi.
+- continue — tsiklning keyingi aylanishiga o'tadi.
+- break — tsikldan chiqadi.
+Tushuncha	Javob
+for	Takrorlash soni yoki ketma-ketlik ma'lum bo'lsa qulay
+while	Shart bajarilib turguncha takrorlaydi
+break	Tsiklni to'liq to'xtatadi
+continue	Joriy aylanishning qolgan qismini o'tkazib yuboradi
+range(1, 11)	1 dan 10 gacha
+range(2, 11, 2)	2, 4, 6, 8, 10
