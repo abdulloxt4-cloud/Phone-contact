@@ -1,0 +1,19 @@
+n = int(input("Son kiriting: "))
+total = 0
+factorial = 1
+if n < 0:
+    print("Musbat son yoki 0 kiriting!")
+else:
+    for i in range(1, n + 1):
+        total += i
+        factorial *= i
+    print(f"Yig'indi: {total}")
+    print(f"Faktorial: {factorial}")
+
+//SELF
+range(1, n + 1) — 1 dan N gacha yuradi.
+total += i — sonlarni qo'shib boradi.
+
+factorial *= i — sonlarni ko'paytirib boradi.
+
+5! = 1 × 2 × 3 × 4 × 5 = 120.
